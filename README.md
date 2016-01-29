@@ -7,7 +7,7 @@ The architecture and methodology focuses on:
 * Flexibility - *Change and add quickly and without worry*
 * Extensibility - *Simply add new features without steep learning curve*
 
-For more information, please check out the [Habitat Wiki](../../wiki)
+For more information, please check out the [Habitat Wiki](https://github.com/Sitecore/Habitat/wiki)
 
 ## Differences than the original
 
@@ -21,7 +21,7 @@ Team Development for Sitecore is a Visual Studio plug-in managed by Hedgehog Dev
 2. Set up a clean Sitecore 8.1 website in the URL http://habitat.local/ and the location C:\Websites\Habitat.local\ (We recommend using Sitecore Instance Manager).
 3. Install the Webforms for Marketers module
 4. Restore npm modules
-  - Make sure you have the version 4+ of node.js Download here
+  - Make sure you have the version 4+ of node.js [Download here](https://nodejs.org/en/)
   - Open an administrator command-line and run 'npm install' in the root of repository.
 5. Open the solution in Visual Studio.
 6. (optional) Configuring your settings if you are using other settings than default:
