@@ -510,5 +510,10 @@
       <Name>Sitecore.Common.Website</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\Sitecore.Common.Website.Core\Sitecore.Common.Website.Core.scproj">
+      <ProjectId>{96cb4d20-920c-4795-879c-80e92570ea41}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>
