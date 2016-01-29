@@ -152,11 +152,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{82551C36-E
 		TdsGlobal.config = TdsGlobal.config
 	EndProjectSection
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Accounts.Master", "Sitecore.Feature.Accounts.Master\Sitecore.Feature.Accounts.Master.scproj", "{AE13D34C-CD4F-40C1-8EF3-06F1366D5A81}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Accounts.Master", "src\Feature\Accounts\tds\Sitecore.Feature.Accounts.Master\Sitecore.Feature.Accounts.Master.scproj", "{AE13D34C-CD4F-40C1-8EF3-06F1366D5A81}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Accounts.Core", "Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj", "{AEC741A2-5BC2-4C9A-807E-C6BC56FF8031}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Accounts.Core", "src\Feature\Accounts\tds\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj", "{AEC741A2-5BC2-4C9A-807E-C6BC56FF8031}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Demo.Master", "Sitecore.Feature.Demo.Master\Sitecore.Feature.Demo.Master.scproj", "{E0598453-0397-4DAA-B3A0-064C8B3F25F5}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Demo.Master", "src\Feature\Demo\tds\Sitecore.Feature.Demo.Master\Sitecore.Feature.Demo.Master.scproj", "{E0598453-0397-4DAA-B3A0-064C8B3F25F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
