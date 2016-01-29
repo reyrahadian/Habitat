@@ -458,7 +458,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Habitat.Website.Co
 		{1D63DDD8-78D4-4253-A86C-3B2B02CB38DF} = {1D63DDD8-78D4-4253-A86C-3B2B02CB38DF}
 	EndProjectSection
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Habitat.Website.Media", "Sitecore.Habitat.Website.Media\Sitecore.Habitat.Website.Media.scproj", "{1D63DDD8-78D4-4253-A86C-3B2B02CB38DF}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Habitat.Website.Media", "src\Project\Habitat\tds\Sitecore.Habitat.Website.Media\Sitecore.Habitat.Website.Media.scproj", "{1D63DDD8-78D4-4253-A86C-3B2B02CB38DF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4} = {D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4}
 	EndProjectSection
