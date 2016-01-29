@@ -184,6 +184,8 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Teasers.Ma
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Assets.Master", "src\Foundation\Assets\tds\Sitecore.Foundation.Assets.Master\Sitecore.Foundation.Assets.Master.scproj", "{031DE74A-D92D-4E68-90C3-8E99EC0D83A5}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Indexing.Master", "src\Foundation\Indexing\tds\Sitecore.Foundation.Indexing.Master\Sitecore.Foundation.Indexing.Master.scproj", "{0B38465A-BB8B-4414-8D00-6204829500BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -678,6 +680,18 @@ Global
 		{031DE74A-D92D-4E68-90C3-8E99EC0D83A5}.Release|x64.ActiveCfg = Release|Any CPU
 		{031DE74A-D92D-4E68-90C3-8E99EC0D83A5}.Release|x64.Build.0 = Release|Any CPU
 		{031DE74A-D92D-4E68-90C3-8E99EC0D83A5}.Release|x64.Deploy.0 = Release|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Debug|x64.Build.0 = Debug|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Release|x64.ActiveCfg = Release|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Release|x64.Build.0 = Release|Any CPU
+		{0B38465A-BB8B-4414-8D00-6204829500BD}.Release|x64.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -761,5 +775,6 @@ Global
 		{D3712D53-F781-4B3D-94B2-5D8B2629093B} = {F5F33FD2-3808-4C5C-9FAA-F1B07E339B66}
 		{1E86EFA3-0793-4E36-9C62-3AF793B9028F} = {8AE5D37C-D340-4D66-8BAE-48A7ED60BCE8}
 		{031DE74A-D92D-4E68-90C3-8E99EC0D83A5} = {4CEA4907-CB04-49A7-869D-FE39C479DF58}
+		{0B38465A-BB8B-4414-8D00-6204829500BD} = {641F22ED-9C6A-4ADA-A9E7-7CA6A67E39B1}
 	EndGlobalSection
 EndGlobal
