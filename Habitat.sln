@@ -196,6 +196,8 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Demo.Website.Maste
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Habitat.Website.Master", "src\Project\Habitat\tds\Sitecore.Habitat.Website.Master\Sitecore.Habitat.Website.Master.scproj", "{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Serialization.Master", "src\Foundation\Serialization\tds\Sitecore.Foundation.Serialization.Master\Sitecore.Foundation.Serialization.Master.scproj", "{F76D3A85-4A21-409A-979C-E92A18108644}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -762,6 +764,18 @@ Global
 		{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4}.Release|x64.ActiveCfg = Release|Any CPU
 		{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4}.Release|x64.Build.0 = Release|Any CPU
 		{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4}.Release|x64.Deploy.0 = Release|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Debug|x64.Build.0 = Debug|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Release|x64.ActiveCfg = Release|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Release|x64.Build.0 = Release|Any CPU
+		{F76D3A85-4A21-409A-979C-E92A18108644}.Release|x64.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -851,5 +865,6 @@ Global
 		{96CB4D20-920C-4795-879C-80E92570EA41} = {5ABB37C0-E86D-4585-81D2-50A0E41ED859}
 		{A77B360B-E770-492D-83F7-CA22D943477A} = {BC277CB0-BAA3-4C15-973F-3F9C10B77278}
 		{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4} = {E5ADCE9F-29A4-42D7-A316-2A1AD6E23E3E}
+		{F76D3A85-4A21-409A-979C-E92A18108644} = {BF8EAE6B-0DFD-45EC-A419-1EC760FE9E49}
 	EndGlobalSection
 EndGlobal
