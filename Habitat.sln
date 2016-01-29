@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.SitecoreExtensions", "src\foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj", "{B535703F-8D07-4F23-A533-2974BB4CC7B1}"
 EndProject
@@ -157,6 +157,8 @@ EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Accounts.Core", "src\Feature\Accounts\tds\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj", "{AEC741A2-5BC2-4C9A-807E-C6BC56FF8031}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Demo.Master", "src\Feature\Demo\tds\Sitecore.Feature.Demo.Master\Sitecore.Feature.Demo.Master.scproj", "{E0598453-0397-4DAA-B3A0-064C8B3F25F5}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Identity.Master", "src\Feature\Identity\tds\Sitecore.Feature.Identity.Master\Sitecore.Feature.Identity.Master.scproj", "{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -496,6 +498,18 @@ Global
 		{E0598453-0397-4DAA-B3A0-064C8B3F25F5}.Release|x64.ActiveCfg = Release|Any CPU
 		{E0598453-0397-4DAA-B3A0-064C8B3F25F5}.Release|x64.Build.0 = Release|Any CPU
 		{E0598453-0397-4DAA-B3A0-064C8B3F25F5}.Release|x64.Deploy.0 = Release|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Debug|x64.Build.0 = Debug|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Release|x64.ActiveCfg = Release|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Release|x64.Build.0 = Release|Any CPU
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A}.Release|x64.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -566,5 +580,6 @@ Global
 		{AE13D34C-CD4F-40C1-8EF3-06F1366D5A81} = {C7886F90-3A67-4889-8ACC-F07D42CFDBF0}
 		{AEC741A2-5BC2-4C9A-807E-C6BC56FF8031} = {C7886F90-3A67-4889-8ACC-F07D42CFDBF0}
 		{E0598453-0397-4DAA-B3A0-064C8B3F25F5} = {CA21CE04-607F-4AF6-8A70-3F1E82C42B11}
+		{BCBEAEB7-1371-49E6-A00D-AD62E1CCD19A} = {6F4B31B8-5677-448B-8A72-957E8AA47F52}
 	EndGlobalSection
 EndGlobal
