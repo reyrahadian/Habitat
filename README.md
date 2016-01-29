@@ -32,5 +32,5 @@ To change the standard location of source, website files and website URL modify 
 7. Open the Visual Studio 2015 Task Runner Explorer (View | Other Windows | Task Runner Explorer).
 8. Run the 01-Copy-Sitecore-Lib task. 
 9. Deploy the solution in Visual Studio 2015 to deploy all Sitecore Items and Project Items.
-10. Run the 03_Apply-Xml-Transform task.
+10. Run the 03_Apply-Xml-Transform task. (To be replaced in the future)
 11. Be productive!
