@@ -19,7 +19,7 @@ content-length: 154
 ----version----
 language: en
 version: 1
-revision: 922dc9e6-20c1-4aba-aa59-9a1982673229
+revision: 2ff5c1f1-7483-4398-90ea-b9d4e6a835cd
 
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
@@ -32,9 +32,9 @@ The Acyclic Dependencies Principle
 field: {13D97A52-7C4E-407C-960D-FADDE8A3C1B1}
 name: TeaserSummary
 key: teasersummary
-content-length: 85
+content-length: 80
 
-The dependency structure between packages must not contain cyclic dependencies.&nbsp;
+The dependency structure between packages must not contain cyclic dependencies. 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-922dc9e6-20c1-4aba-aa59-9a1982673229
+2ff5c1f1-7483-4398-90ea-b9d4e6a835cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212046Z
+20160405T151923Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

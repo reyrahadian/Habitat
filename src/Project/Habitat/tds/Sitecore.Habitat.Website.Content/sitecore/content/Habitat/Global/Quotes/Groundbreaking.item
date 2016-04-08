@@ -12,15 +12,8 @@ templatekey: Quote
 ----version----
 language: en
 version: 1
-revision: 9a08b3b4-ff9f-4811-b1d9-40f407554dfa
+revision: a9572a5d-61b3-43c0-8dc1-96d121bec46c
 
-----field----
-field: {BF83983A-473F-4A49-BE8E-7D563AA5687E}
-name: Company
-key: company
-content-length: 10
-
-Pentia A/S
 ----field----
 field: {26CD59AB-3639-488F-BAFD-58D2B217755A}
 name: Name
@@ -43,6 +36,13 @@ content-length: 12
 
 Sitecore MVP
 ----field----
+field: {BF83983A-473F-4A49-BE8E-7D563AA5687E}
+name: Cite Origin
+key: cite origin
+content-length: 10
+
+Pentia A/S
+----field----
 field: {C9BAF3EB-8CFA-4BF6-9B19-51D38DB5FC38}
 name: Picture
 key: picture
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9a08b3b4-ff9f-4811-b1d9-40f407554dfa
+a9572a5d-61b3-43c0-8dc1-96d121bec46c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212043Z
+20160405T151922Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

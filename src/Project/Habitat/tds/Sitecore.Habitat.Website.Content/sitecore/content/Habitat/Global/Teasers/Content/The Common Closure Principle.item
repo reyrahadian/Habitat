@@ -19,7 +19,7 @@ content-length: 142
 ----version----
 language: en
 version: 1
-revision: 5a3a4f4b-7106-4962-8341-b9b914b29d66
+revision: 97b172f2-632c-4ac5-834b-5cc2669166ff
 
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
@@ -32,9 +32,9 @@ THE COMMON CLOSURE PRINCIPLE
 field: {13D97A52-7C4E-407C-960D-FADDE8A3C1B1}
 name: TeaserSummary
 key: teasersummary
-content-length: 89
+content-length: 84
 
-Classes that change together are packaged together.&nbsp;What affects one, affects all.
+Classes that change together are packaged together. What affects one, affects all.
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5a3a4f4b-7106-4962-8341-b9b914b29d66
+97b172f2-632c-4ac5-834b-5cc2669166ff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212046Z
+20160405T151923Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

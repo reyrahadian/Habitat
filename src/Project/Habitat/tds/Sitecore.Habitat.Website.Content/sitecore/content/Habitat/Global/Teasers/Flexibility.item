@@ -12,15 +12,15 @@ templatekey: Teaser
 ----version----
 language: en
 version: 1
-revision: c967185e-d0b5-4886-a487-2239b97f29fd
+revision: 99776ef9-4239-4ff7-b0ca-71ac9a73ba42
 
 ----field----
 field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
 name: TeaserImage
 key: teaserimage
-content-length: 159
+content-length: 166
 
-<image mediapath="" src="" height="" mediaid="{40EA01F7-1897-4ED0-8721-76511278B6A5}" hspace="" usethumbnail="" showineditor="" width="" alt="087" vspace="" />
+<image mediapath="" src="" height="" mediaid="{40EA01F7-1897-4ED0-8721-76511278B6A5}" hspace="" usethumbnail="" showineditor="" width="" alt="087" vspace="" ></image>
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
 name: TeaserTitle
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c967185e-d0b5-4886-a487-2239b97f29fd
+99776ef9-4239-4ff7-b0ca-71ac9a73ba42
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212044Z
+20160405T151922Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 18d30a41-8e61-4d4b-9520-dd864fb736ff
+revision: 55f9cbc2-d3f4-4dca-853d-20ca3a2101ab
 
 ----field----
 field: {BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}
@@ -46,9 +46,9 @@ Sitecore releases new feature packed version
 field: {3437EAAC-6EE8-460B-A33D-DA1F714B5A93}
 name: NewsImage
 key: newsimage
-content-length: 159
+content-length: 166
 
-<image mediapath="" src="" height="" mediaid="{08E01453-5709-43F0-9F2F-9B7A65BA5666}" hspace="" usethumbnail="" showineditor="" width="" alt="074" vspace="" />
+<image mediapath="" src="" height="" mediaid="{08E01453-5709-43F0-9F2F-9B7A65BA5666}" hspace="" usethumbnail="" showineditor="" width="" alt="074" vspace="" ></image>
 ----field----
 field: {9D08271A-1672-44DD-B7EF-0A6EC34FCBA7}
 name: NewsSummary
@@ -85,14 +85,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-18d30a41-8e61-4d4b-9520-dd864fb736ff
+55f9cbc2-d3f4-4dca-853d-20ca3a2101ab
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212048Z
+20160405T151924Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

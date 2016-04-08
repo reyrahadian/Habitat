@@ -12,15 +12,15 @@ templatekey: Teaser
 ----version----
 language: en
 version: 1
-revision: 916e324a-9b1d-4e42-a596-67eb49ec428f
+revision: b4aa65a2-dd7d-4ffe-88a4-110b63cffb2d
 
 ----field----
 field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
 name: TeaserImage
 key: teaserimage
-content-length: 159
+content-length: 166
 
-<image mediapath="" src="" height="" mediaid="{7C3BBB56-BE70-4F1B-86A3-3D7C505D74AD}" hspace="" usethumbnail="" showineditor="" width="" alt="178" vspace="" />
+<image mediapath="" src="" height="" mediaid="{7C3BBB56-BE70-4F1B-86A3-3D7C505D74AD}" hspace="" usethumbnail="" showineditor="" width="" alt="178" vspace="" ></image>
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
 name: TeaserTitle
@@ -32,9 +32,9 @@ Simplicity
 field: {13D97A52-7C4E-407C-960D-FADDE8A3C1B1}
 name: TeaserSummary
 key: teasersummary
-content-length: 86
+content-length: 76
 
-By defining and&nbsp;following&nbsp;stringent conventions development is much simpler.
+By defining and following stringent conventions development is much simpler.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-916e324a-9b1d-4e42-a596-67eb49ec428f
+b4aa65a2-dd7d-4ffe-88a4-110b63cffb2d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212044Z
+20160405T151922Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

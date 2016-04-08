@@ -7,15 +7,15 @@ parent: {DAC24EDD-44FB-42EF-9ECD-1E8DAF706386}
 name: Register
 master: {00000000-0000-0000-0000-000000000000}
 template: {6EF8F8A0-C567-495B-9E00-8775A268A486}
-templatekey: Service Page
+templatekey: Register Page
 
 ----field----
-field: {5585A30D-B115-4753-93CE-422C3455DEB2}
-name: ShowInNavigation
-key: showinnavigation
-content-length: 1
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 12
 
-0
+<tracking />
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -23,17 +23,10 @@ key: __sortorder
 content-length: 3
 
 600
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 278
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{47F5A079-6F63-4219-BC45-1A221B200906}"><p:d /></r><r uid="{F57684CD-F181-4D99-83F8-869BD554234E}" s:id="{B683EFB4-161D-4FDF-9A90-CC8637766C9C}" s:ph="/page-layout/col-narrow-2" /></d></r>
 ----version----
 language: en
 version: 1
-revision: d2742053-592a-4e4c-ae4a-d0b73d04af0d
+revision: 4a0a1cde-953b-49ae-8f49-44ab3ae2fac6
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -50,6 +43,13 @@ content-length: 8
 
 Register
 ----field----
+field: {CA0479CE-0BFE-4522-83DE-BA688B380A78}
+name: BrowserTitle
+key: browsertitle
+content-length: 8
+
+Register
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d2742053-592a-4e4c-ae4a-d0b73d04af0d
+4a0a1cde-953b-49ae-8f49-44ab3ae2fac6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212042Z
+20160405T151921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 76b78adf-0a11-445b-b1b5-81972dce8ad9
+revision: f9dfded9-023e-4e42-84d7-4a9dceb031ae
 
 ----field----
 field: {BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}
@@ -39,9 +39,9 @@ Sitecore XP rated Best In Class - again
 field: {3437EAAC-6EE8-460B-A33D-DA1F714B5A93}
 name: NewsImage
 key: newsimage
-content-length: 159
+content-length: 166
 
-<image mediapath="" src="" height="" mediaid="{7C3BBB56-BE70-4F1B-86A3-3D7C505D74AD}" hspace="" usethumbnail="" showineditor="" width="" alt="178" vspace="" />
+<image mediapath="" src="" height="" mediaid="{7C3BBB56-BE70-4F1B-86A3-3D7C505D74AD}" hspace="" usethumbnail="" showineditor="" width="" alt="178" vspace="" ></image>
 ----field----
 field: {9D08271A-1672-44DD-B7EF-0A6EC34FCBA7}
 name: NewsSummary
@@ -78,14 +78,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76b78adf-0a11-445b-b1b5-81972dce8ad9
+f9dfded9-023e-4e42-84d7-4a9dceb031ae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212048Z
+20160405T151924Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

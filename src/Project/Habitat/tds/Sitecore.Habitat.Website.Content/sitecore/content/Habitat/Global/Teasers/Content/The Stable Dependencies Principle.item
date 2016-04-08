@@ -19,7 +19,7 @@ content-length: 152
 ----version----
 language: en
 version: 1
-revision: 185f21a8-57af-4f7f-89ed-029e5cfa7183
+revision: 7f73d357-3271-4750-8dc6-00c054039ea7
 
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
@@ -32,9 +32,9 @@ The Stable Dependencies Principle
 field: {13D97A52-7C4E-407C-960D-FADDE8A3C1B1}
 name: TeaserSummary
 key: teasersummary
-content-length: 176
+content-length: 171
 
-The dependencies between packages should be in the direction of the stability of the packages. A package should only depend upon packages that are more stable than it is.&nbsp;
+The dependencies between packages should be in the direction of the stability of the packages. A package should only depend upon packages that are more stable than it is. 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-185f21a8-57af-4f7f-89ed-029e5cfa7183
+7f73d357-3271-4750-8dc6-00c054039ea7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212046Z
+20160405T151923Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

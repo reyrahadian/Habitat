@@ -12,15 +12,15 @@ templatekey: Datasource Configuration
 ----version----
 language: en
 version: 1
-revision: d4eefdb2-e6ef-4bd0-84e6-b0940956511c
+revision: aa379d3e-7bfe-48d3-87c4-fbce9b18501c
 
 ----field----
 field: {5FE1CC43-F86C-459C-A379-CD75950D85AF}
 name: DatasourceLocation
 key: datasourcelocation
-content-length: 40
+content-length: 68
 
-/sitecore/content/Habitat/Global/Persons
+/sitecore/content/Habitat/Home/Modules/Feature/Person/Employees List
 ----field----
 field: {498DD5B6-7DAE-44A7-9213-1D32596AD14F}
 name: DatasourceTemplate
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d4eefdb2-e6ef-4bd0-84e6-b0940956511c
+aa379d3e-7bfe-48d3-87c4-fbce9b18501c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212042Z
+20160405T151921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

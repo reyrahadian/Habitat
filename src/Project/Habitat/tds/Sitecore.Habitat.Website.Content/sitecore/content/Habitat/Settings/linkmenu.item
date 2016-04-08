@@ -12,8 +12,15 @@ templatekey: Datasource Configuration
 ----version----
 language: en
 version: 1
-revision: e1380cf8-378d-4636-80ce-08b36b1400a1
+revision: b46f4664-92fc-4187-bff2-8c68525ceefe
 
+----field----
+field: {5FE1CC43-F86C-459C-A379-CD75950D85AF}
+name: DatasourceLocation
+key: datasourcelocation
+content-length: 38
+
+{3AA0815E-CBD7-4A56-A922-1CCA81D844D1}
 ----field----
 field: {498DD5B6-7DAE-44A7-9213-1D32596AD14F}
 name: DatasourceTemplate
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e1380cf8-378d-4636-80ce-08b36b1400a1
+b46f4664-92fc-4187-bff2-8c68525ceefe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212042Z
+20160405T151921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
