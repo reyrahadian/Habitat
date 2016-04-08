@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6585d32b-ef87-41b2-9be5-c049024f138a</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
+    <SourceWebProject>{5cf5fa06-ab27-4df5-a471-ed57ef3e4ae9}|src\Foundation\Alerts\code\Sitecore.Foundation.Alerts.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Sitecore.Foundation.Alerts.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Sitecore.Foundation.Alerts.Master</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Sitecore.Foundation.Alerts.Master</AssemblyName>
+    <Name>Sitecore.Foundation.Alerts.Master</Name>
+    <RootNamespace>Sitecore.Foundation.Alerts.Master</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\code\Sitecore.Foundation.Alerts.csproj">
+      <Project>{5cf5fa06-ab27-4df5-a471-ed57ef3e4ae9}</Project>
+      <Name>Sitecore.Foundation.Alerts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+  <ItemGroup>
+    <ExcludedAssemblies Include="MongoDB.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Abstractions.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Analytics.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Buckets.%2a" />
+    <ExcludedAssemblies Include="Sitecore.CES.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Cintel.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Client.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Cloud.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ContentSearch.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ControlPanel.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ExperienceAnalytics.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ExperienceEditor.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Forms.%2a" />
+    <ExcludedAssemblies Include="Sitecore.FXM.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ItemWebApi.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Kernel.%2a" />
+    <ExcludedAssemblies Include="Sitecore.LaunchPad.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ListManagement.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Logging.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Marketing.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Mvc.%2a" />
+    <ExcludedAssemblies Include="sitecore.nexus.%2a" />
+    <ExcludedAssemblies Include="Sitecore.NVelocity.dll" />
+    <ExcludedAssemblies Include="Sitecore.Oracle.%2a" />
+    <ExcludedAssemblies Include="Sitecore.PathAnalyzer.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Security.%2a" />
+    <ExcludedAssemblies Include="Sitecore.SegmentBuilder.%2a" />
+    <ExcludedAssemblies Include="Sitecore.SequenceAnalyzer.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Services.%2a" />
+    <ExcludedAssemblies Include="Sitecore.SessionProvider.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Shell.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Social.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Speak.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Update.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Web.%2a" />
+    <ExcludedAssemblies Include="Sitecore.WFFM.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Xdb.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Zip.%2a" />
+  </ItemGroup>
+</Project>
