@@ -15,6 +15,8 @@ This version of Habitat is using Team Development For Sitecore for Item Serializ
 
 Team Development for Sitecore is a Visual Studio plug-in managed by Hedgehog Development. At its core, it provides companies with the ability to automate their Sitecore builds or set up a continuous deployment scenarios. TDS provides several additional features its users find valuable, for more information visit: www.teamdevelopmentforsitecore.com.
 
+There was a duplicate named item at `/sitecore/content/Habitat/Global/Media/Dependencies`. In the TDS version we've renamed one of these items to `DependenciesFolder` instead.
+
 ## Differences in Installation:
 
 1. Clone this repository to your local file system.
