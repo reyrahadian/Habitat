@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {4A8822CC-B418-4452-AB0F-8BB6DF2F2114}
 templatekey: Home
 
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 255
+
+<tracking><profile id="{24DFF2CF-B30A-4B75-8967-2FE3DED82271}" name="Focus" presets="konstantin|100||"><key name="Background" value="9" /><key name="Practical" value="8" /><key name="Process" value="7" /><key name="Scope" value="3" /></profile></tracking>
 ----version----
 language: da
 version: 1
-revision: a89b7d1c-d091-4990-a268-64b0e7135752
+revision: 91f01659-fc50-4cfb-9aee-3c1bdb337aa7
 
 ----field----
 field: {1B483E91-D8C4-4D19-BA03-462074B55936}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a89b7d1c-d091-4990-a268-64b0e7135752
+91f01659-fc50-4cfb-9aee-3c1bdb337aa7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151920Z
+20160411T220308Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,7 +73,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 913a91e1-9874-447b-8d87-928afd6ad814
+revision: 7c50ef65-556a-439e-8b85-bbf16412d3ba
 
 ----field----
 field: {1B483E91-D8C4-4D19-BA03-462074B55936}
@@ -116,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-913a91e1-9874-447b-8d87-928afd6ad814
+7c50ef65-556a-439e-8b85-bbf16412d3ba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151920Z
+20160411T220308Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

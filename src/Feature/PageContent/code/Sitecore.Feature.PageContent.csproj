@@ -117,6 +117,7 @@
     <Content Include="Views\PageContent\ChildPageList.cshtml" />
     <Content Include="Views\PageContent\PageTeaser.cshtml" />
     <Content Include="Views\PageContent\PageTitle.cshtml" />
+    <Content Include="Views\PageContent\PageImage.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -158,7 +159,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59548</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

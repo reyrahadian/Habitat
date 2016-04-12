@@ -486,6 +486,13 @@ p {
 .lead {
   line-height: 1.8; }
 
+li.active {
+  color: #337ab7;
+  font-weight: bold; }
+  li.active a {
+    color: #337ab7;
+    font-weight: bold; }
+
 table {
   background-color: transparent; }
 

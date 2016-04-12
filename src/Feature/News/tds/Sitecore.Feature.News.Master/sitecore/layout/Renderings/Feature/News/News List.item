@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 70
+content-length: 71
 
-Sitecore.Feature.News.Controller.NewsController, Sitecore.Feature.News
+Sitecore.Feature.News.Controllers.NewsController, Sitecore.Feature.News
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f924becf-6c4f-4ea6-9b9d-4a011034a9fa
+revision: b94d6264-19cf-4a00-aa54-4de06eacb764
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f924becf-6c4f-4ea6-9b9d-4a011034a9fa
+b94d6264-19cf-4a00-aa54-4de06eacb764
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151850Z
+20160411T220232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
