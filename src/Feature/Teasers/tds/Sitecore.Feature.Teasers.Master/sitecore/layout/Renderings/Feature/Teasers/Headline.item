@@ -16,10 +16,24 @@ key: path
 content-length: 30
 
 /Views/Teasers/Headline.cshtml
+----field----
+field: {7D24E54F-5C16-4314-90C9-6051AA1A7DA1}
+name: Parameters Template
+key: parameters template
+content-length: 38
+
+{A2A233A1-6701-48A9-B5F8-EFEAB74B655F}
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 14
+
+site:headlines
 ----version----
 language: en
 version: 1
-revision: 0d720268-9864-44bf-bf85-df47b61219c8
+revision: 6cd7d1c5-eeb3-43d9-b256-e21c82fcd154
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0d720268-9864-44bf-bf85-df47b61219c8
+6cd7d1c5-eeb3-43d9-b256-e21c82fcd154
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105352Z
+20160413T173824Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

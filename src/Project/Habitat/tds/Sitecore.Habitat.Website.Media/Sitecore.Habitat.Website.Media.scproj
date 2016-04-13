@@ -145,6 +145,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Habitat\Images\Logo\Logo.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Habitat\Images\Square.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
