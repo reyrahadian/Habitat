@@ -23,10 +23,17 @@ key: __sortorder
 content-length: 3
 
 100
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 118
+
+ar|Everyone|pe|!*|+field:read|pd|!*|+field:read|ar|modules\Foundation Multisite Admin|pe|+field:write|pd|+field:write|
 ----version----
 language: en
 version: 1
-revision: 68a3e305-08dc-4774-8d63-b6e7ffb8e04e
+revision: 8e82a1cb-00e1-43a7-bbc8-7dfb4c96c732
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-68a3e305-08dc-4774-8d63-b6e7ffb8e04e
+8e82a1cb-00e1-43a7-bbc8-7dfb4c96c732
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T211927Z
+20160412T105114Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

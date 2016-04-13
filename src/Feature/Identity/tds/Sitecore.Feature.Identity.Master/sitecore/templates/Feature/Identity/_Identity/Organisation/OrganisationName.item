@@ -16,10 +16,17 @@ key: type
 content-length: 16
 
 Single-Line Text
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 114
+
+ar|Everyone|pe|!*|+field:read|pd|!*|+field:read|ar|modules\Feature Identity Admin|pe|+field:write|pd|+field:write|
 ----version----
 language: en
 version: 1
-revision: ce97f3c5-688a-4cf8-b5c2-39a10614c34e
+revision: 1ec5c83c-e693-4d25-9158-bc6afd52d2e9
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ce97f3c5-688a-4cf8-b5c2-39a10614c34e
+1ec5c83c-e693-4d25-9158-bc6afd52d2e9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151744Z
+20160412T105304Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

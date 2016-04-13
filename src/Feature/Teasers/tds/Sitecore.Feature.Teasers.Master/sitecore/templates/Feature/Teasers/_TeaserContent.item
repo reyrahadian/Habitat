@@ -15,14 +15,7 @@ name: __Base template
 key: __base template
 content-length: 38
 
-{C80D124B-B9AC-432E-8C26-DBF3A7F18D20}
-----field----
-field: {F7D48A55-2158-4F02-9356-756654404F73}
-name: __Standard values
-key: __standard values
-content-length: 38
-
-{FF12FA13-D8E7-4806-8251-D7819B7AAE5A}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -33,7 +26,7 @@ Applications/32x32/form_blue.png
 ----version----
 language: en
 version: 1
-revision: 3ad37556-9ff1-48e4-9f25-e63f5d29774b
+revision: 942e6de1-b88f-42b9-b079-5e8527ed59c7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ad37556-9ff1-48e4-9f25-e63f5d29774b
+942e6de1-b88f-42b9-b079-5e8527ed59c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160411T220246Z
+20160412T105350Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

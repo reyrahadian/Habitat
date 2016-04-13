@@ -21,7 +21,7 @@
     <Name>Sitecore.Habitat.Website.Master</Name>
     <RootNamespace>Sitecore.Habitat.Website.Master</RootNamespace>
     <EnableCodeGeneration>false</EnableCodeGeneration>
-    <ManageRoles>False</ManageRoles>
+    <ManageRoles>True</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
@@ -29,6 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <InstallPackageIfMissing>true</InstallPackageIfMissing>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -187,6 +188,26 @@
     <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Habitat.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Web Forms for Marketers.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Web Forms for Marketers\Habitat.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Web Forms for Marketers\Habitat\Leave an Email.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Web Forms for Marketers\Habitat\Leave an Email\Email.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Social.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -359,19 +380,18 @@
       <Name>Sitecore.Habitat.Website</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <ItemGroup>
     <ExcludedAssemblies Include="MongoDB.%2a" />
     <ExcludedAssemblies Include="Sitecore.Abstractions.%2a" />
-    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
     <ExcludedAssemblies Include="Sitecore.Analytics.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
     <ExcludedAssemblies Include="Sitecore.Buckets.%2a" />
     <ExcludedAssemblies Include="Sitecore.CES.%2a" />
     <ExcludedAssemblies Include="Sitecore.Cintel.%2a" />
     <ExcludedAssemblies Include="Sitecore.Client.%2a" />
     <ExcludedAssemblies Include="Sitecore.Cloud.%2a" />
-    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
     <ExcludedAssemblies Include="Sitecore.ContentSearch.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
     <ExcludedAssemblies Include="Sitecore.ControlPanel.%2a" />
     <ExcludedAssemblies Include="Sitecore.ExperienceAnalytics.%2a" />
     <ExcludedAssemblies Include="Sitecore.ExperienceEditor.%2a" />
@@ -402,4 +422,14 @@
     <ExcludedAssemblies Include="Sitecore.Xdb.%2a" />
     <ExcludedAssemblies Include="Sitecore.Zip.%2a" />
   </ItemGroup>
+  <ItemGroup>
+    <SitecoreRole Include="Sitecore Roles\habitat\Project Habitat Content Author.role" />
+    <SitecoreRole Include="Sitecore Roles\habitat\Project Habitat Modules Admin.role" />
+    <SitecoreRole Include="Sitecore Roles\sitecore\Author.role" />
+    <SitecoreRole Include="Sitecore Roles\sitecore\Designer.role" />
+  </ItemGroup>
+  <ItemGroup>
+    <SitecorePackage Include="..\Habitat Users-1.0.0.zip" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

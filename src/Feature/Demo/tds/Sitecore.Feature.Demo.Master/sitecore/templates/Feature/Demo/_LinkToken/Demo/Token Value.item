@@ -23,10 +23,17 @@ key: __sortorder
 content-length: 3
 
 100
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 110
+
+ar|Everyone|pe|!*|+field:read|pd|+field:read|!*|ar|modules\Feature Demo Admin|pe|+field:write|pd|+field:write|
 ----version----
 language: en
 version: 1
-revision: a3427c4d-c154-4604-a15f-f8ca5aa29b45
+revision: 7bd46dca-60d1-443d-bdba-e1ded489f521
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a3427c4d-c154-4604-a15f-f8ca5aa29b45
+7bd46dca-60d1-443d-bdba-e1ded489f521
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T211538Z
+20160412T105258Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

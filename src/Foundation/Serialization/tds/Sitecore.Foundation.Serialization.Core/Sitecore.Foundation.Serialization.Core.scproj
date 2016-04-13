@@ -64,19 +64,18 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <ItemGroup>
     <ExcludedAssemblies Include="MongoDB.%2a" />
     <ExcludedAssemblies Include="Sitecore.Abstractions.%2a" />
-    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
     <ExcludedAssemblies Include="Sitecore.Analytics.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
     <ExcludedAssemblies Include="Sitecore.Buckets.%2a" />
     <ExcludedAssemblies Include="Sitecore.CES.%2a" />
     <ExcludedAssemblies Include="Sitecore.Cintel.%2a" />
     <ExcludedAssemblies Include="Sitecore.Client.%2a" />
     <ExcludedAssemblies Include="Sitecore.Cloud.%2a" />
-    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
     <ExcludedAssemblies Include="Sitecore.ContentSearch.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
     <ExcludedAssemblies Include="Sitecore.ControlPanel.%2a" />
     <ExcludedAssemblies Include="Sitecore.ExperienceAnalytics.%2a" />
     <ExcludedAssemblies Include="Sitecore.ExperienceEditor.%2a" />
@@ -107,4 +106,5 @@
     <ExcludedAssemblies Include="Sitecore.Xdb.%2a" />
     <ExcludedAssemblies Include="Sitecore.Zip.%2a" />
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

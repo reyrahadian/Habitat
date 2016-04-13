@@ -30,10 +30,17 @@ key: __sortorder
 content-length: 3
 
 500
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 114
+
+ar|Everyone|pe|+field:read|!*|pd|+field:read|!*|ar|modules\Feature Accounts Admin|pe|+field:write|pd|+field:write|
 ----version----
 language: en
 version: 1
-revision: 5a8cd80e-03d7-4129-87b7-6dfddbd8b96f
+revision: bd8e779a-b8cf-4e6b-962f-23281c07a7a2
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5a8cd80e-03d7-4129-87b7-6dfddbd8b96f
+bd8e779a-b8cf-4e6b-962f-23281c07a7a2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T211932Z
+20160412T105244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

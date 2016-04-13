@@ -30,10 +30,17 @@ key: __style
 content-length: 12
 
 height:500px
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 110
+
+ar|Everyone|pe|!*|+field:read|pd|+field:read|!*|ar|modules\Feature Demo Admin|pe|+field:write|pd|+field:write|
 ----version----
 language: en
 version: 1
-revision: 80fff5f2-a613-4722-a9d9-b83972019e4a
+revision: da1137fa-75b0-43b1-ab8d-844503244fb5
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-80fff5f2-a613-4722-a9d9-b83972019e4a
+da1137fa-75b0-43b1-ab8d-844503244fb5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T211538Z
+20160412T105258Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

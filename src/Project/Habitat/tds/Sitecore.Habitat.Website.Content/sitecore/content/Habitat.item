@@ -58,6 +58,13 @@ key: supportedlanguages
 content-length: 77
 
 {2403D44D-A04E-4C4F-B00B-5CE8CF531254}|{AF584191-45C9-4201-8740-5409F4CF8BDD}
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 100
+
+ar|habitat\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:write|+item:read|!*|
 ----version----
 language: da
 version: 1
