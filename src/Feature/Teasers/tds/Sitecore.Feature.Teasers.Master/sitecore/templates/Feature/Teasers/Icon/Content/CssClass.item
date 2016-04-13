@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {8F49D801-02B0-4DB7-90DB-5742D1662CF1}
+id: {585F89D1-570C-4F66-A6EC-195A8DA654E1}
 database: master
-path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasContainer/Page Layout/ContainerIsFluid
-parent: {78DE453D-1FF0-4785-9035-414ABA388F4D}
-name: ContainerIsFluid
+path: /sitecore/templates/Feature/Teasers/Icon/Content/CssClass
+parent: {1E318122-6A25-4FD2-B639-9785A84DD328}
+name: CssClass
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,9 +13,9 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 16
 
-Checkbox
+Single-Line Text
 ----field----
 field: {BE351A73-FCB0-4213-93FA-C302D8AB4F51}
 name: Shared
@@ -33,43 +33,29 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 09b4a4ba-e228-4ad7-ba84-f0b93bd38977
+revision: e3d7bcd2-8ec5-4dda-bc75-808cd4caf360
 
-----field----
-field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
-name: Title
-key: title
-content-length: 19
-
-Use full page width
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 18
-
-Container Is Fluid
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150921T041559Z
+20160322T034744Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-09b4a4ba-e228-4ad7-ba84-f0b93bd38977
+e3d7bcd2-8ec5-4dda-bc75-808cd4caf360
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105140Z
+20160413T145029Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,7 +26,7 @@ content-length: 1535
 ----version----
 language: en
 version: 1
-revision: 29da4a35-8d31-4d96-baab-343d4d0842ef
+revision: abba43d8-d808-4f2a-b2f8-72999be1e3a9
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -35,6 +35,13 @@ key: title
 content-length: 3
 
 FAQ
+----field----
+field: {AC3FD4DB-8266-476D-9635-67814D91E901}
+name: Summary
+key: summary
+content-length: 87
+
+<p>The FAQ module features a handy accordion control to show questions and answers.</p>
 ----field----
 field: {9492E0BB-9DF9-46E7-8188-EC795C4ADE44}
 name: Image
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-29da4a35-8d31-4d96-baab-343d4d0842ef
+abba43d8-d808-4f2a-b2f8-72999be1e3a9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160411T220311Z
+20160413T145106Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

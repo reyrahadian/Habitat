@@ -2,7 +2,7 @@
 version: 1
 id: {3ACBA3A7-FD6C-4C3E-AE68-DA2AA6C3AE95}
 database: master
-path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasContainerWithDynamicPlaceholder/__Standard Values
+path: /sitecore/templates/Project/Common/Parameters/ParametersTemplate_HasContainerWithDynamicPlaceholder/__Standard Values
 parent: {4654D5F0-9B39-426A-992D-1D42E356FB0A}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
@@ -12,7 +12,7 @@ templatekey: ParametersTemplate_HasContainerWithDynamicPlaceholder
 ----version----
 language: en
 version: 1
-revision: ee92b6c5-2e0c-4af5-8d49-bc0fcdfc745f
+revision: cfeb9066-77ef-48d8-ba1c-fe27a6c68932
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee92b6c5-2e0c-4af5-8d49-bc0fcdfc745f
+cfeb9066-77ef-48d8-ba1c-fe27a6c68932
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105128Z
+20160413T145051Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

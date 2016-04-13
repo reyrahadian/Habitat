@@ -31,16 +31,23 @@ content-length: 38
 
 {4738312C-22B8-4E77-9B9C-86BCDCEE6635}
 ----field----
-field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
-name: Datasource Location
-key: datasource location
-content-length: 13
+field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
+name: Open Properties after Add
+key: open properties after add
+content-length: 1
 
-site:employee
+1
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 44
+
+/sitecore/templates/Feature/Person/_Employee
 ----version----
 language: en
 version: 1
-revision: 637d9fb8-601e-42ec-a2d8-d2874384f8c4
+revision: 26addba9-62a1-4583-8493-effe028c2036
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-637d9fb8-601e-42ec-a2d8-d2874384f8c4
+26addba9-62a1-4583-8493-effe028c2036
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151906Z
+20160413T145041Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

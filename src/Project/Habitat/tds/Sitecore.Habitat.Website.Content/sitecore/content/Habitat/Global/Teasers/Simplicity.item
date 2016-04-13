@@ -12,15 +12,15 @@ templatekey: Teaser
 ----version----
 language: en
 version: 1
-revision: b4aa65a2-dd7d-4ffe-88a4-110b63cffb2d
+revision: e0917901-198e-4733-bf9a-83d95f0a4c09
 
 ----field----
 field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
 name: TeaserImage
 key: teaserimage
-content-length: 166
+content-length: 147
 
-<image mediapath="" src="" height="" mediaid="{7C3BBB56-BE70-4F1B-86A3-3D7C505D74AD}" hspace="" usethumbnail="" showineditor="" width="" alt="178" vspace="" ></image>
+<image querystring="" target="" linktype="internal" id="{DAC24EDD-44FB-42EF-9ECD-1E8DAF706386}" mediaid="{B00F14C3-62DA-4568-AFC8-91AA8F75229A}" />
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
 name: TeaserTitle
@@ -48,18 +48,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b4aa65a2-dd7d-4ffe-88a4-110b63cffb2d
+e0917901-198e-4733-bf9a-83d95f0a4c09
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151922Z
+20160413T145105Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 17
 
-sitecore\admin
+default\Anonymous

@@ -68,7 +68,7 @@ ar|habitat\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:
 ----version----
 language: da
 version: 1
-revision: d9731450-e54f-4e6d-a29b-764399355cb9
+revision: 4cd26a2f-96b3-4c2a-a53b-0522364bf4d5
 
 ----field----
 field: {E748D808-64C1-4DEC-9718-F35CF9689E4B}
@@ -111,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d9731450-e54f-4e6d-a29b-764399355cb9
+4cd26a2f-96b3-4c2a-a53b-0522364bf4d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151920Z
+20160413T145102Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +129,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 8c74a41c-2ceb-489c-9753-3ae41277c3cd
+revision: cce4de4e-934c-421f-8407-bc6e9693081e
 
 ----field----
 field: {2A84ECA4-68BB-4451-B4AC-98EA71A5A3DC}
@@ -144,7 +144,7 @@ name: Logo
 key: logo
 content-length: 211
 
-<image mediapath="/Default Website/sc_logo" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Default Website/sc_logo" mediaid="{461A93BF-5471-4AF2-BF36-D638F5660CB5}" />
+<image mediapath="/Default Website/sc_logo" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Default Website/sc_logo" mediaid="{60CB73C9-D101-4248-95FF-AF8AF939B7ED}" />
 ----field----
 field: {02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}
 name: Copyright
@@ -152,6 +152,13 @@ key: copyright
 content-length: 121
 
 Copyright © 2015 <a href="http://sitecore.net" target="_blank" title="Opens in a new window">Sitecore Corporation A/S</a>
+----field----
+field: {31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}
+name: LogoTagLine
+key: logotagline
+content-length: 25
+
+Sitecore Solution Example
 ----field----
 field: {235AE392-97AC-4822-BE38-837DA3E7724E}
 name: SiteBrowserTitle
@@ -246,18 +253,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c74a41c-2ceb-489c-9753-3ae41277c3cd
+cce4de4e-934c-421f-8407-bc6e9693081e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151920Z
+20160413T145102Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+extranet\Anonymous

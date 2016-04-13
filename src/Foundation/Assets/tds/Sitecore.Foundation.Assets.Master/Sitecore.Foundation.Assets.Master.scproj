@@ -118,6 +118,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System\Layout\Renderings\Controller rendering.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System\Layout\Renderings\View rendering.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
