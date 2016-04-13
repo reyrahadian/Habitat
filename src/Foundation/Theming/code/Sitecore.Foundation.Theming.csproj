@@ -55,7 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
-    <Content Include="App_Config\Include\Foundation\Foundation.Theming.Serialization.config" />
     <Content Include="scripts\media-query.js" />
     <Content Include="styles\bootstrap.css">
       <DependentUpon>bootstrap.scss</DependentUpon>
