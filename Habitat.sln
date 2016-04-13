@@ -520,7 +520,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation.Accounts", "src\
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Forms.Master", "src\Foundation\Forms\tds\Sitecore.Foundation.Forms.Master\Sitecore.Foundation.Forms.Master.scproj", "{FEB3BDCA-6086-4C2D-B021-A8C399EBEAE6}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Accounts.Master", "Sitecore.Foundation.Accounts.Master\Sitecore.Foundation.Accounts.Master.scproj", "{028439A6-441C-49AD-A240-A7763EC508EA}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Accounts.Master", "src\Foundation\Accounts\tds\Sitecore.Foundation.Accounts.Master\Sitecore.Foundation.Accounts.Master.scproj", "{028439A6-441C-49AD-A240-A7763EC508EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
