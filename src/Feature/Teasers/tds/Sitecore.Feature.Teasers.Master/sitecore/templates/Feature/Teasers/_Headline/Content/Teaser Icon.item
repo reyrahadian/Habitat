@@ -30,10 +30,17 @@ key: shared
 content-length: 1
 
 1
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 113
+
+ar|modules\Feature Teasers Admin|pe|+field:write|pd|+field:write|ar|Everyone|pe|+field:read|!*|pd|+field:read|!*|
 ----version----
 language: en
 version: 1
-revision: 0358a219-8300-4c81-ab94-2326a8ddfe09
+revision: 48267ab0-c5c3-40d2-bd58-d92384ea27fd
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0358a219-8300-4c81-ab94-2326a8ddfe09
+48267ab0-c5c3-40d2-bd58-d92384ea27fd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T145034Z
+20160415T211012Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

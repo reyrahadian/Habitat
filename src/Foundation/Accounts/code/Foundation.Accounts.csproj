@@ -71,18 +71,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\Foundation\Foundation.Accounts.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Security\domains.config.transform" />
-    <Content Include="App_Config\Security\Domains.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.DataProvider.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Users.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Users.DataProvider.config" />
     <Content Include="App_Config\Include\Foundation\Foundation.Accounts.config" />
     <None Include="App_Config\Security\domains.config.transform" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="App_Config\Security\Domains.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
