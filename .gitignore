@@ -16,7 +16,6 @@ T4RenderCache/
 BuiltFiles_*.txt
 
 specs/**/[Bb]in/
-.nuget/
 _ReSharper.*
 packages/
 artifacts/
