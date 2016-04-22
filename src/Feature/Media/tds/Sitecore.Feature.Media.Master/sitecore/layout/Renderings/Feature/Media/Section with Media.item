@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 74
+content-length: 81
 
-Sitecore.Feature.Media.Controllers.MediaController, Sitecore.Feature.Media
+Sitecore.Feature.Media.Controllers.MediaFeatureController, Sitecore.Feature.Media
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b26f6a94-e009-4b12-86c9-926a084257ab
+revision: d2a66e1c-32ec-4578-be3b-c7a73ec01334
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b26f6a94-e009-4b12-86c9-926a084257ab
+d2a66e1c-32ec-4578-be3b-c7a73ec01334
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151841Z
+20160422T111835Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
