@@ -284,13 +284,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.8.1.0.151207\lib\Sitecore.Mvc.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />

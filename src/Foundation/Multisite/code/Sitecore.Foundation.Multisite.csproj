@@ -56,8 +56,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\packages\NSubstitute.1.9.2.0\lib\net45\NSubstitute.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
