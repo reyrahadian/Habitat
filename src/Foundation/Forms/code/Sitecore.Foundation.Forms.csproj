@@ -53,8 +53,9 @@
       <HintPath>..\..\..\..\packages\Sitecore.Analytics.8.1.0.151207\lib\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Outcome">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Analytics.Outcome.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Outcome, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Outcome.8.1.0.151207\lib\Sitecore.Analytics.Outcome.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Forms.Core">
       <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Forms.Core.dll</HintPath>
