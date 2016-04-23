@@ -113,8 +113,6 @@
   <ItemGroup>
     <Content Include="Views\MediaFeature\LightboxImage.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Media\LightboxVideo.cshtml" />
-    <Content Include="Views\Media\Carousel.cshtml" />
     <Content Include="Views\MediaFeature\LightboxVideo.cshtml" />
     <Content Include="Views\MediaFeature\Carousel.cshtml" />
     <Content Include="packages.config" />
