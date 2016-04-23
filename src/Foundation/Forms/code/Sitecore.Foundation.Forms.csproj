@@ -57,18 +57,21 @@
       <HintPath>..\..\..\..\packages\Sitecore.Analytics.Outcome.8.1.0.151207\lib\Sitecore.Analytics.Outcome.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Forms.Core">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Forms.Core.dll</HintPath>
+    <Reference Include="Sitecore.Forms.Core, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Forms.Core.8.1.0.151217\lib\Sitecore.Forms.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.WFFM.Abstractions">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.WFFM.Abstractions.dll</HintPath>
+    <Reference Include="Sitecore.WFFM.Abstractions, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.WFFM.Abstractions.8.1.0.151217\lib\Sitecore.WFFM.Abstractions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.WFFM.Actions">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.WFFM.Actions.dll</HintPath>
+    <Reference Include="Sitecore.WFFM.Actions, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.WFFM.Actions.8.1.0.151217\lib\Sitecore.WFFM.Actions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
