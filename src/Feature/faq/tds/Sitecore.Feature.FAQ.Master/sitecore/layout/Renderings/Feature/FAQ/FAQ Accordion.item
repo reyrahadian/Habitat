@@ -23,10 +23,17 @@ key: datasource location
 content-length: 8
 
 site:faq
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{85C963E8-6944-4B79-A532-195E57F87423}" />
 ----version----
 language: en
 version: 1
-revision: 7ac7b2b6-e563-4678-9f6d-2a3c3a11752f
+revision: 0e0b7d7e-fa16-437c-8753-884529335eb9
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7ac7b2b6-e563-4678-9f6d-2a3c3a11752f
+0e0b7d7e-fa16-437c-8753-884529335eb9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160411T220203Z
+20160617T181415Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

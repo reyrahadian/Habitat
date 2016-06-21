@@ -12,15 +12,15 @@ templatekey: Text Token
 ----version----
 language: en
 version: 1
-revision: f7e190b4-382f-4521-9ed2-2b4009504cbe
+revision: 2ad3eb55-05f2-4de3-8d76-35e72d737cad
 
 ----field----
 field: {7B9F4FE3-6285-4969-9784-B96D49973161}
 name: Token Value
 key: token value
-content-length: 20
+content-length: 29
 
-http://habitat.local
+http://habitat.sitecore.local
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f7e190b4-382f-4521-9ed2-2b4009504cbe
+2ad3eb55-05f2-4de3-8d76-35e72d737cad
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212037Z
+20160617T181754Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -24,16 +24,16 @@ content-length: 10
 
 Breadcrumb
 ----field----
-field: {94069F66-609C-48B0-8281-521C30FB269D}
-name: Open Properties after Add
-key: open properties after add
-content-length: 1
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
 
--
+<image mediaid="{710DABCE-A497-4BB6-BF51-79B3F08E1CFA}" />
 ----version----
 language: en
 version: 1
-revision: 3ab726e4-964e-449d-a47a-44660ab6c94f
+revision: c3b89a25-06d9-4d1b-9512-39aa000f15b0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ab726e4-964e-449d-a47a-44660ab6c94f
+c3b89a25-06d9-4d1b-9512-39aa000f15b0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T211958Z
+20160617T181709Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

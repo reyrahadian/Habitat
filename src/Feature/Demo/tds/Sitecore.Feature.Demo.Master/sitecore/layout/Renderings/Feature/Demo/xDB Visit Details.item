@@ -24,23 +24,23 @@ content-length: 12
 
 VisitDetails
 ----field----
-field: {94069F66-609C-48B0-8281-521C30FB269D}
-name: Open Properties after Add
-key: open properties after add
-content-length: 1
-
--
-----field----
 field: {E514A1EB-DDBA-44F7-8528-82CA2280F778}
 name: JavaScript assets
 key: javascript assets
 content-length: 29
 
 /scripts/Demo/VisitDetails.js
+----field----
+field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
+name: Compatible Renderings
+key: compatible renderings
+content-length: 38
+
+{A6CFB41B-C613-4A2B-A5EE-4A374015914D}
 ----version----
 language: en
 version: 1
-revision: 4ae47ce7-5a73-4e44-b7cb-12a6fe72faf7
+revision: c5411a7a-8f41-437e-b1e3-95eba958879e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4ae47ce7-5a73-4e44-b7cb-12a6fe72faf7
+c5411a7a-8f41-437e-b1e3-95eba958879e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151834Z
+20160617T181648Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

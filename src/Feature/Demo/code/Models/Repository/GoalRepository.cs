@@ -7,7 +7,7 @@
   using Sitecore.Analytics.Tracking;
   using Sitecore.Common;
   using Sitecore.Data;
-  using Sitecore.Foundation.SitecoreExtensions.Repositories;
+  using Sitecore.Foundation.Dictionary.Repositories;
   using Sitecore.Marketing.Definitions;
   using Sitecore.Marketing.Definitions.Goals;
 
@@ -23,14 +23,15 @@
 
     private IEnumerable<Goal> GetHistoric()
     {
+      Tracker.Current.Contact.LoadKeyBehaviorCache();
       var keyBehaviourCache = Tracker.Current.Contact.GetKeyBehaviorCache();
       foreach (var cachedGoal in keyBehaviourCache.Goals)
       {
         var goal = GetGoalDefinition(cachedGoal.Id.ToID());
- 
+
         yield return new Goal
                      {
-                       Title = goal?.Name ?? DictionaryRepository.Get("/Demo/Goals/UnknownGoal", "(Unknown)"),
+                       Title = goal?.Name ?? DictionaryPhraseRepository.Current.Get("/Demo/Goals/Unknown Goal", "(Unknown)"),
                        Date = cachedGoal.DateTime,
                        EngagementValue = goal?.EngagementValuePoints ?? 0,
                        IsCurrentVisit = false

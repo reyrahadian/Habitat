@@ -13,9 +13,9 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 35
+content-length: 40
 
-/Views/MediaFeature/Carousel.cshtml
+/Views/MediaFeature/MediaCarousel.cshtml
 ----field----
 field: {7D24E54F-5C16-4314-90C9-6051AA1A7DA1}
 name: Parameters Template
@@ -37,11 +37,25 @@ key: compatible renderings
 content-length: 38
 
 {4E541395-9332-4F1D-87F0-E7F4920C2036}
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{71E17F51-7532-4539-AFE1-89DB633FDDAC}" />
 ----version----
 language: en
 version: 1
-revision: 6735b89e-3d55-43ae-b164-c615d7ea5165
+revision: 04d4c03f-9a33-466a-987b-1403acea8014
 
+----field----
+field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
+name: Supports Local Datasource
+key: supports local datasource
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6735b89e-3d55-43ae-b164-c615d7ea5165
+04d4c03f-9a33-466a-987b-1403acea8014
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160422T111835Z
+20160617T181702Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

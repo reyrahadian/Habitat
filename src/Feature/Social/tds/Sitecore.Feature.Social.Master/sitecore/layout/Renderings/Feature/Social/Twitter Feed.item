@@ -37,11 +37,25 @@ key: datasource location
 content-length: 16
 
 site:twitterfeed
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{6EA80E0B-565B-4E89-A3C8-260BF26BF538}" />
 ----version----
 language: en
 version: 1
-revision: 35d0ad4d-b560-4910-8472-6902062949d4
+revision: 6fe1f4dc-701d-4313-ada9-1744e1dce613
 
+----field----
+field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
+name: Supports Local Datasource
+key: supports local datasource
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-35d0ad4d-b560-4910-8472-6902062949d4
+6fe1f4dc-701d-4313-ada9-1744e1dce613
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151859Z
+20160617T181722Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

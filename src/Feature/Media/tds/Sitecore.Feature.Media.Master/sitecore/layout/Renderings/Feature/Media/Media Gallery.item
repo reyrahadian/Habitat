@@ -30,11 +30,25 @@ key: compatible renderings
 content-length: 38
 
 {E86BFEB1-F3FC-4E37-B693-A5550D6789EE}
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{5EB33DA1-4606-4589-ABEF-0C0FAB117422}" />
 ----version----
 language: en
 version: 1
-revision: 4cfb2af1-3ebf-43a0-880f-0f7367e28934
+revision: 017ab5ab-4a9b-4bdb-bc09-0eb443cef4ac
 
+----field----
+field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
+name: Supports Local Datasource
+key: supports local datasource
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4cfb2af1-3ebf-43a0-880f-0f7367e28934
+017ab5ab-4a9b-4bdb-bc09-0eb443cef4ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160422T111835Z
+20160617T181702Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -30,10 +30,17 @@ key: datasource location
 content-length: 14
 
 site:headlines
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{0F6974EA-59AC-4AEE-8140-B8AF87995A7A}" />
 ----version----
 language: en
 version: 1
-revision: 6cd7d1c5-eeb3-43d9-b256-e21c82fcd154
+revision: c10f4e2e-9fbb-402c-9bea-b5c886efeaeb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6cd7d1c5-eeb3-43d9-b256-e21c82fcd154
+c10f4e2e-9fbb-402c-9bea-b5c886efeaeb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T173824Z
+20160617T181733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

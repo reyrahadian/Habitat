@@ -34,13 +34,20 @@ site:jumbotronteaser
 field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
 name: Compatible Renderings
 key: compatible renderings
-content-length: 155
+content-length: 38
 
-{A25C9850-AAB7-46A6-84B7-0DFAB32FC357}|{E47303E0-90FD-4E81-B2B5-CA4E8C1C36B4}|{781C6B36-4B02-46EA-8ADC-B92A11877F10}|{FDFCD088-3C9E-49C4-97FF-2DDE5D339BA0}
+{A9B002E1-963F-4F35-B6DB-14A8D4BF171A}
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{A4B526D0-9062-4DC7-B405-ABF705195279}" />
 ----version----
 language: en
 version: 1
-revision: 8b9e50df-688d-41cc-83da-a1991e7e6bdd
+revision: d09750b0-fa12-4ce3-84f6-54425b3e9400
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b9e50df-688d-41cc-83da-a1991e7e6bdd
+d09750b0-fa12-4ce3-84f6-54425b3e9400
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160415T211014Z
+20160617T181733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
