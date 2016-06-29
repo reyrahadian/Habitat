@@ -67,6 +67,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Default Rendering Buttons\Edit Item.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>

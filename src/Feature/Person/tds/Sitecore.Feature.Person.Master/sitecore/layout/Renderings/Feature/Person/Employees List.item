@@ -20,9 +20,9 @@ content-length: 34
 field: {DDAB263E-B42E-419A-AA6F-081B7393CA38}
 name: Model
 key: model
-content-length: 122
+content-length: 77
 
-Sitecore.Foundation.SitecoreExtensions.Rendering.QueryableDatasourceRenderingModel, Sitecore.Foundation.SitecoreExtensions
+/sitecore/layout/Models/Foundation/Indexing/QueryableDatasourceRenderingModel
 ----field----
 field: {7D24E54F-5C16-4314-90C9-6051AA1A7DA1}
 name: Parameters Template
@@ -54,7 +54,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: dfee2beb-5f78-4bd7-bacb-27b577dcd558
+revision: 7643bed0-7887-4a06-a694-33d45b5c5688
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dfee2beb-5f78-4bd7-bacb-27b577dcd558
+7643bed0-7887-4a06-a694-33d45b5c5688
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181737Z
+20160622T160141Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
