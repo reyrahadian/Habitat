@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {E132E073-74F0-4FA6-82B1-A18581C2CB3D}
+id: {32F4012D-FC30-4EFD-AF6C-1D3144B257FC}
 database: master
-path: /sitecore/templates/Project/Demo
-parent: {825B30B4-B40B-422E-9920-23A1B6BDA89C}
-name: Demo
+path: /sitecore/templates/Project/Common/Content Types/Demo Tokens
+parent: {8664A57F-F2C9-4B18-B4E5-D3FED495D212}
+name: Demo Tokens
 master: {00000000-0000-0000-0000-000000000000}
 template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
@@ -12,7 +12,7 @@ templatekey: Template Folder
 ----version----
 language: en
 version: 1
-revision: e8e35a23-4c4f-431f-9980-49823c484ce7
+revision: c46b18c3-b8ff-4419-9dc4-f1910037fc37
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151215T030740Z
+20151110T043416Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e8e35a23-4c4f-431f-9980-49823c484ce7
+c46b18c3-b8ff-4419-9dc4-f1910037fc37
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212034Z
+20160630T165301Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

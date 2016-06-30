@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {7DEFAA26-ED9D-4495-B5F0-0A7620403842}
+id: {49C651BA-4004-40A9-9B0F-E95D0573F3AE}
 database: master
-path: /sitecore/templates/Project/Demo/Content Types/Demo Tokens/Link Token
-parent: {32F4012D-FC30-4EFD-AF6C-1D3144B257FC}
-name: Link Token
+path: /sitecore/templates/Project/Common/Page Types/Demo Page
+parent: {C9635039-D5D7-445E-8A90-09BDD60913A1}
+name: Demo Page
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -13,20 +13,27 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 77
+content-length: 116
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{359AD0B9-20B5-49E7-A430-891D6E67BC5C}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{1224B40E-7B6C-42B3-A6D0-C40A6C61345C}|{0FCCFE4F-B087-498F-BD26-5CDFFC522C9A}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{CAE7DAE3-DEB2-4415-B118-A2069BDB174A}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 27
+content-length: 24
 
-People/32x32/dictionary.png
+People/32x32/teacher.png
 ----version----
 language: en
 version: 1
-revision: 6162d4d9-e131-4e4b-b24f-8907ecab5016
+revision: f5b84ddd-eefa-4568-bb6a-e8571afeb1e0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151110T043433Z
+20151109T235136Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6162d4d9-e131-4e4b-b24f-8907ecab5016
+f5b84ddd-eefa-4568-bb6a-e8571afeb1e0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212036Z
+20160630T165305Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

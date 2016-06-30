@@ -2,7 +2,7 @@
 version: 1
 id: {CAE7DAE3-DEB2-4415-B118-A2069BDB174A}
 database: master
-path: /sitecore/templates/Project/Demo/Page Types/Demo Page/__Standard Values
+path: /sitecore/templates/Project/Common/Page Types/Demo Page/__Standard Values
 parent: {49C651BA-4004-40A9-9B0F-E95D0573F3AE}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
@@ -33,7 +33,7 @@ content-length: 208
 ----version----
 language: en
 version: 1
-revision: 24c124be-3ea1-4c17-bcd6-1c9b9930b804
+revision: a43eb5e2-8234-4850-b513-9ec237815665
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,18 +48,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-24c124be-3ea1-4c17-bcd6-1c9b9930b804
+a43eb5e2-8234-4850-b513-9ec237815665
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212037Z
+20160630T165315Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+extranet\Anonymous

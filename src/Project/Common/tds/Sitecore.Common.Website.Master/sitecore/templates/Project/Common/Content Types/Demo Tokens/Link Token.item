@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {8AFCFECF-6CA3-4FD6-B055-96B0231441E6}
+id: {7DEFAA26-ED9D-4495-B5F0-0A7620403842}
 database: master
-path: /sitecore/content/Demo/search/campaign
-parent: {31D40630-A6A8-4047-9454-A228C332D9ED}
-name: campaign
+path: /sitecore/templates/Project/Common/Content Types/Demo Tokens/Link Token
+parent: {32F4012D-FC30-4EFD-AF6C-1D3144B257FC}
+name: Link Token
 master: {00000000-0000-0000-0000-000000000000}
-template: {51B1726B-4290-4908-A2DA-B169194AE80C}
-templatekey: Campaign Token
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
 
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 77
+
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{359AD0B9-20B5-49E7-A430-891D6E67BC5C}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 27
+
+People/32x32/dictionary.png
 ----version----
 language: en
 version: 1
-revision: 31682238-3207-4c2e-af5b-045cff5dc5c8
+revision: 7f7ffe96-bf6f-4f08-b63f-01c2fd4f4bcd
 
-----field----
-field: {3B485BD9-DEAE-4AAF-9C32-4106C4214162}
-name: Token Value
-key: token value
-content-length: 38
-
-{0BFFAF94-F523-452A-9F2A-1FA3292D4647}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151111T024034Z
+20151110T043433Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31682238-3207-4c2e-af5b-045cff5dc5c8
+7f7ffe96-bf6f-4f08-b63f-01c2fd4f4bcd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212037Z
+20160630T165305Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

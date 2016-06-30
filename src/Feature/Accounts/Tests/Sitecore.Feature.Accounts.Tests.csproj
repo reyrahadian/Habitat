@@ -90,16 +90,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Analytics.Outcome.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.FakeDb, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.FakeDb.1.1.1\lib\net45\Sitecore.FakeDb.dll</HintPath>
+    <Reference Include="Sitecore.FakeDb, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.FakeDb.1.1.2\lib\net45\Sitecore.FakeDb.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.FakeDb.AutoFixture, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.FakeDb.AutoFixture.1.1.1\lib\net45\Sitecore.FakeDb.AutoFixture.dll</HintPath>
+    <Reference Include="Sitecore.FakeDb.AutoFixture, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.FakeDb.AutoFixture.1.1.2\lib\net45\Sitecore.FakeDb.AutoFixture.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.FakeDb.NSubstitute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.FakeDb.NSubstitute.1.0.0\lib\net45\Sitecore.FakeDb.NSubstitute.dll</HintPath>
+    <Reference Include="Sitecore.FakeDb.NSubstitute, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.FakeDb.NSubstitute.1.1.2\lib\net45\Sitecore.FakeDb.NSubstitute.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
@@ -192,7 +192,7 @@
     <Compile Include="AccountsControllerTests.cs" />
     <Compile Include="ProfileSettingsServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FixtureContext\SmptWrapper.cs" />
+    <Compile Include="FixtureContext\SmtpWrapper.cs" />
     <Compile Include="UserProfileProviderTests.cs" />
     <Compile Include="UserProfileServiceTests.cs" />
   </ItemGroup>
@@ -230,6 +230,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\lib\license.xml">
+      <Link>license.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
