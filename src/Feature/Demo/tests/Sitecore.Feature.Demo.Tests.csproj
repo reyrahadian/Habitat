@@ -114,8 +114,9 @@
       <HintPath>..\..\..\..\packages\sitecore.nexus.8.1.0.151207\lib\sitecore.nexus.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Xdb.Configuration">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Xdb.Configuration.dll</HintPath>
+    <Reference Include="Sitecore.Xdb.Configuration, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Xdb.Configuration.8.1.0.151207\lib\Sitecore.Xdb.Configuration.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

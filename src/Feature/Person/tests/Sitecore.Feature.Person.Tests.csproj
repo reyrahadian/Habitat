@@ -94,8 +94,9 @@
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="sitecore.nexus">
-      <HintPath>..\..\..\..\lib\Sitecore\sitecore.nexus.dll</HintPath>
+    <Reference Include="sitecore.nexus, Version=1.0.0.4404, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\sitecore.nexus.8.1.0.151207\lib\sitecore.nexus.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
