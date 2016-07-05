@@ -62,8 +62,10 @@
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.FakeDb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.FakeDb.1.0.0\lib\net45\Sitecore.FakeDb.dll</HintPath>
+    </Reference>
     <Reference Include="Ploeh.AutoFixture, Version=3.47.4.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\AutoFixture.3.47.4\lib\net40\Ploeh.AutoFixture.dll</HintPath>
       <Private>True</Private>
@@ -86,10 +88,6 @@
     </Reference>
     <Reference Include="Sitecore.FakeDb.NSubstitute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.FakeDb.NSubstitute.1.0.0\lib\net45\Sitecore.FakeDb.NSubstitute.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Logging, Version=1.2.0.30715, Culture=neutral, processorArchitecture=MSIL">

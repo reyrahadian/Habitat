@@ -83,6 +83,7 @@
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.ExperienceEditor">
       <HintPath>..\..\..\..\lib\Sitecore\Sitecore.ExperienceEditor.dll</HintPath>
     </Reference>
