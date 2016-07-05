@@ -53,10 +53,17 @@ key: datasource location
 content-length: 14
 
 site:mappoints
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{8E5FCC7D-069D-48D8-9A57-AC4AEC221E10}" />
 ----version----
 language: en
 version: 1
-revision: 4f15167f-1ba3-4423-a6e2-8485c97033ef
+revision: ef6c8929-9fc2-44ad-8770-a2f48005ac4e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -71,14 +78,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4f15167f-1ba3-4423-a6e2-8485c97033ef
+ef6c8929-9fc2-44ad-8770-a2f48005ac4e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160411T220214Z
+20160617T181658Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

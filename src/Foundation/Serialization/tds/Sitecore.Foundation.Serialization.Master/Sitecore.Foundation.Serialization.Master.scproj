@@ -111,6 +111,18 @@
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Feature.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\system.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -185,15 +197,15 @@
   <ItemGroup>
     <ExcludedAssemblies Include="MongoDB.%2a" />
     <ExcludedAssemblies Include="Sitecore.Abstractions.%2a" />
-    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
     <ExcludedAssemblies Include="Sitecore.Analytics.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Apps.%2a" />
     <ExcludedAssemblies Include="Sitecore.Buckets.%2a" />
     <ExcludedAssemblies Include="Sitecore.CES.%2a" />
     <ExcludedAssemblies Include="Sitecore.Cintel.%2a" />
     <ExcludedAssemblies Include="Sitecore.Client.%2a" />
     <ExcludedAssemblies Include="Sitecore.Cloud.%2a" />
-    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
     <ExcludedAssemblies Include="Sitecore.ContentSearch.%2a" />
+    <ExcludedAssemblies Include="Sitecore.ContentTesting.%2a" />
     <ExcludedAssemblies Include="Sitecore.ControlPanel.%2a" />
     <ExcludedAssemblies Include="Sitecore.ExperienceAnalytics.%2a" />
     <ExcludedAssemblies Include="Sitecore.ExperienceEditor.%2a" />

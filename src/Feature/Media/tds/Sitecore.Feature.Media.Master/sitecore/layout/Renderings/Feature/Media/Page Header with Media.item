@@ -37,10 +37,17 @@ key: open properties after add
 content-length: 1
 
 1
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{3562E417-E541-4F54-848E-ECB0B855699A}" />
 ----version----
 language: en
 version: 1
-revision: 36b9cfdd-8312-4ab6-8b7b-56be4e5e9f83
+revision: a597f528-a0cd-4c35-897d-5e26dc5a861b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-36b9cfdd-8312-4ab6-8b7b-56be4e5e9f83
+a597f528-a0cd-4c35-897d-5e26dc5a861b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160422T111835Z
+20160617T181702Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -23,11 +23,25 @@ key: datasource location
 content-length: 13
 
 site:carousel
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{71E17F51-7532-4539-AFE1-89DB633FDDAC}" />
 ----version----
 language: en
 version: 1
-revision: 4f0190b2-9de5-4fd8-8d75-bf4f5131423c
+revision: b4620731-6ed8-4d43-8bb1-099a84e0e7f5
 
+----field----
+field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
+name: Supports Local Datasource
+key: supports local datasource
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4f0190b2-9de5-4fd8-8d75-bf4f5131423c
+b4620731-6ed8-4d43-8bb1-099a84e0e7f5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160422T111835Z
+20160617T181702Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

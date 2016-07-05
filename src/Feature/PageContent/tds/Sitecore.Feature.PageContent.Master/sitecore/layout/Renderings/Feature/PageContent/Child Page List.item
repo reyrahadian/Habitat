@@ -16,10 +16,17 @@ key: path
 content-length: 39
 
 /Views/PageContent/ChildPageList.cshtml
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{CBA9AFCB-5E6B-459C-9E1E-066E0E9D1C85}" />
 ----version----
 language: en
 version: 1
-revision: 4ec86553-0b20-4275-b976-a754f5848a13
+revision: e3b0397f-1030-4b01-95ad-90f1f2b98e5c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4ec86553-0b20-4275-b976-a754f5848a13
+e3b0397f-1030-4b01-95ad-90f1f2b98e5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151852Z
+20160617T181714Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

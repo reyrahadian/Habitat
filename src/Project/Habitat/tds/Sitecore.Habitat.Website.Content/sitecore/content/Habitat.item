@@ -11,46 +11,39 @@ templatekey: Site Root
 
 ----field----
 field: {ED71D374-8C33-4561-991D-77482AE01330}
-name: AccountsDetailsPage
-key: accountsdetailspage
+name: Accounts Details Page
+key: accounts details page
 content-length: 43
 
 /sitecore/content/Habitat/Home/Edit Profile
 ----field----
 field: {71962360-10D8-4B98-BB8D-57660CE11127}
-name: RegisterPage
-key: registerpage
+name: Register Page
+key: register page
 content-length: 39
 
 /sitecore/content/Habitat/Home/Register
 ----field----
-field: {365254C4-1C1C-493A-9710-671574717898}
-name: FogotPasswordMailTemplate
-key: fogotpasswordmailtemplate
-content-length: 66
-
-/sitecore/content/Habitat/Global/Registration/Forgot Password Mail
-----field----
 field: {F3CD2BB8-472B-4DF0-87C0-A13098E391CA}
-name: ForgotPasswordPage
-key: forgotpasswordpage
+name: Forgot Password Page
+key: forgot password page
 content-length: 52
 
 /sitecore/content/Habitat/Home/Login/Forgot Password
 ----field----
 field: {B128E2B3-3865-4F1C-A147-5F248676D3F5}
-name: AfterLoginPage
-key: afterloginpage
+name: After Login Page
+key: after login page
 content-length: 30
 
 /sitecore/content/Habitat/Home
 ----field----
-field: {989351F9-6C42-4623-BC83-DBEFB398A56B}
-name: InterestsFolder
-key: interestsfolder
-content-length: 38
+field: {365254C4-1C1C-493A-9710-671574717898}
+name: Forgot Password Mail Template
+key: forgot password mail template
+content-length: 66
 
-{A74EE096-F225-4568-8D81-2F71ABBC8118}
+/sitecore/content/Habitat/Global/Registration/Forgot Password Mail
 ----field----
 field: {5F115B6D-6052-4C7E-B442-AE923A7E9BD2}
 name: SupportedLanguages
@@ -68,7 +61,7 @@ ar|habitat\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:
 ----version----
 language: da
 version: 1
-revision: 4cd26a2f-96b3-4c2a-a53b-0522364bf4d5
+revision: 281ed2b2-5fad-41fa-a455-6580ed8994a2
 
 ----field----
 field: {E748D808-64C1-4DEC-9718-F35CF9689E4B}
@@ -111,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4cd26a2f-96b3-4c2a-a53b-0522364bf4d5
+281ed2b2-5fad-41fa-a455-6580ed8994a2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T145102Z
+20160622T160207Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,8 +122,15 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: cce4de4e-934c-421f-8407-bc6e9693081e
+revision: 1138ec0a-2577-45e8-81af-43efbe95d9b1
 
+----field----
+field: {835FA523-D28A-46A2-A589-6AA4A5BF0846}
+name: Register Outcome
+key: register outcome
+content-length: 38
+
+{C2D9DFBC-E465-45FD-BA21-0A06EBE942D6}
 ----field----
 field: {2A84ECA4-68BB-4451-B4AC-98EA71A5A3DC}
 name: SiteProfiles
@@ -146,19 +146,19 @@ content-length: 211
 
 <image mediapath="/Default Website/sc_logo" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Default Website/sc_logo" mediaid="{60CB73C9-D101-4248-95FF-AF8AF939B7ED}" />
 ----field----
+field: {31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}
+name: Logo Tagline
+key: logo tagline
+content-length: 25
+
+Sitecore Solution Example
+----field----
 field: {02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}
 name: Copyright
 key: copyright
 content-length: 121
 
 Copyright © 2015 <a href="http://sitecore.net" target="_blank" title="Opens in a new window">Sitecore Corporation A/S</a>
-----field----
-field: {31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}
-name: LogoTagLine
-key: logotagline
-content-length: 25
-
-Sitecore Solution Example
 ----field----
 field: {235AE392-97AC-4822-BE38-837DA3E7724E}
 name: SiteBrowserTitle
@@ -168,25 +168,18 @@ content-length: 29
  - Habitat Sitecore Framework
 ----field----
 field: {378B7D87-5775-4EB6-86B7-282D5359B1C6}
-name: UserProfile
-key: userprofile
+name: User Profile
+key: user profile
 content-length: 38
 
 {14523428-879D-491C-9DF0-1417E82A4311}
 ----field----
 field: {021AA3F7-206F-4ACC-9538-F6D7FE86B168}
-name: InterestFolder
-key: interestfolder
+name: Interests Folder
+key: interests folder
 content-length: 38
 
 {A74EE096-F225-4568-8D81-2F71ABBC8118}
-----field----
-field: {B8027200-AAB0-4876-B454-DBB85ADD9E3C}
-name: HostName
-key: hostname
-content-length: 13
-
-habitat.local
 ----field----
 field: {12537182-F35C-403F-AFB5-747D55C450B8}
 name: ShowInMenu
@@ -201,13 +194,6 @@ key: title
 content-length: 22
 
 Habitat - Example Site
-----field----
-field: {835FA523-D28A-46A2-A589-6AA4A5BF0846}
-name: RegisterOutcome
-key: registeroutcome
-content-length: 38
-
-{C2D9DFBC-E465-45FD-BA21-0A06EBE942D6}
 ----field----
 field: {EFD4980A-030C-497C-8880-40B6030AC28B}
 name: OrganisationName
@@ -253,14 +239,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cce4de4e-934c-421f-8407-bc6e9693081e
+1138ec0a-2577-45e8-81af-43efbe95d9b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T145102Z
+20160622T160207Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

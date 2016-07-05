@@ -13,13 +13,13 @@ templatekey: Dynamic Teaser
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
-content-length: 38
+content-length: 116
 
-{061574E1-59DD-4B62-9680-1C84EFBE6773}
+{061574E1-59DD-4B62-9680-1C84EFBE6773}|{C7D9D293-4EF8-4380-8E10-C4632E729F39}|{DDBBF170-CFBD-439F-958C-A090BDF66D94}
 ----version----
 language: en
 version: 1
-revision: e5b0345c-b969-493d-9f8a-78b918e67b80
+revision: 86d783f1-5bcc-4eba-a281-116f6718f7dc
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e5b0345c-b969-493d-9f8a-78b918e67b80
+86d783f1-5bcc-4eba-a281-116f6718f7dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T145051Z
+20160617T181748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -19,7 +19,7 @@ content-length: 130
 ----version----
 language: da
 version: 1
-revision: 043c2b1f-ab2a-408b-848f-ff0a348d44dd
+revision: cbd8b99e-4c43-421e-a9d9-cddbe812b94c
 
 ----field----
 field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-043c2b1f-ab2a-408b-848f-ff0a348d44dd
+cbd8b99e-4c43-421e-a9d9-cddbe812b94c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212044Z
+20160622T160209Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,15 +80,8 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: ba228c6c-2781-4b3c-a0fb-2ae3f6ea3485
+revision: 80b7adf5-7d5b-4265-96dd-2bf1487daeed
 
-----field----
-field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
-name: TeaserImage
-key: teaserimage
-content-length: 58
-
-<image mediaid="{D85C1120-43E8-4F4A-A43E-DC472A985E10}" />
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
 name: TeaserTitle
@@ -116,18 +109,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ba228c6c-2781-4b3c-a0fb-2ae3f6ea3485
+80b7adf5-7d5b-4265-96dd-2bf1487daeed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212044Z
+20160622T160209Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 17
 
-sitecore\admin
+default\Anonymous

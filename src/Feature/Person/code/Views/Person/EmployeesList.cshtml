@@ -1,9 +1,10 @@
 ﻿@using Sitecore.Feature.Person
 @using Sitecore.Foundation.Alerts
 @using Sitecore.Foundation.Alerts.Extensions
+@using Sitecore.Foundation.Dictionary.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Foundation.SitecoreExtensions.Repositories
-@model Sitecore.Foundation.SitecoreExtensions.Rendering.QueryableDatasourceRenderingModel
+@model Sitecore.Foundation.Indexing.Rendering.QueryableDatasourceRenderingModel
 
 @if (Model?.Items == null || !Model.Items.All(i => i.IsDerived(Templates.Person.ID)))
 {
@@ -15,8 +16,8 @@
   @foreach (var item in Model.Items)
   {
     <div class="block-grid-item">
-      <div>
-        <div class="mosaic mosaic-bar-bottom">
+      <div style="max-width: 100%">
+        <div class="mosaic mosaic-bar-bottom" style="max-width: 100%">
           <div class="mosaic-overlay">
             <label>@item.Field(Templates.Person.Fields.Title)</label>
             <h4>
@@ -48,7 +49,7 @@
                 </a>
               }
               <a href="@item.Url()" target="_blank" class="btn btn-primary text-uppercase">
-                @DictionaryRepository.Get("/Person/EmployeeList/Read More", "About...")
+                @Html.Sitecore().Dictionary("/Person/EmployeeList/Read More", "About...")
               </a>
             </div>
           </div>

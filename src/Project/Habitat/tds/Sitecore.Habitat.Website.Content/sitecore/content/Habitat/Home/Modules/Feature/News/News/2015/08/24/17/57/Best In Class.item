@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f9dfded9-023e-4e42-84d7-4a9dceb031ae
+revision: 87acaedd-9ef7-4f7b-94f5-8d9a9090938e
 
 ----field----
 field: {BD9ECD4A-C0B0-4233-A3CD-D995519AC87B}
@@ -66,6 +66,13 @@ content-length: 12
 
 News article
 ----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 607
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{DAE436A6-7FCD-496C-8FFE-FD4390407EB5}" p:before="r[@uid='{32989D01-241F-476F-A09E-165676D21833}']" s:ds="{E9E0AC91-854D-4E27-AA3C-134235209CE2}" s:id="{F49C9252-47F3-406B-B311-E26EE4D1149B}" s:ph="/page-layout/section-narrow/col-wide-1_32989d01-241f-476f-a09e-165676d21833" /><r uid="{32989D01-241F-476F-A09E-165676D21833}" p:before="r[@uid='{E6CA18D8-321D-4105-9C38-0622E94BE400}']" s:id="{03112E88-1499-4132-9D5F-E213AFD2019C}" s:ph="/page-layout/section-narrow" /></d></r>
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -78,14 +85,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f9dfded9-023e-4e42-84d7-4a9dceb031ae
+87acaedd-9ef7-4f7b-94f5-8d9a9090938e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151924Z
+20160617T181805Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

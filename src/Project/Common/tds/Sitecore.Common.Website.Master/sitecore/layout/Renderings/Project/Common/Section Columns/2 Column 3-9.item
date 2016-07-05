@@ -37,10 +37,17 @@ key: __sortorder
 content-length: 3
 
 100
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{AF621E25-458C-4CF9-A8BD-AA4A74C724DE}" />
 ----version----
 language: en
 version: 1
-revision: 2985cd0f-9d61-4b8f-aeff-c9a9ed9a0d1c
+revision: e73cee08-c0c9-4fb6-9be9-59969a748bfb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2985cd0f-9d61-4b8f-aeff-c9a9ed9a0d1c
+e73cee08-c0c9-4fb6-9be9-59969a748bfb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151910Z
+20160617T181742Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

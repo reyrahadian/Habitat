@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 4a0a1cde-953b-49ae-8f49-44ab3ae2fac6
+revision: 527b511d-68bd-4a75-9c8b-7386de53fc34
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -35,6 +35,13 @@ key: title
 content-length: 8
 
 Register
+----field----
+field: {AC3FD4DB-8266-476D-9635-67814D91E901}
+name: Summary
+key: summary
+content-length: 73
+
+<p>Please enter the required details to register a user for this site</p>
 ----field----
 field: {1B483E91-D8C4-4D19-BA03-462074B55936}
 name: NavigationTitle
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4a0a1cde-953b-49ae-8f49-44ab3ae2fac6
+527b511d-68bd-4a75-9c8b-7386de53fc34
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151921Z
+20160617T181759Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
