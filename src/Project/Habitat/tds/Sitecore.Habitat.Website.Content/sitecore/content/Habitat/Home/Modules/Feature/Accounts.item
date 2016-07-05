@@ -12,7 +12,7 @@ templatekey: Article
 ----version----
 language: en
 version: 1
-revision: 0064dcca-8230-4ad4-98c9-683f986dea56
+revision: d06f8efa-ae22-4869-b40c-d1d50bfdc1ca
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -62,9 +62,9 @@ Accounts
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
 key: __final renderings
-content-length: 1179
+content-length: 275
 
-<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{B0638AD4-91B4-473A-8285-A35538E5C287}" p:before="*" s:id="{41EA568D-C3AF-45DF-B1D0-B7813CD06093}" s:ph="/page-layout/section-narrow/col-wide-1_927d47ad-a496-49b3-bd5b-c5f93d8bc701" /><r uid="{BE168088-8A34-42CC-AE71-AA53F3802D72}" p:after="r[@uid='{B0638AD4-91B4-473A-8285-A35538E5C287}']" s:id="{B683EFB4-161D-4FDF-9A90-CC8637766C9C}" s:ph="/page-layout/section-narrow/col-wide-2_977cec4d-6e99-4fa9-ba2d-2377465a45ba" /><r uid="{F7A89D2B-5C2D-40FF-AE07-459FCBB1C231}" p:after="r[@uid='{BE168088-8A34-42CC-AE71-AA53F3802D72}']" s:id="{5899FE6B-2AD7-4243-B1F9-3BC664CF0A7C}" s:ph="/page-layout/section-narrow/col-wide-1_977cec4d-6e99-4fa9-ba2d-2377465a45ba" /><r uid="{977CEC4D-6E99-4FA9-BA2D-2377465A45BA}" p:after="r[@uid='{F7A89D2B-5C2D-40FF-AE07-459FCBB1C231}']" s:id="{50F6052C-4FC2-4AA6-9399-FFC6055CF19F}" s:ph="/page-layout/section-narrow" /><r uid="{927D47AD-A496-49B3-BD5B-C5F93D8BC701}" p:after="r[@uid='{977CEC4D-6E99-4FA9-BA2D-2377465A45BA}']" s:id="{03112E88-1499-4132-9D5F-E213AFD2019C}" s:ph="/page-layout/section-narrow" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{927D47AD-A496-49B3-BD5B-C5F93D8BC701}" p:before="*" s:id="{03112E88-1499-4132-9D5F-E213AFD2019C}" s:ph="/page-layout/section-narrow" /></d></r>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -78,14 +78,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0064dcca-8230-4ad4-98c9-683f986dea56
+d06f8efa-ae22-4869-b40c-d1d50bfdc1ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181803Z
+20160705T192602Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
