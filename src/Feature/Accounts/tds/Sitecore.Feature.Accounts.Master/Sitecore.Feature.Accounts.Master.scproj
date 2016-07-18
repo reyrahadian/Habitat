@@ -208,6 +208,9 @@
       <Project>{3f61c57d-50d9-4194-8196-ef5f7aa4cce5}</Project>
       <Name>Sitecore.Feature.Accounts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="MongoDB.%2a" />
