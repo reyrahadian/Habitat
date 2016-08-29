@@ -88,6 +88,7 @@
     <Reference Include="Sitecore.Analytics, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Analytics.8.1.0.151207\lib\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
+    </Reference>
     <Reference Include="Ploeh.AutoFixture">
       <HintPath>..\..\..\..\packages\AutoFixture.3.49.0\lib\net40\Ploeh.AutoFixture.dll</HintPath>
       <Private>True</Private>
@@ -106,12 +107,12 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.MongoDB, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Analytics.MongoDB.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.MongoDB.8.1.0.151207\lib\Sitecore.Analytics.MongoDB.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Processing, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Analytics.Processing.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Processing.8.1.0.151207\lib\Sitecore.Analytics.Processing.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.8.1.0.151207\lib\Sitecore.ContentSearch.dll</HintPath>
