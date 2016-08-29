@@ -236,4 +236,9 @@
     <ExcludedAssemblies Include="Sitecore.Xdb.%2a" />
     <ExcludedAssemblies Include="Sitecore.Zip.%2a" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Foundation.Serialization.Core\Sitecore.Foundation.Serialization.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
