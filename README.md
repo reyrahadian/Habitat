@@ -20,19 +20,14 @@ There was a duplicate named item at `/sitecore/content/Habitat/Global/Media/Depe
 ## Differences in Installation:
 
 1. Clone this repository to your local file system.
-2. Set up a clean Sitecore 8.1 website in the URL http://habitat.local/ and the location C:\Websites\Habitat.local\ (We recommend using Sitecore Instance Manager).
+2. Set up a clean Sitecore 8.2 website in the URL http://habitat.dev.local/ and the location C:\Websites\Habitat.local\ (We recommend using Sitecore Instance Manager).
 3. Install the Webforms for Marketers module
-4. Restore npm modules
-  - Make sure you have the version 4+ of node.js [Download here](https://nodejs.org/en/)
-  - Open an administrator command-line and run 'npm install' in the root of repository.
-5. Open the solution in Visual Studio.
+4. Open the solution in Visual Studio.
+5. Ensure you have setup a NuGet Source to the Sitecore NuGet Public Feed. (use the NuGet v3 feed) [https://doc.sitecore.net/sitecore_experience_platform/82/developing/developing_with_sitecore/sitecore_public_nuget_packages_faq](https://doc.sitecore.net/sitecore_experience_platform/82/developing/developing_with_sitecore/sitecore_public_nuget_packages_faq)
 6. (optional) Configuring your settings if you are using other settings than default:
 To change the standard location of source, website files and website URL modify the following files:
   - /Configuration/z.Habitat.DevSettings.config
-  - /Configuration/gulp-config.js
   - /Configuration/TdsGlobal.config
-7. Open the Visual Studio 2015 Task Runner Explorer (View | Other Windows | Task Runner Explorer).
-8. Run the 01-Copy-Sitecore-Lib task. 
-9. Deploy the Solution (Right click on the solution file -> Deploy Solution) in Visual Studio 2015 to deploy all Sitecore Items and Project Items.
-10. Run the 03_Apply-Xml-Transform task. (To be replaced in the future)
-11. Be productive!
+7. Deploy the Solution (Right click on the solution file -> Deploy Solution)
+   (This will restore the packages, build and deploy the code and items to your local site).
+8. Be productive!
