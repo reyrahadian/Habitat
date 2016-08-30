@@ -1,0 +1,1205 @@
+{
+  "locked": false,
+  "version": 1,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "DynamicPlaceholders/1.1.0.1": {
+        "compile": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        }
+      },
+      "DynamicPlaceholders.Mvc/1.1.0.1": {
+        "dependencies": {
+          "DynamicPlaceholders": "1.1.0.1"
+        },
+        "compile": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {},
+      "Microsoft.SqlServer.Scripting/11.0.2100.61": {
+        "compile": {
+          "lib/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/Microsoft.SqlServer.Smo.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/Microsoft.SqlServer.Smo.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Microsoft.Web.Xdt/2.1.1": {
+        "compile": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        }
+      },
+      "mongocsharpdriver/1.10.0": {
+        "compile": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        },
+        "runtime": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.MongoDB.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.MongoDB.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.MongoDB.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Processing.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Processing.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Processing.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        }
+      },
+      "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        }
+      },
+      "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      },
+      "Sitecore.Mvc.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Mvc.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Configuration.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Xdb.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Xdb.Configuration.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "DynamicPlaceholders/1.1.0.1": {
+        "compile": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        }
+      },
+      "DynamicPlaceholders.Mvc/1.1.0.1": {
+        "dependencies": {
+          "DynamicPlaceholders": "1.1.0.1"
+        },
+        "compile": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {},
+      "Microsoft.SqlServer.Scripting/11.0.2100.61": {
+        "compile": {
+          "lib/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/Microsoft.SqlServer.Smo.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/Microsoft.SqlServer.Smo.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Microsoft.Web.Xdt/2.1.1": {
+        "compile": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        }
+      },
+      "mongocsharpdriver/1.10.0": {
+        "compile": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        },
+        "runtime": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.MongoDB.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.MongoDB.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.MongoDB.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Processing.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Processing.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Processing.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        }
+      },
+      "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        }
+      },
+      "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      },
+      "Sitecore.Mvc.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Mvc.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Configuration.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Xdb.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Xdb.Configuration.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-anycpu": {
+      "DynamicPlaceholders/1.1.0.1": {
+        "compile": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        }
+      },
+      "DynamicPlaceholders.Mvc/1.1.0.1": {
+        "dependencies": {
+          "DynamicPlaceholders": "1.1.0.1"
+        },
+        "compile": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {},
+      "Microsoft.SqlServer.Scripting/11.0.2100.61": {
+        "compile": {
+          "lib/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/Microsoft.SqlServer.Smo.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/Microsoft.SqlServer.Smo.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Microsoft.Web.Xdt/2.1.1": {
+        "compile": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        }
+      },
+      "mongocsharpdriver/1.10.0": {
+        "compile": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        },
+        "runtime": {
+          "lib/net35/MongoDB.Bson.dll": {},
+          "lib/net35/MongoDB.Driver.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.MongoDB.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.MongoDB.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.MongoDB.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Processing.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Processing.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Processing.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        }
+      },
+      "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        }
+      },
+      "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      },
+      "Sitecore.Mvc.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Mvc.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Configuration.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Xdb.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Xdb.Configuration.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DynamicPlaceholders/1.1.0.1": {
+      "sha512": "eHoQJhDNCF1vvemuraIMhiPwGsSufJKKfReiIWvQCVVaPpa5awX/8u0tETNjAjJHhIJwHRhY4qErMmbgwjMfEg==",
+      "type": "package",
+      "path": "DynamicPlaceholders/1.1.0.1",
+      "files": [
+        "DynamicPlaceholders.1.1.0.1.nupkg.sha512",
+        "DynamicPlaceholders.nuspec",
+        "content/App_Config/Include/DynamicPlaceholders/DynamicPlaceholders.config",
+        "lib/net45/DynamicPlaceholders.dll"
+      ]
+    },
+    "DynamicPlaceholders.Mvc/1.1.0.1": {
+      "sha512": "NRe+vhzYlYQrIiivvnNa1rqbVnBxeepIJDiU+4/CNW77EA0WuimCPZAseCjJG/PJdHbp5rZZwt3TjlrNraihtQ==",
+      "type": "package",
+      "path": "DynamicPlaceholders.Mvc/1.1.0.1",
+      "files": [
+        "DynamicPlaceholders.Mvc.1.1.0.1.nupkg.sha512",
+        "DynamicPlaceholders.Mvc.nuspec",
+        "lib/net45/DynamicPlaceholders.Mvc.dll"
+      ]
+    },
+    "Microsoft.AspNet.Mvc/5.2.3": {
+      "sha512": "i8jZf5QrbcFmjiYWRD7o7qTak/oXKxV80MgP4cZ33A8GC0RBtBIdZ1VHaloGUg+qsHUz5rVkGpwenM+ugDz5PA==",
+      "type": "package",
+      "path": "Microsoft.AspNet.Mvc/5.2.3",
+      "files": [
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "Microsoft.AspNet.Mvc.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.Mvc.nuspec",
+        "lib/net45/System.Web.Mvc.dll",
+        "lib/net45/System.Web.Mvc.xml"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.2.3": {
+      "sha512": "leta+Q73O7+pR8ThTqXmwaNMSqwZQQ3BHfpUHd8S1XaUWe1jRVLitMHqo1AmY7wPNLyankPA1beiUKEGj8Q3Dw==",
+      "type": "package",
+      "path": "Microsoft.AspNet.Razor/3.2.3",
+      "files": [
+        "Microsoft.AspNet.Razor.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.Razor.nuspec",
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi/5.2.3": {
+      "sha512": "mGBfSy61+2dIdPwgguW8EaCVsbYTwwVHeCc/pVq1PhlZS87ColgJ++Hve40TrX6Dtqde0fo9M1Tt19rXlHC5GA==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi/5.2.3",
+      "files": [
+        "Microsoft.AspNet.WebApi.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi.Client/5.2.3",
+      "files": [
+        "Microsoft.AspNet.WebApi.Client.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Client.nuspec",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "sha512": "o90QYlRV8VKR1S7+EcJw9w8WSyVFLl+IIzN8ILZ+n2t6rsc/KS8kBxRzA7wCFPRUHhebCfLqilBk39phvanx3g==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi.Core/5.2.3",
+      "files": [
+        "Content/web.config.transform",
+        "Microsoft.AspNet.WebApi.Core.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Core.nuspec",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+      "sha512": "bhm4/BKdS3t6nK2R3NjCpxulcwtMFiHqVBDLuN3W5So1PhZfE+RBs7eVazGOhsEKCk7PoSmiSnl9DG0cpyfHtA==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi.WebHost/5.2.3",
+      "files": [
+        "Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.WebHost.nuspec",
+        "lib/net45/System.Web.Http.WebHost.dll",
+        "lib/net45/System.Web.Http.WebHost.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebPages/3.2.3": {
+      "sha512": "zbtxBERla5RE/mhftwbrXOzc0r6lh8WcnjpGW7QQe+PvSDDx1BgsTUGzfCXO/vJznHNpY5oCSYLt8Q5vUu7F0g==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebPages/3.2.3",
+      "files": [
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "Microsoft.AspNet.WebPages.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebPages.nuspec",
+        "lib/net45/System.Web.Helpers.dll",
+        "lib/net45/System.Web.Helpers.xml",
+        "lib/net45/System.Web.WebPages.Deployment.dll",
+        "lib/net45/System.Web.WebPages.Deployment.xml",
+        "lib/net45/System.Web.WebPages.Razor.dll",
+        "lib/net45/System.Web.WebPages.Razor.xml",
+        "lib/net45/System.Web.WebPages.dll",
+        "lib/net45/System.Web.WebPages.xml"
+      ]
+    },
+    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+      "sha512": "JAFfTGtdaFdTGFgkFv9E/uXLXRev0oFjyFi9X4LIu+KO1LrB0l4FYyvlciS486ff0UiLIYR0EujTB29Cn5rHyg==",
+      "type": "package",
+      "path": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1",
+      "files": [
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1.nupkg.sha512",
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.nuspec",
+        "build/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props",
+        "content/web.config.install.xdt",
+        "content/web.config.uninstall.xdt",
+        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
+        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.Net.Compilers/1.0.0": {
+      "sha512": "qDceaxG9cBOSv/171eEb79OXeAOFNc6ZM2OLIZVUhNyTd0U463r9E8B61nMjTnLn35q/joP387bTFHrXGYHPAg==",
+      "type": "package",
+      "path": "Microsoft.Net.Compilers/1.0.0",
+      "files": [
+        "Microsoft.Net.Compilers.1.0.0.nupkg.sha512",
+        "Microsoft.Net.Compilers.nuspec",
+        "ThirdPartyNotices.rtf",
+        "build/Microsoft.Net.Compilers.props",
+        "tools/Microsoft.Build.Tasks.CodeAnalysis.dll",
+        "tools/Microsoft.CSharp.Core.targets",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Microsoft.VisualBasic.Core.targets",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.Reflection.Metadata.dll",
+        "tools/VBCSCompiler.exe",
+        "tools/VBCSCompiler.exe.config",
+        "tools/csc.exe",
+        "tools/vbc.exe"
+      ]
+    },
+    "Microsoft.SqlServer.Scripting/11.0.2100.61": {
+      "sha512": "z30kCLuN7xazN+zP8I21t1+eRBzVY+Om9Prj/97XD7TI/k4BY+swJVmn+PVpy/2xO3Tk358WZs4bfcGmUKPkew==",
+      "type": "package",
+      "path": "Microsoft.SqlServer.Scripting/11.0.2100.61",
+      "files": [
+        "Microsoft.SqlServer.Scripting.11.0.2100.61.nupkg.sha512",
+        "Microsoft.SqlServer.Scripting.nuspec",
+        "lib/Microsoft.SqlServer.ConnectionInfo.dll",
+        "lib/Microsoft.SqlServer.Management.Sdk.Sfc.dll",
+        "lib/Microsoft.SqlServer.Smo.dll"
+      ]
+    },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "type": "package",
+      "path": "Microsoft.Web.Infrastructure/1.0.0",
+      "files": [
+        "Microsoft.Web.Infrastructure.1.0.0.nupkg.sha512",
+        "Microsoft.Web.Infrastructure.nuspec",
+        "lib/net40/Microsoft.Web.Infrastructure.dll"
+      ]
+    },
+    "Microsoft.Web.Xdt/2.1.1": {
+      "sha512": "PHoqib4d+f2lmnluVwMFM8M4AF8Z7y2g18hUTi5UCKkjNQIzkNnB1uyqnS5od2sMsRcI/9mexQjDO6e5dL/MeA==",
+      "type": "package",
+      "path": "Microsoft.Web.Xdt/2.1.1",
+      "files": [
+        "Microsoft.Web.Xdt.2.1.1.nupkg.sha512",
+        "Microsoft.Web.Xdt.nuspec",
+        "lib/net40/Microsoft.Web.XmlTransform.dll"
+      ]
+    },
+    "mongocsharpdriver/1.10.0": {
+      "sha512": "gDAC6h6Rgw9BWcKQ13JCMW4GhF+2qqajS2myN6dcOYD5L0+uUgAECVX7cMF5IQf3KdEjAFOCbViPTkVMfboCzw==",
+      "type": "package",
+      "path": "mongocsharpdriver/1.10.0",
+      "files": [
+        "License.rtf",
+        "lib/net35/MongoDB.Bson.XML",
+        "lib/net35/MongoDB.Bson.dll",
+        "lib/net35/MongoDB.Driver.XML",
+        "lib/net35/MongoDB.Driver.dll",
+        "mongocsharpdriver.1.10.0.nupkg.sha512",
+        "mongocsharpdriver.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/6.0.8": {
+      "sha512": "7ut47NDedTW19EbL0JpFDYUP62fcuz27hJrehCDNajdCS5NtqL+E39+7Um3OkNc2wl2ym7K8Ln5eNuLus6mVGQ==",
+      "type": "package",
+      "path": "Newtonsoft.Json/6.0.8",
+      "files": [
+        "Newtonsoft.Json.6.0.8.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+      "sha512": "xzIalfJC/ha5ikLcALvuOcNUWb7hz31Wq9vIvMjsOKJ1Wtu/1EyvUORUAUWNxvDG6U+Y0cC28hb0gRhblpGGBw==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Core.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Core.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Core.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Core.dll"
+      ]
+    },
+    "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+      "sha512": "AAFEZN0xIqyAjUlMoVM5Cerx/SUVgOjuZK+21h3x9mhIIlm5nqn/SP2ESlkwDKNMkl01hdunqoK+5yAS/zls6Q==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Model.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Model.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Model.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Model.dll"
+      ]
+    },
+    "Sitecore.Analytics.MongoDB.NoReferences/8.2.160729": {
+      "sha512": "EKe/1KSJxwoiElLgd5Yzlyb18yMXOYHRbZ0/BcI0Y2vQUpPWSnlHZw5lsgSFTcpRU9S/qchKh25Ai29BdKE7pQ==",
+      "type": "package",
+      "path": "Sitecore.Analytics.MongoDB.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.MongoDB.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.MongoDB.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.MongoDB.dll"
+      ]
+    },
+    "Sitecore.Analytics.NoReferences/8.2.160729": {
+      "sha512": "Yw1/qXKuSrCWsj/3i2uoSHJ5LHmlPbmuJPwH+8M0Ykt6igX604AFj5RePQT+IfO/ezCPV+qVG/I1aqKm15H5Fg==",
+      "type": "package",
+      "path": "Sitecore.Analytics.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.dll"
+      ]
+    },
+    "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+      "sha512": "Sq+bGmhTd/QmVvyqJ37J0IZAMsfdK34PASgt+OArzypge32uISMxB7FUiM6vjmvBM27Rhx50gG1SeyNM4BFPlA==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Outcome.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Outcome.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Outcome.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Outcome.dll"
+      ]
+    },
+    "Sitecore.Analytics.Processing.NoReferences/8.2.160729": {
+      "sha512": "W94SwpcOh8SoKljPXFaBh5lLBjyf3t7DAADXmNdDEFdsQFSHqGskXMrg42ujGhJ39kIrwVVuglUaBwtZJWOI9A==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Processing.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Processing.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Processing.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Processing.dll"
+      ]
+    },
+    "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+      "sha512": "q/TvkjU4/RdAz3LB+tZsyogIruHirLLatnJEd4iUuIpbr5fK8cK0rU8Y8+q1VIrsckWiekvyuQi1TygPJBxPAg==",
+      "type": "package",
+      "path": "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ContentSearch.Linq.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ContentSearch.Linq.Noreferences.nuspec",
+        "lib/NET452/Sitecore.ContentSearch.Linq.dll"
+      ]
+    },
+    "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+      "sha512": "X0+6VLe6Jpkr/4n06ezwStVtbglslLHVslQSL9/9s+1dOu5Cj5PyLNCqhj6aR2AkbiHQ+RC5DjIXYceiFFAEgg==",
+      "type": "package",
+      "path": "Sitecore.ContentSearch.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ContentSearch.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ContentSearch.Noreferences.nuspec",
+        "lib/NET452/Sitecore.ContentSearch.dll"
+      ]
+    },
+    "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+      "sha512": "dVBuV/BI0hFWUCWDtRECmGN3a4C1T1/lcU+oW+x8tcgDjWCux0FnA54/ZoFQmAUcCcBhHen/F/pKmihhW3WMOg==",
+      "type": "package",
+      "path": "Sitecore.ExperienceEditor.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ExperienceEditor.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ExperienceEditor.Noreferences.nuspec",
+        "lib/NET452/Sitecore.ExperienceEditor.dll"
+      ]
+    },
+    "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+      "sha512": "7cQ5IQ7zB0Qy8CJLUvXXqWYDBRvyqDnI1ht6HgHhK0FwLbleXRqjxhLyA40+llVaiPWsfptcAz0V8kSblGaMFw==",
+      "type": "package",
+      "path": "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ExperienceExplorer.Business.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ExperienceExplorer.Business.NoReferences.nuspec",
+        "lib/NET452/Sitecore.ExperienceExplorer.Business.dll"
+      ]
+    },
+    "Sitecore.Kernel.NoReferences/8.2.160729": {
+      "sha512": "BztABih+o8QKDqvhIpkHu7PL4/F67BzKlTw4KBQc0a0ZwyhayUxW4Is827bO2XaITP6g5IhjbMZN5+TtmmsKCA==",
+      "type": "package",
+      "path": "Sitecore.Kernel.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Kernel.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Kernel.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Kernel.dll"
+      ]
+    },
+    "Sitecore.Mvc.Analytics.NoReferences/8.2.160729": {
+      "sha512": "9B6r3YBAX1Bo/EdAtaDLi6ehXQRC6RyrZtKyG4wdk+An7rudno1LLKVaXgXOfogH8/kJIyx+hyiZgD9fOq4+1Q==",
+      "type": "package",
+      "path": "Sitecore.Mvc.Analytics.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Mvc.Analytics.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Mvc.Analytics.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Mvc.Analytics.dll"
+      ]
+    },
+    "Sitecore.Mvc.NoReferences/8.2.160729": {
+      "sha512": "oski2btvh1okAWQNV1IxhkgeDA7omY2rAP8JGdpKJyqK3rgc4qur4NbqtuX9wCVPvUrT1EhrA3uS6Tfc2OOKOQ==",
+      "type": "package",
+      "path": "Sitecore.Mvc.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Mvc.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Mvc.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Mvc.dll"
+      ]
+    },
+    "Sitecore.Xdb.Configuration.NoReferences/8.2.160729": {
+      "sha512": "zBeGlp97D6rLm4hqRICB74OksVbWjPJxGdJjLfk7gu7kEgkr4ecfBt7xZl8Fml4eYxFpzMsprQ6F2WJXAqeL9g==",
+      "type": "package",
+      "path": "Sitecore.Xdb.Configuration.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Xdb.Configuration.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Xdb.Configuration.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Xdb.Configuration.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Microsoft.AspNet.Mvc >= 5.2.3",
+      "Microsoft.AspNet.Razor >= 3.2.3",
+      "Microsoft.AspNet.WebApi >= 5.2.3",
+      "Microsoft.AspNet.WebApi.Client >= 5.2.3",
+      "Microsoft.AspNet.WebApi.Core >= 5.2.3",
+      "Microsoft.AspNet.WebApi.WebHost >= 5.2.3",
+      "Microsoft.AspNet.WebPages >= 3.2.3",
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform >= 1.0.1",
+      "Microsoft.Net.Compilers >= 1.0.0",
+      "Microsoft.SqlServer.Scripting >= 11.0.2100.61",
+      "Microsoft.Web.Infrastructure >= 1.0.0",
+      "Microsoft.Web.Xdt >= 2.1.1",
+      "Newtonsoft.Json >= 6.0.8",
+      "Sitecore.Analytics.Core.NoReferences >= 8.2.160729",
+      "Sitecore.Analytics.Model.NoReferences >= 8.2.160729",
+      "Sitecore.Analytics.MongoDB.NoReferences >= 8.2.160729",
+      "Sitecore.Analytics.NoReferences >= 8.2.160729",
+      "Sitecore.Analytics.Processing.NoReferences >= 8.2.160729",
+      "Sitecore.ContentSearch.NoReferences >= 8.2.160729",
+      "Sitecore.Kernel.NoReferences >= 8.2.160729",
+      "Sitecore.Mvc.Analytics.NoReferences >= 8.2.160729",
+      "Sitecore.Mvc.NoReferences >= 8.2.160729",
+      "Sitecore.Xdb.Configuration.NoReferences >= 8.2.160729",
+      "mongocsharpdriver >= 1.10.0"
+    ],
+    ".NETFramework,Version=v4.6": []
+  }
+}

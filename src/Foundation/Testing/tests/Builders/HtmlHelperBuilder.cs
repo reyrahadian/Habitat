@@ -1,12 +1,12 @@
 ﻿namespace Sitecore.Foundation.Testing.Builders
 {
-  using System.Web;
-  using System.Web.Mvc;
-  using System.Web.Routing;
-  using NSubstitute;
-  using Ploeh.AutoFixture.Kernel;
+    using System.Web;
+    using System.Web.Mvc;
+    using System.Web.Routing;
+    using NSubstitute;
+    using Ploeh.AutoFixture.Kernel;
 
-  public class HtmlHelperBuilder : ISpecimenBuilder
+    public class HtmlHelperBuilder : ISpecimenBuilder
   {
     public object Create(object request, ISpecimenContext context)
     {

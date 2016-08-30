@@ -1,0 +1,1807 @@
+{
+  "locked": false,
+  "version": 1,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "AutoFixture/3.47.4": {
+        "compile": {
+          "lib/net40/Ploeh.AutoFixture.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Ploeh.AutoFixture.dll": {}
+        }
+      },
+      "AutoFixture.AutoNSubstitute/3.47.4": {
+        "dependencies": {
+          "NSubstitute": "1.5.0",
+          "autofixture": "3.47.4"
+        },
+        "compile": {
+          "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll": {}
+        }
+      },
+      "AutoFixture.Xunit2/3.47.4": {
+        "dependencies": {
+          "autofixture": "3.47.4",
+          "xunit.core": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Ploeh.AutoFixture.Xunit2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Ploeh.AutoFixture.Xunit2.dll": {}
+        }
+      },
+      "DynamicPlaceholders/1.1.0.1": {
+        "compile": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        }
+      },
+      "DynamicPlaceholders.Mvc/1.1.0.1": {
+        "dependencies": {
+          "DynamicPlaceholders": "1.1.0.1"
+        },
+        "compile": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        }
+      },
+      "FluentAssertions/4.7.0": {
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {},
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Moq/4.1.1308.2321": {
+        "compile": {
+          "lib/net40/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Moq.dll": {}
+        }
+      },
+      "netDumbster/1.3.0.7": {
+        "compile": {
+          "lib/net40/netDumbster.dll": {}
+        },
+        "runtime": {
+          "lib/net40/netDumbster.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NSubstitute/1.10.0": {
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        }
+      },
+      "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        }
+      },
+      "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        }
+      },
+      "Sitecore.FakeDb/1.1.1": {
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.dll": {}
+        }
+      },
+      "Sitecore.FakeDb.AutoFixture/1.1.0": {
+        "dependencies": {
+          "AutoFixture": "[3.0.0, 4.0.0)",
+          "Sitecore.FakeDb": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.AutoFixture.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.AutoFixture.dll": {}
+        }
+      },
+      "Sitecore.FakeDb.NSubstitute/1.1.0": {
+        "dependencies": {
+          "NSubstitute": "1.9.2",
+          "Sitecore.FakeDb": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.NSubstitute.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      },
+      "Sitecore.Mvc.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Nexus.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Nexus.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Nexus.dll": {}
+        }
+      },
+      "xunit/2.1.0": {
+        "dependencies": {
+          "xunit.assert": "[2.1.0]",
+          "xunit.core": "[2.1.0]"
+        }
+      },
+      "xunit.abstractions/2.0.0": {
+        "compile": {
+          "lib/net35/xunit.abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net35/xunit.abstractions.dll": {}
+        }
+      },
+      "xunit.assert/2.1.0": {
+        "compile": {
+          "lib/dotnet/xunit.assert.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.assert.dll": {}
+        }
+      },
+      "xunit.core/2.1.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "[2.1.0]",
+          "xunit.extensibility.execution": "[2.1.0]"
+        }
+      },
+      "xunit.extensibility.core/2.1.0": {
+        "dependencies": {
+          "xunit.abstractions": "[2.0.0]"
+        },
+        "compile": {
+          "lib/dotnet/xunit.core.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.core.dll": {}
+        }
+      },
+      "xunit.extensibility.execution/2.1.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "[2.1.0]"
+        },
+        "compile": {
+          "lib/net45/xunit.execution.desktop.dll": {}
+        },
+        "runtime": {
+          "lib/net45/xunit.execution.desktop.dll": {}
+        }
+      },
+      "xunit.runner.visualstudio/2.1.0": {}
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "AutoFixture/3.47.4": {
+        "compile": {
+          "lib/net40/Ploeh.AutoFixture.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Ploeh.AutoFixture.dll": {}
+        }
+      },
+      "AutoFixture.AutoNSubstitute/3.47.4": {
+        "dependencies": {
+          "NSubstitute": "1.5.0",
+          "autofixture": "3.47.4"
+        },
+        "compile": {
+          "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll": {}
+        }
+      },
+      "AutoFixture.Xunit2/3.47.4": {
+        "dependencies": {
+          "autofixture": "3.47.4",
+          "xunit.core": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Ploeh.AutoFixture.Xunit2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Ploeh.AutoFixture.Xunit2.dll": {}
+        }
+      },
+      "DynamicPlaceholders/1.1.0.1": {
+        "compile": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        }
+      },
+      "DynamicPlaceholders.Mvc/1.1.0.1": {
+        "dependencies": {
+          "DynamicPlaceholders": "1.1.0.1"
+        },
+        "compile": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        }
+      },
+      "FluentAssertions/4.7.0": {
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {},
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Moq/4.1.1308.2321": {
+        "compile": {
+          "lib/net40/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Moq.dll": {}
+        }
+      },
+      "netDumbster/1.3.0.7": {
+        "compile": {
+          "lib/net40/netDumbster.dll": {}
+        },
+        "runtime": {
+          "lib/net40/netDumbster.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NSubstitute/1.10.0": {
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        }
+      },
+      "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        }
+      },
+      "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        }
+      },
+      "Sitecore.FakeDb/1.1.1": {
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.dll": {}
+        }
+      },
+      "Sitecore.FakeDb.AutoFixture/1.1.0": {
+        "dependencies": {
+          "AutoFixture": "[3.0.0, 4.0.0)",
+          "Sitecore.FakeDb": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.AutoFixture.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.AutoFixture.dll": {}
+        }
+      },
+      "Sitecore.FakeDb.NSubstitute/1.1.0": {
+        "dependencies": {
+          "NSubstitute": "1.9.2",
+          "Sitecore.FakeDb": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.NSubstitute.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      },
+      "Sitecore.Mvc.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Nexus.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Nexus.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Nexus.dll": {}
+        }
+      },
+      "xunit/2.1.0": {
+        "dependencies": {
+          "xunit.assert": "[2.1.0]",
+          "xunit.core": "[2.1.0]"
+        }
+      },
+      "xunit.abstractions/2.0.0": {
+        "compile": {
+          "lib/net35/xunit.abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net35/xunit.abstractions.dll": {}
+        }
+      },
+      "xunit.assert/2.1.0": {
+        "compile": {
+          "lib/dotnet/xunit.assert.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.assert.dll": {}
+        }
+      },
+      "xunit.core/2.1.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "[2.1.0]",
+          "xunit.extensibility.execution": "[2.1.0]"
+        }
+      },
+      "xunit.extensibility.core/2.1.0": {
+        "dependencies": {
+          "xunit.abstractions": "[2.0.0]"
+        },
+        "compile": {
+          "lib/dotnet/xunit.core.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.core.dll": {}
+        }
+      },
+      "xunit.extensibility.execution/2.1.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "[2.1.0]"
+        },
+        "compile": {
+          "lib/net45/xunit.execution.desktop.dll": {}
+        },
+        "runtime": {
+          "lib/net45/xunit.execution.desktop.dll": {}
+        }
+      },
+      "xunit.runner.visualstudio/2.1.0": {}
+    },
+    ".NETFramework,Version=v4.6/win-anycpu": {
+      "AutoFixture/3.47.4": {
+        "compile": {
+          "lib/net40/Ploeh.AutoFixture.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Ploeh.AutoFixture.dll": {}
+        }
+      },
+      "AutoFixture.AutoNSubstitute/3.47.4": {
+        "dependencies": {
+          "NSubstitute": "1.5.0",
+          "autofixture": "3.47.4"
+        },
+        "compile": {
+          "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll": {}
+        }
+      },
+      "AutoFixture.Xunit2/3.47.4": {
+        "dependencies": {
+          "autofixture": "3.47.4",
+          "xunit.core": "[2.0.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Ploeh.AutoFixture.Xunit2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Ploeh.AutoFixture.Xunit2.dll": {}
+        }
+      },
+      "DynamicPlaceholders/1.1.0.1": {
+        "compile": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.dll": {}
+        }
+      },
+      "DynamicPlaceholders.Mvc/1.1.0.1": {
+        "dependencies": {
+          "DynamicPlaceholders": "1.1.0.1"
+        },
+        "compile": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DynamicPlaceholders.Mvc.dll": {}
+        }
+      },
+      "FluentAssertions/4.7.0": {
+        "frameworkAssemblies": [
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {},
+          "lib/net45/FluentAssertions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {},
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Moq/4.1.1308.2321": {
+        "compile": {
+          "lib/net40/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Moq.dll": {}
+        }
+      },
+      "netDumbster/1.3.0.7": {
+        "compile": {
+          "lib/net40/netDumbster.dll": {}
+        },
+        "runtime": {
+          "lib/net40/netDumbster.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NSubstitute/1.10.0": {
+        "compile": {
+          "lib/net45/NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Core.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Outcome.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.Linq.dll": {}
+        }
+      },
+      "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ContentSearch.dll": {}
+        }
+      },
+      "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceEditor.dll": {}
+        }
+      },
+      "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.ExperienceExplorer.Business.dll": {}
+        }
+      },
+      "Sitecore.FakeDb/1.1.1": {
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.dll": {}
+        }
+      },
+      "Sitecore.FakeDb.AutoFixture/1.1.0": {
+        "dependencies": {
+          "AutoFixture": "[3.0.0, 4.0.0)",
+          "Sitecore.FakeDb": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.AutoFixture.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.AutoFixture.dll": {}
+        }
+      },
+      "Sitecore.FakeDb.NSubstitute/1.1.0": {
+        "dependencies": {
+          "NSubstitute": "1.9.2",
+          "Sitecore.FakeDb": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/Sitecore.FakeDb.NSubstitute.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Sitecore.FakeDb.NSubstitute.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      },
+      "Sitecore.Mvc.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Nexus.NoReferences/8.2.160729": {
+        "compile": {
+          "lib/NET452/Sitecore.Nexus.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Nexus.dll": {}
+        }
+      },
+      "xunit/2.1.0": {
+        "dependencies": {
+          "xunit.assert": "[2.1.0]",
+          "xunit.core": "[2.1.0]"
+        }
+      },
+      "xunit.abstractions/2.0.0": {
+        "compile": {
+          "lib/net35/xunit.abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net35/xunit.abstractions.dll": {}
+        }
+      },
+      "xunit.assert/2.1.0": {
+        "compile": {
+          "lib/dotnet/xunit.assert.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.assert.dll": {}
+        }
+      },
+      "xunit.core/2.1.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "[2.1.0]",
+          "xunit.extensibility.execution": "[2.1.0]"
+        }
+      },
+      "xunit.extensibility.core/2.1.0": {
+        "dependencies": {
+          "xunit.abstractions": "[2.0.0]"
+        },
+        "compile": {
+          "lib/dotnet/xunit.core.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.core.dll": {}
+        }
+      },
+      "xunit.extensibility.execution/2.1.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "[2.1.0]"
+        },
+        "compile": {
+          "lib/net45/xunit.execution.desktop.dll": {}
+        },
+        "runtime": {
+          "lib/net45/xunit.execution.desktop.dll": {}
+        }
+      },
+      "xunit.runner.visualstudio/2.1.0": {}
+    }
+  },
+  "libraries": {
+    "AutoFixture/3.47.4": {
+      "sha512": "ql/JQUaC2uAaSahcbqcjIskrczVBAzTojAaBCy/oAeJTjFKjkuqCFfPzNv0dMNWMJINtFWy6+6plQalGI/SkWQ==",
+      "type": "package",
+      "path": "AutoFixture/3.47.4",
+      "files": [
+        "AutoFixture.3.47.4.nupkg.sha512",
+        "AutoFixture.nuspec",
+        "lib/net40/Ploeh.AutoFixture.XML",
+        "lib/net40/Ploeh.AutoFixture.dll",
+        "tools/Install.ps1"
+      ]
+    },
+    "AutoFixture.AutoNSubstitute/3.47.4": {
+      "sha512": "KwuAkL8VwkekTumMGPjk5Eqk/Q7QgD3N0VGx7Lczt2Y8/aYU6ycLgBitOg1rKzW6W+zD4A8zdd6/+hmXIIeiQg==",
+      "type": "package",
+      "path": "AutoFixture.AutoNSubstitute/3.47.4",
+      "files": [
+        "AutoFixture.AutoNSubstitute.3.47.4.nupkg.sha512",
+        "AutoFixture.AutoNSubstitute.nuspec",
+        "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.XML",
+        "lib/net40/Ploeh.AutoFixture.AutoNSubstitute.dll",
+        "tools/Install.ps1"
+      ]
+    },
+    "AutoFixture.Xunit2/3.47.4": {
+      "sha512": "Dm4XA+F9Q+gYAJ3jZWn1NgUnQ1jv/seTrEg9mwtxVdPekbO0MD0FfYKSt4iP+rIE4JtoumENz/op5wYoFWHgZQ==",
+      "type": "package",
+      "path": "AutoFixture.Xunit2/3.47.4",
+      "files": [
+        "AutoFixture.Xunit2.3.47.4.nupkg.sha512",
+        "AutoFixture.Xunit2.nuspec",
+        "lib/net45/Ploeh.AutoFixture.Xunit2.XML",
+        "lib/net45/Ploeh.AutoFixture.Xunit2.dll",
+        "tools/Install.ps1"
+      ]
+    },
+    "DynamicPlaceholders/1.1.0.1": {
+      "sha512": "eHoQJhDNCF1vvemuraIMhiPwGsSufJKKfReiIWvQCVVaPpa5awX/8u0tETNjAjJHhIJwHRhY4qErMmbgwjMfEg==",
+      "type": "package",
+      "path": "DynamicPlaceholders/1.1.0.1",
+      "files": [
+        "DynamicPlaceholders.1.1.0.1.nupkg.sha512",
+        "DynamicPlaceholders.nuspec",
+        "content/App_Config/Include/DynamicPlaceholders/DynamicPlaceholders.config",
+        "lib/net45/DynamicPlaceholders.dll"
+      ]
+    },
+    "DynamicPlaceholders.Mvc/1.1.0.1": {
+      "sha512": "NRe+vhzYlYQrIiivvnNa1rqbVnBxeepIJDiU+4/CNW77EA0WuimCPZAseCjJG/PJdHbp5rZZwt3TjlrNraihtQ==",
+      "type": "package",
+      "path": "DynamicPlaceholders.Mvc/1.1.0.1",
+      "files": [
+        "DynamicPlaceholders.Mvc.1.1.0.1.nupkg.sha512",
+        "DynamicPlaceholders.Mvc.nuspec",
+        "lib/net45/DynamicPlaceholders.Mvc.dll"
+      ]
+    },
+    "FluentAssertions/4.7.0": {
+      "sha512": "ny4gO9jFYDnz25zd4fEIy34RW72LULEqCdE40IS+TZUvaUd1WgPAv9uSBlwjLrLYlRP+6ey6ce1eFtK/0pWvxw==",
+      "type": "package",
+      "path": "FluentAssertions/4.7.0",
+      "files": [
+        "FluentAssertions.4.7.0.nupkg.sha512",
+        "FluentAssertions.nuspec",
+        "lib/dotnet/FluentAssertions.Core.dll",
+        "lib/dotnet/FluentAssertions.Core.pdb",
+        "lib/dotnet/FluentAssertions.dll",
+        "lib/dotnet/FluentAssertions.pdb",
+        "lib/dotnet/FluentAssertions.xml",
+        "lib/monoandroid/FluentAssertions.Core.dll",
+        "lib/monoandroid/FluentAssertions.Core.pdb",
+        "lib/monoandroid/FluentAssertions.Core.xml",
+        "lib/monotouch/FluentAssertions.Core.dll",
+        "lib/monotouch/FluentAssertions.Core.pdb",
+        "lib/monotouch/FluentAssertions.Core.xml",
+        "lib/net40/FluentAssertions.Core.dll",
+        "lib/net40/FluentAssertions.Core.pdb",
+        "lib/net40/FluentAssertions.Core.xml",
+        "lib/net40/FluentAssertions.dll",
+        "lib/net40/FluentAssertions.pdb",
+        "lib/net40/FluentAssertions.xml",
+        "lib/net45/FluentAssertions.Core.dll",
+        "lib/net45/FluentAssertions.Core.pdb",
+        "lib/net45/FluentAssertions.Core.xml",
+        "lib/net45/FluentAssertions.dll",
+        "lib/net45/FluentAssertions.pdb",
+        "lib/net45/FluentAssertions.xml",
+        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.dll",
+        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.pdb",
+        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.XML",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-win81+wpa81/FluentAssertions.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.pri",
+        "lib/portable-win81+wpa81/FluentAssertions.xml",
+        "lib/sl5/FluentAssertions.Core.dll",
+        "lib/sl5/FluentAssertions.Core.pdb",
+        "lib/sl5/FluentAssertions.Core.xml",
+        "lib/sl5/FluentAssertions.dll",
+        "lib/sl5/FluentAssertions.pdb",
+        "lib/sl5/FluentAssertions.xml",
+        "lib/sl5/Microsoft.CSharp.dll",
+        "lib/sl5/Microsoft.CSharp.xml",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml",
+        "lib/sl5/System.Xml.Linq.dll",
+        "lib/sl5/System.Xml.Linq.xml",
+        "lib/sl5/de/Microsoft.CSharp.resources.dll",
+        "lib/sl5/de/System.Xml.Linq.resources.dll",
+        "lib/sl5/es/Microsoft.CSharp.resources.dll",
+        "lib/sl5/es/System.Xml.Linq.resources.dll",
+        "lib/sl5/fr/Microsoft.CSharp.resources.dll",
+        "lib/sl5/fr/System.Xml.Linq.resources.dll",
+        "lib/sl5/it/Microsoft.CSharp.resources.dll",
+        "lib/sl5/it/System.Xml.Linq.resources.dll",
+        "lib/sl5/ja/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ja/System.Xml.Linq.resources.dll",
+        "lib/sl5/ko/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ko/System.Xml.Linq.resources.dll",
+        "lib/sl5/ru/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ru/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hans/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hans/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hant/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hant/System.Xml.Linq.resources.dll",
+        "lib/win81/FluentAssertions.Core.dll",
+        "lib/win81/FluentAssertions.Core.pdb",
+        "lib/win81/FluentAssertions.Core.xml",
+        "lib/win81/FluentAssertions.dll",
+        "lib/win81/FluentAssertions.pdb",
+        "lib/win81/FluentAssertions.pri",
+        "lib/win81/FluentAssertions.xml",
+        "lib/wp8/FluentAssertions.Core.dll",
+        "lib/wp8/FluentAssertions.Core.pdb",
+        "lib/wp8/FluentAssertions.Core.xml",
+        "lib/wp8/FluentAssertions.dll",
+        "lib/wp8/FluentAssertions.pdb",
+        "lib/wp8/FluentAssertions.xml",
+        "lib/wpa81/FluentAssertions.Core.dll",
+        "lib/wpa81/FluentAssertions.Core.pdb",
+        "lib/wpa81/FluentAssertions.Core.xml",
+        "lib/wpa81/FluentAssertions.dll",
+        "lib/wpa81/FluentAssertions.pdb",
+        "lib/wpa81/FluentAssertions.pri",
+        "lib/wpa81/FluentAssertions.xml",
+        "lib/xamarin.ios/FluentAssertions.Core.dll",
+        "lib/xamarin.ios/FluentAssertions.Core.pdb",
+        "lib/xamarin.ios/FluentAssertions.Core.xml"
+      ]
+    },
+    "Microsoft.AspNet.Mvc/5.2.3": {
+      "sha512": "i8jZf5QrbcFmjiYWRD7o7qTak/oXKxV80MgP4cZ33A8GC0RBtBIdZ1VHaloGUg+qsHUz5rVkGpwenM+ugDz5PA==",
+      "type": "package",
+      "path": "Microsoft.AspNet.Mvc/5.2.3",
+      "files": [
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "Microsoft.AspNet.Mvc.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.Mvc.nuspec",
+        "lib/net45/System.Web.Mvc.dll",
+        "lib/net45/System.Web.Mvc.xml"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.2.3": {
+      "sha512": "leta+Q73O7+pR8ThTqXmwaNMSqwZQQ3BHfpUHd8S1XaUWe1jRVLitMHqo1AmY7wPNLyankPA1beiUKEGj8Q3Dw==",
+      "type": "package",
+      "path": "Microsoft.AspNet.Razor/3.2.3",
+      "files": [
+        "Microsoft.AspNet.Razor.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.Razor.nuspec",
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi/5.2.3": {
+      "sha512": "mGBfSy61+2dIdPwgguW8EaCVsbYTwwVHeCc/pVq1PhlZS87ColgJ++Hve40TrX6Dtqde0fo9M1Tt19rXlHC5GA==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi/5.2.3",
+      "files": [
+        "Microsoft.AspNet.WebApi.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi.Client/5.2.3",
+      "files": [
+        "Microsoft.AspNet.WebApi.Client.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Client.nuspec",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "sha512": "o90QYlRV8VKR1S7+EcJw9w8WSyVFLl+IIzN8ILZ+n2t6rsc/KS8kBxRzA7wCFPRUHhebCfLqilBk39phvanx3g==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi.Core/5.2.3",
+      "files": [
+        "Content/web.config.transform",
+        "Microsoft.AspNet.WebApi.Core.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Core.nuspec",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+      "sha512": "bhm4/BKdS3t6nK2R3NjCpxulcwtMFiHqVBDLuN3W5So1PhZfE+RBs7eVazGOhsEKCk7PoSmiSnl9DG0cpyfHtA==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebApi.WebHost/5.2.3",
+      "files": [
+        "Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.WebHost.nuspec",
+        "lib/net45/System.Web.Http.WebHost.dll",
+        "lib/net45/System.Web.Http.WebHost.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebPages/3.2.3": {
+      "sha512": "zbtxBERla5RE/mhftwbrXOzc0r6lh8WcnjpGW7QQe+PvSDDx1BgsTUGzfCXO/vJznHNpY5oCSYLt8Q5vUu7F0g==",
+      "type": "package",
+      "path": "Microsoft.AspNet.WebPages/3.2.3",
+      "files": [
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "Microsoft.AspNet.WebPages.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebPages.nuspec",
+        "lib/net45/System.Web.Helpers.dll",
+        "lib/net45/System.Web.Helpers.xml",
+        "lib/net45/System.Web.WebPages.Deployment.dll",
+        "lib/net45/System.Web.WebPages.Deployment.xml",
+        "lib/net45/System.Web.WebPages.Razor.dll",
+        "lib/net45/System.Web.WebPages.Razor.xml",
+        "lib/net45/System.Web.WebPages.dll",
+        "lib/net45/System.Web.WebPages.xml"
+      ]
+    },
+    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1": {
+      "sha512": "JAFfTGtdaFdTGFgkFv9E/uXLXRev0oFjyFi9X4LIu+KO1LrB0l4FYyvlciS486ff0UiLIYR0EujTB29Cn5rHyg==",
+      "type": "package",
+      "path": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.1",
+      "files": [
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1.nupkg.sha512",
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.nuspec",
+        "build/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props",
+        "content/web.config.install.xdt",
+        "content/web.config.uninstall.xdt",
+        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
+        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.Net.Compilers/1.0.0": {
+      "sha512": "qDceaxG9cBOSv/171eEb79OXeAOFNc6ZM2OLIZVUhNyTd0U463r9E8B61nMjTnLn35q/joP387bTFHrXGYHPAg==",
+      "type": "package",
+      "path": "Microsoft.Net.Compilers/1.0.0",
+      "files": [
+        "Microsoft.Net.Compilers.1.0.0.nupkg.sha512",
+        "Microsoft.Net.Compilers.nuspec",
+        "ThirdPartyNotices.rtf",
+        "build/Microsoft.Net.Compilers.props",
+        "tools/Microsoft.Build.Tasks.CodeAnalysis.dll",
+        "tools/Microsoft.CSharp.Core.targets",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Microsoft.VisualBasic.Core.targets",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.Reflection.Metadata.dll",
+        "tools/VBCSCompiler.exe",
+        "tools/VBCSCompiler.exe.config",
+        "tools/csc.exe",
+        "tools/vbc.exe"
+      ]
+    },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "type": "package",
+      "path": "Microsoft.Web.Infrastructure/1.0.0",
+      "files": [
+        "Microsoft.Web.Infrastructure.1.0.0.nupkg.sha512",
+        "Microsoft.Web.Infrastructure.nuspec",
+        "lib/net40/Microsoft.Web.Infrastructure.dll"
+      ]
+    },
+    "Moq/4.1.1308.2321": {
+      "sha512": "Mt1Z8RZ5xSuUgsvMip/YWnueIxfJ5IR3+uD8glui7NrUyYmV4j3eIIifWiDi/g1NainnIm6wc5hNmJBRNbyigA==",
+      "type": "package",
+      "path": "Moq/4.1.1308.2321",
+      "files": [
+        "Moq.4.1.1308.2321.nupkg.sha512",
+        "Moq.nuspec",
+        "lib/net35/Moq.dll",
+        "lib/net35/Moq.xml",
+        "lib/net40/Moq.dll",
+        "lib/net40/Moq.xml",
+        "lib/sl4/Moq.Silverlight.dll",
+        "lib/sl4/Moq.Silverlight.xml"
+      ]
+    },
+    "netDumbster/1.3.0.7": {
+      "sha512": "55ZdcjY4t/cLyi6G+IhBeCeNf1IHUIL/RK34cBPy6bmDtnei8NrSAopndSjux+z371e7ID9jonG4InYxVkif8w==",
+      "type": "package",
+      "path": "netDumbster/1.3.0.7",
+      "files": [
+        "lib/net40/netDumbster.XML",
+        "lib/net40/netDumbster.dll",
+        "lib/net40/netDumbster.pdb",
+        "netDumbster.1.3.0.7.nupkg.sha512",
+        "netDumbster.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/6.0.8": {
+      "sha512": "7ut47NDedTW19EbL0JpFDYUP62fcuz27hJrehCDNajdCS5NtqL+E39+7Um3OkNc2wl2ym7K8Ln5eNuLus6mVGQ==",
+      "type": "package",
+      "path": "Newtonsoft.Json/6.0.8",
+      "files": [
+        "Newtonsoft.Json.6.0.8.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "NSubstitute/1.10.0": {
+      "sha512": "EjtltQLY+h9Q5k+Qr/8rnR0/MUlTizF+LOHA8Y5uy4SzLAL1Yubuz1gW9qfisJEhsS2DPWoBym/1f3Huwr0E8w==",
+      "type": "package",
+      "path": "NSubstitute/1.10.0",
+      "files": [
+        "BreakingChanges.txt",
+        "CHANGELOG.txt",
+        "LICENSE.txt",
+        "NSubstitute.1.10.0.nupkg.sha512",
+        "NSubstitute.nuspec",
+        "README.txt",
+        "acknowledgements.txt",
+        "lib/net35/NSubstitute.XML",
+        "lib/net35/NSubstitute.dll",
+        "lib/net40/NSubstitute.XML",
+        "lib/net40/NSubstitute.dll",
+        "lib/net45/NSubstitute.XML",
+        "lib/net45/NSubstitute.dll"
+      ]
+    },
+    "Sitecore.Analytics.Core.NoReferences/8.2.160729": {
+      "sha512": "xzIalfJC/ha5ikLcALvuOcNUWb7hz31Wq9vIvMjsOKJ1Wtu/1EyvUORUAUWNxvDG6U+Y0cC28hb0gRhblpGGBw==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Core.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Core.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Core.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Core.dll"
+      ]
+    },
+    "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+      "sha512": "AAFEZN0xIqyAjUlMoVM5Cerx/SUVgOjuZK+21h3x9mhIIlm5nqn/SP2ESlkwDKNMkl01hdunqoK+5yAS/zls6Q==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Model.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Model.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Model.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Model.dll"
+      ]
+    },
+    "Sitecore.Analytics.NoReferences/8.2.160729": {
+      "sha512": "Yw1/qXKuSrCWsj/3i2uoSHJ5LHmlPbmuJPwH+8M0Ykt6igX604AFj5RePQT+IfO/ezCPV+qVG/I1aqKm15H5Fg==",
+      "type": "package",
+      "path": "Sitecore.Analytics.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.dll"
+      ]
+    },
+    "Sitecore.Analytics.Outcome.NoReferences/8.2.160729": {
+      "sha512": "Sq+bGmhTd/QmVvyqJ37J0IZAMsfdK34PASgt+OArzypge32uISMxB7FUiM6vjmvBM27Rhx50gG1SeyNM4BFPlA==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Outcome.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Outcome.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Outcome.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Outcome.dll"
+      ]
+    },
+    "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729": {
+      "sha512": "q/TvkjU4/RdAz3LB+tZsyogIruHirLLatnJEd4iUuIpbr5fK8cK0rU8Y8+q1VIrsckWiekvyuQi1TygPJBxPAg==",
+      "type": "package",
+      "path": "Sitecore.ContentSearch.Linq.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ContentSearch.Linq.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ContentSearch.Linq.Noreferences.nuspec",
+        "lib/NET452/Sitecore.ContentSearch.Linq.dll"
+      ]
+    },
+    "Sitecore.ContentSearch.NoReferences/8.2.160729": {
+      "sha512": "X0+6VLe6Jpkr/4n06ezwStVtbglslLHVslQSL9/9s+1dOu5Cj5PyLNCqhj6aR2AkbiHQ+RC5DjIXYceiFFAEgg==",
+      "type": "package",
+      "path": "Sitecore.ContentSearch.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ContentSearch.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ContentSearch.Noreferences.nuspec",
+        "lib/NET452/Sitecore.ContentSearch.dll"
+      ]
+    },
+    "Sitecore.ExperienceEditor.NoReferences/8.2.160729": {
+      "sha512": "dVBuV/BI0hFWUCWDtRECmGN3a4C1T1/lcU+oW+x8tcgDjWCux0FnA54/ZoFQmAUcCcBhHen/F/pKmihhW3WMOg==",
+      "type": "package",
+      "path": "Sitecore.ExperienceEditor.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ExperienceEditor.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ExperienceEditor.Noreferences.nuspec",
+        "lib/NET452/Sitecore.ExperienceEditor.dll"
+      ]
+    },
+    "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729": {
+      "sha512": "7cQ5IQ7zB0Qy8CJLUvXXqWYDBRvyqDnI1ht6HgHhK0FwLbleXRqjxhLyA40+llVaiPWsfptcAz0V8kSblGaMFw==",
+      "type": "package",
+      "path": "Sitecore.ExperienceExplorer.Business.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.ExperienceExplorer.Business.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.ExperienceExplorer.Business.NoReferences.nuspec",
+        "lib/NET452/Sitecore.ExperienceExplorer.Business.dll"
+      ]
+    },
+    "Sitecore.FakeDb/1.1.1": {
+      "sha512": "LxQ74spvFpLvkH7M/fmHc8F4L3/6ynduOeXjrD+yxDxYrCsztRkdyP0f+QKKFt7tZQWqAopsVN8cbUTbap9c6A==",
+      "type": "package",
+      "path": "Sitecore.FakeDb/1.1.1",
+      "files": [
+        "Sitecore.FakeDb.1.1.1.nupkg.sha512",
+        "Sitecore.FakeDb.nuspec",
+        "content/App.config",
+        "lib/net45/Sitecore.FakeDb.XML",
+        "lib/net45/Sitecore.FakeDb.dll"
+      ]
+    },
+    "Sitecore.FakeDb.AutoFixture/1.1.0": {
+      "sha512": "JJlhQDRZgab6vgNlBfQOBM7H5MNZGOP6h3v+chhR9qXjYaT0vQLlSq4Vt+YZtLEpfje1tRNXIbX+Nsxa/j/MCw==",
+      "type": "package",
+      "path": "Sitecore.FakeDb.AutoFixture/1.1.0",
+      "files": [
+        "Sitecore.FakeDb.AutoFixture.1.1.0.nupkg.sha512",
+        "Sitecore.FakeDb.AutoFixture.nuspec",
+        "lib/net45/Sitecore.FakeDb.AutoFixture.XML",
+        "lib/net45/Sitecore.FakeDb.AutoFixture.dll"
+      ]
+    },
+    "Sitecore.FakeDb.NSubstitute/1.1.0": {
+      "sha512": "zVK7cf4dtW42mG3nGCbyDbYSySoo49SeCu1bQKGNSV4jG/oX1SsrdBN3uD6uF7rMoKp9ZPlZ69KYV3NcVGgCAg==",
+      "type": "package",
+      "path": "Sitecore.FakeDb.NSubstitute/1.1.0",
+      "files": [
+        "Sitecore.FakeDb.NSubstitute.1.1.0.nupkg.sha512",
+        "Sitecore.FakeDb.NSubstitute.nuspec",
+        "content/App.config.transform",
+        "lib/net45/Sitecore.FakeDb.NSubstitute.dll"
+      ]
+    },
+    "Sitecore.Kernel.NoReferences/8.2.160729": {
+      "sha512": "BztABih+o8QKDqvhIpkHu7PL4/F67BzKlTw4KBQc0a0ZwyhayUxW4Is827bO2XaITP6g5IhjbMZN5+TtmmsKCA==",
+      "type": "package",
+      "path": "Sitecore.Kernel.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Kernel.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Kernel.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Kernel.dll"
+      ]
+    },
+    "Sitecore.Mvc.NoReferences/8.2.160729": {
+      "sha512": "oski2btvh1okAWQNV1IxhkgeDA7omY2rAP8JGdpKJyqK3rgc4qur4NbqtuX9wCVPvUrT1EhrA3uS6Tfc2OOKOQ==",
+      "type": "package",
+      "path": "Sitecore.Mvc.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Mvc.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Mvc.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Mvc.dll"
+      ]
+    },
+    "Sitecore.Nexus.NoReferences/8.2.160729": {
+      "sha512": "IILsuEQSaoPJUc158rLLHbW1t5FhVrswbB3Fwk1sxouatLc8KLxvmmW67vcawmGGEP7e3ODikcJzDAnm/T1ZKA==",
+      "type": "package",
+      "path": "sitecore.nexus.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Nexus.NoReferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Nexus.NoReferences.nuspec",
+        "lib/NET452/Sitecore.Nexus.dll"
+      ]
+    },
+    "xunit/2.1.0": {
+      "sha512": "u/7VQSOSXa7kSG4iK6Lcn7RqKZQ3hk7cnyMNVMpXHSP0RI5VQEtc44hvkG3LyWOVsx1dhUDD3rPAHAxyOUDQJw==",
+      "type": "package",
+      "path": "xunit/2.1.0",
+      "files": [
+        "xunit.2.1.0.nupkg.sha512",
+        "xunit.nuspec"
+      ]
+    },
+    "xunit.abstractions/2.0.0": {
+      "sha512": "NAdxKQRzuLnCZ0g++x6i87/8rMBpQoRiRlRNLAqfODm2zJPbteHRoSER3DXfxnqrHXyBJT8rFaZ8uveBeQyaMA==",
+      "type": "package",
+      "path": "xunit.abstractions/2.0.0",
+      "files": [
+        "lib/net35/xunit.abstractions.dll",
+        "lib/net35/xunit.abstractions.xml",
+        "lib/portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS/xunit.abstractions.dll",
+        "lib/portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS/xunit.abstractions.xml",
+        "xunit.abstractions.2.0.0.nupkg.sha512",
+        "xunit.abstractions.nuspec"
+      ]
+    },
+    "xunit.assert/2.1.0": {
+      "sha512": "Hhhw+YaTe+BGhbr57dxVE+6VJk8BfThqFFii1XIsSZ4qx+SSCixprJC10JkiLRVSTfWyT8W/4nAf6NQgIrmBxA==",
+      "type": "package",
+      "path": "xunit.assert/2.1.0",
+      "files": [
+        "lib/dotnet/xunit.assert.dll",
+        "lib/dotnet/xunit.assert.pdb",
+        "lib/dotnet/xunit.assert.xml",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.assert.dll",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.assert.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.assert.xml",
+        "xunit.assert.2.1.0.nupkg.sha512",
+        "xunit.assert.nuspec"
+      ]
+    },
+    "xunit.core/2.1.0": {
+      "sha512": "jlbYdPbnkPIRwJllcT/tQZCNsSElVDEymdpJfH79uTUrPARkELVYw9o/zhAjKZXmeikGqGK5C2Yny4gTNoEu0Q==",
+      "type": "package",
+      "path": "xunit.core/2.1.0",
+      "files": [
+        "build/_desktop/xunit.execution.desktop.dll",
+        "build/dnx451/_._",
+        "build/monoandroid/_._",
+        "build/monotouch/_._",
+        "build/net45/_._",
+        "build/portable-net45+win8+wp8+wpa81/xunit.core.props",
+        "build/win8/_._",
+        "build/win81/xunit.core.props",
+        "build/wp8/_._",
+        "build/wpa81/xunit.core.props",
+        "build/xamarinios/_._",
+        "xunit.core.2.1.0.nupkg.sha512",
+        "xunit.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.core/2.1.0": {
+      "sha512": "ANWM3WxeaeHjACLRlmrv+xOc0WAcr3cvIiJE+gqbdzTv1NCH4p1VDyT+8WmmdCc9db0WFiJLaDy4YTYsL1wWXw==",
+      "type": "package",
+      "path": "xunit.extensibility.core/2.1.0",
+      "files": [
+        "lib/dotnet/xunit.core.dll",
+        "lib/dotnet/xunit.core.dll.tdnet",
+        "lib/dotnet/xunit.core.pdb",
+        "lib/dotnet/xunit.core.xml",
+        "lib/dotnet/xunit.runner.tdnet.dll",
+        "lib/dotnet/xunit.runner.utility.desktop.dll",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.core.dll",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.core.dll.tdnet",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.core.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.core.xml",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.runner.tdnet.dll",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.runner.utility.desktop.dll",
+        "xunit.extensibility.core.2.1.0.nupkg.sha512",
+        "xunit.extensibility.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.execution/2.1.0": {
+      "sha512": "tAoNafoVknKa3sZJPMvtZRnhOSk3gasEGeceSm7w/gyGwsR/OXFxndWJB1xSHeoy33d3Z6jFqn4A3j+pWCF0Ew==",
+      "type": "package",
+      "path": "xunit.extensibility.execution/2.1.0",
+      "files": [
+        "lib/dnx451/xunit.execution.dotnet.dll",
+        "lib/dnx451/xunit.execution.dotnet.pdb",
+        "lib/dnx451/xunit.execution.dotnet.xml",
+        "lib/dotnet/xunit.execution.dotnet.dll",
+        "lib/dotnet/xunit.execution.dotnet.pdb",
+        "lib/dotnet/xunit.execution.dotnet.xml",
+        "lib/monoandroid/xunit.execution.dotnet.dll",
+        "lib/monoandroid/xunit.execution.dotnet.pdb",
+        "lib/monoandroid/xunit.execution.dotnet.xml",
+        "lib/monotouch/xunit.execution.dotnet.dll",
+        "lib/monotouch/xunit.execution.dotnet.pdb",
+        "lib/monotouch/xunit.execution.dotnet.xml",
+        "lib/net45/xunit.execution.desktop.dll",
+        "lib/net45/xunit.execution.desktop.pdb",
+        "lib/net45/xunit.execution.desktop.xml",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.execution.dotnet.dll",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.execution.dotnet.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.execution.dotnet.xml",
+        "lib/win8/xunit.execution.dotnet.dll",
+        "lib/win8/xunit.execution.dotnet.pdb",
+        "lib/win8/xunit.execution.dotnet.xml",
+        "lib/wp8/xunit.execution.dotnet.dll",
+        "lib/wp8/xunit.execution.dotnet.pdb",
+        "lib/wp8/xunit.execution.dotnet.xml",
+        "lib/wpa81/xunit.execution.dotnet.dll",
+        "lib/wpa81/xunit.execution.dotnet.pdb",
+        "lib/wpa81/xunit.execution.dotnet.xml",
+        "lib/xamarinios/xunit.execution.dotnet.dll",
+        "lib/xamarinios/xunit.execution.dotnet.pdb",
+        "lib/xamarinios/xunit.execution.dotnet.xml",
+        "xunit.extensibility.execution.2.1.0.nupkg.sha512",
+        "xunit.extensibility.execution.nuspec"
+      ]
+    },
+    "xunit.runner.visualstudio/2.1.0": {
+      "sha512": "44vJFEQopk8SHfPMjgzn4QevRNfITO7zRZBo9lb+OPhID7v/q2gFaOgyEUomKilq2rwWUQ0m9yquBOzJL4L4aA==",
+      "type": "package",
+      "path": "xunit.runner.visualstudio/2.1.0",
+      "files": [
+        "build/_common/xunit.abstractions.dll",
+        "build/_common/xunit.runner.utility.desktop.dll",
+        "build/_common/xunit.runner.utility.dotnet.dll",
+        "build/_common/xunit.runner.visualstudio.testadapter.dll",
+        "build/monoandroid/_._",
+        "build/monotouch/_._",
+        "build/net20/xunit.runner.visualstudio.props",
+        "build/portable-net45+win8+wp8+wpa81/xunit.runner.visualstudio.props",
+        "build/uap10.0/xunit.runner.visualstudio.props",
+        "build/uap10.0/xunit.runner.visualstudio.targets",
+        "build/uap10.0/xunit.runner.visualstudio.uwp.dll",
+        "build/uap10.0/xunit.runner.visualstudio.uwp.pri",
+        "build/win8/_._",
+        "build/win81/xunit.runner.visualstudio.props",
+        "build/win81/xunit.runner.visualstudio.targets",
+        "build/win81/xunit.runner.visualstudio.win81.dll",
+        "build/win81/xunit.runner.visualstudio.win81.pri",
+        "build/wp8/_._",
+        "build/wpa81/xunit.runner.visualstudio.props",
+        "build/wpa81/xunit.runner.visualstudio.targets",
+        "build/wpa81/xunit.runner.visualstudio.wpa81.dll",
+        "build/wpa81/xunit.runner.visualstudio.wpa81.pri",
+        "build/xamarinios/_._",
+        "xunit.runner.visualstudio.2.1.0.nupkg.sha512",
+        "xunit.runner.visualstudio.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "AutoFixture >= 3.47.4",
+      "AutoFixture.AutoNSubstitute >= 3.47.4",
+      "AutoFixture.Xunit2 >= 3.47.4",
+      "FluentAssertions >= 4.7.0",
+      "Microsoft.AspNet.Razor >= 3.2.3",
+      "Microsoft.AspNet.WebApi >= 5.2.3",
+      "Microsoft.AspNet.WebApi.Client >= 5.2.3",
+      "Microsoft.AspNet.WebApi.Core >= 5.2.3",
+      "Microsoft.AspNet.WebApi.WebHost >= 5.2.3",
+      "Microsoft.AspNet.WebPages >= 3.2.3",
+      "Microsoft.Web.Infrastructure >= 1.0.0",
+      "Moq >= 4.1.1308.2321",
+      "NSubstitute >= 1.10.0",
+      "Newtonsoft.Json >= 6.0.8",
+      "Sitecore.Analytics.NoReferences >= 8.2.160729",
+      "Sitecore.FakeDb >= 1.1.1",
+      "Sitecore.FakeDb.AutoFixture >= 1.1.0",
+      "Sitecore.FakeDb.NSubstitute >= 1.1.0",
+      "Sitecore.Kernel.NoReferences >= 8.2.160729",
+      "Sitecore.Nexus.NoReferences >= 8.2.160729",
+      "netDumbster >= 1.3.0.7",
+      "xunit >= 2.1.0",
+      "xunit.abstractions >= 2.0.0",
+      "xunit.assert >= 2.1.0",
+      "xunit.core >= 2.1.0",
+      "xunit.extensibility.core >= 2.1.0",
+      "xunit.extensibility.execution >= 2.1.0",
+      "xunit.runner.visualstudio >= 2.1.0"
+    ],
+    ".NETFramework,Version=v4.6": []
+  }
+}

@@ -71,7 +71,6 @@
     <Content Include="App_Config\Include\Feature\Feature.PageContent.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\PageContent\ChildPageList.cshtml" />
     <Content Include="Views\PageContent\PageTeaser.cshtml" />

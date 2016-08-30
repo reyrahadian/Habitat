@@ -81,7 +81,6 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Search\GlobalSearch.cshtml" />
     <Content Include="Views\Search\SearchResults.cshtml" />

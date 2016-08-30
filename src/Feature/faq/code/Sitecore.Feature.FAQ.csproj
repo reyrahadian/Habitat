@@ -61,9 +61,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Views\web.config" />
     <Content Include="Views\FAQ\FaqAccordion.cshtml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />

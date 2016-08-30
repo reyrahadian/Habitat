@@ -88,7 +88,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\DynamicPlaceholders\DynamicPlaceholders.config" />
-    <Content Include="packages.config" />
     <None Include="web.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.Debug.config">

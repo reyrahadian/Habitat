@@ -70,7 +70,6 @@
     <Content Include="App_Config\Include\Feature\Feature.Accounts.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Scripts\Accounts\Accounts.js" />
     <Content Include="Views\Accounts\Login.cshtml" />

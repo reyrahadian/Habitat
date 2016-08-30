@@ -68,7 +68,6 @@
     <Content Include="App_Config\Include\Feature\Feature.News.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\News\NewsTeaser.cshtml" />
     <Content Include="Views\News\NewsPageHeader.cshtml" />

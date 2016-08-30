@@ -1,0 +1,221 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {
+        "type": "package"
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {
+        "type": "package"
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-anycpu": {
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Compilers": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
+        }
+      },
+      "Microsoft.Net.Compilers/1.0.0": {
+        "type": "package"
+      },
+      "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.Model.dll": {}
+        }
+      },
+      "Sitecore.Analytics.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Analytics.dll": {}
+        }
+      },
+      "Sitecore.Kernel.NoReferences/8.2.160729": {
+        "type": "package",
+        "compile": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        },
+        "runtime": {
+          "lib/NET452/Sitecore.Kernel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0": {
+      "sha512": "XBYMaN07HBQaPixQ9gbnNdjp9JyWbC/5JAyQCDcWebss2E0RPv43ZUru6lFnDhhDhMbpbjmCg/lsXeMjbuF1rg==",
+      "type": "package",
+      "path": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0",
+      "files": [
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg.sha512",
+        "Microsoft.CodeDom.Providers.DotNetCompilerPlatform.nuspec",
+        "build/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props",
+        "content/web.config.install.xdt",
+        "content/web.config.uninstall.xdt",
+        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
+        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml",
+        "tools/init.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.Net.Compilers/1.0.0": {
+      "sha512": "qDceaxG9cBOSv/171eEb79OXeAOFNc6ZM2OLIZVUhNyTd0U463r9E8B61nMjTnLn35q/joP387bTFHrXGYHPAg==",
+      "type": "package",
+      "path": "Microsoft.Net.Compilers/1.0.0",
+      "files": [
+        "Microsoft.Net.Compilers.1.0.0.nupkg.sha512",
+        "Microsoft.Net.Compilers.nuspec",
+        "ThirdPartyNotices.rtf",
+        "build/Microsoft.Net.Compilers.props",
+        "tools/Microsoft.Build.Tasks.CodeAnalysis.dll",
+        "tools/Microsoft.CSharp.Core.targets",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Microsoft.VisualBasic.Core.targets",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.Reflection.Metadata.dll",
+        "tools/VBCSCompiler.exe",
+        "tools/VBCSCompiler.exe.config",
+        "tools/csc.exe",
+        "tools/vbc.exe"
+      ]
+    },
+    "Sitecore.Analytics.Model.NoReferences/8.2.160729": {
+      "sha512": "AAFEZN0xIqyAjUlMoVM5Cerx/SUVgOjuZK+21h3x9mhIIlm5nqn/SP2ESlkwDKNMkl01hdunqoK+5yAS/zls6Q==",
+      "type": "package",
+      "path": "Sitecore.Analytics.Model.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Model.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Model.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.Model.dll"
+      ]
+    },
+    "Sitecore.Analytics.NoReferences/8.2.160729": {
+      "sha512": "Yw1/qXKuSrCWsj/3i2uoSHJ5LHmlPbmuJPwH+8M0Ykt6igX604AFj5RePQT+IfO/ezCPV+qVG/I1aqKm15H5Fg==",
+      "type": "package",
+      "path": "Sitecore.Analytics.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Analytics.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Analytics.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Analytics.dll"
+      ]
+    },
+    "Sitecore.Kernel.NoReferences/8.2.160729": {
+      "sha512": "BztABih+o8QKDqvhIpkHu7PL4/F67BzKlTw4KBQc0a0ZwyhayUxW4Is827bO2XaITP6g5IhjbMZN5+TtmmsKCA==",
+      "type": "package",
+      "path": "Sitecore.Kernel.NoReferences/8.2.160729",
+      "files": [
+        "Sitecore.Kernel.Noreferences.8.2.160729.nupkg.sha512",
+        "Sitecore.Kernel.Noreferences.nuspec",
+        "lib/NET452/Sitecore.Kernel.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform >= 1.0.0",
+      "Microsoft.Net.Compilers >= 1.0.0",
+      "Sitecore.Analytics.Model.NoReferences >= 8.2.160729",
+      "Sitecore.Analytics.NoReferences >= 8.2.160729",
+      "Sitecore.Kernel.NoReferences >= 8.2.160729"
+    ],
+    ".NETFramework,Version=v4.6": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}
