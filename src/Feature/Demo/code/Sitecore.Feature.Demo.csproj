@@ -54,54 +54,55 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Analytics.8.1.0.151207\lib\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.8.1.0.160519\lib\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Automation, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Automation.8.1.0.151207\lib\Sitecore.Analytics.Automation.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Automation.8.1.0.160519\lib\Sitecore.Analytics.Automation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Core, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Core.8.1.0.151207\lib\Sitecore.Analytics.Core.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Core.8.1.0.160519\lib\Sitecore.Analytics.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Model.8.1.0.151207\lib\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Model.8.1.0.160519\lib\Sitecore.Analytics.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Outcome, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Outcome.8.1.0.151207\lib\Sitecore.Analytics.Outcome.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Outcome.8.1.0.160519\lib\Sitecore.Analytics.Outcome.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.CES.DeviceDetection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.CES.DeviceDetection.8.1.0.151207\lib\Sitecore.CES.DeviceDetection.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.CES.DeviceDetection.8.1.0.160519\lib\Sitecore.CES.DeviceDetection.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Cintel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Cintel.8.1.0.151207\lib\Sitecore.Cintel.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Cintel.8.1.0.160519\lib\Sitecore.Cintel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ExperienceEditor, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.ExperienceEditor.8.1.0.151207\lib\Sitecore.ExperienceEditor.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.ExperienceEditor.8.1.0.160519\lib\Sitecore.ExperienceEditor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ExperienceExplorer.Business, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.ExperienceExplorer.Business.8.1.0.151207\lib\Sitecore.ExperienceExplorer.Business.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.ExperienceExplorer.Business.8.1.0.160519\lib\Sitecore.ExperienceExplorer.Business.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.151207\lib\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.160519\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Marketing, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Marketing.8.1.0.151207\lib\Sitecore.Marketing.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Marketing.8.1.0.160519\lib\Sitecore.Marketing.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Marketing.Taxonomy, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Marketing.Taxonomy.8.1.0.151207\lib\Sitecore.Marketing.Taxonomy.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Marketing.Taxonomy.8.1.0.160519\lib\Sitecore.Marketing.Taxonomy.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.8.1.0.151207\lib\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.8.1.0.160519\lib\Sitecore.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
