@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {8BDCAF0D-54E2-4B20-8671-4B70766631AD}
+id: {6436850D-E938-43F7-83B1-D0325369A3C9}
 database: master
 path: /sitecore/layout/Renderings/Modules
 parent: {32566F0E-7686-45F1-A12F-D7260BD78BC3}
@@ -8,12 +8,12 @@ name: Modules
 master: {00000000-0000-0000-0000-000000000000}
 template: {239F9CF4-E5A0-44E0-B342-0F32CD4C6D8B}
 templatekey: Node
-created: 20160830T151223:636081667439770000
+created: 20160830T162649:636081712092130000
 
 ----version----
 language: en
 version: 1
-revision: 607171be-a32f-4062-9c7b-f1c4e763a656
+revision: 816b3551-0794-47a7-925d-47f8ca3e7a0c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -21,21 +21,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20160830T151224Z
+20160830T162649Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-607171be-a32f-4062-9c7b-f1c4e763a656
+816b3551-0794-47a7-925d-47f8ca3e7a0c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160830T151224Z
+20160830T162649Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
