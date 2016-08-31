@@ -5,10 +5,10 @@
     "Microsoft.Net.Compilers": "1.0.0",
     "Sitecore.Analytics.NoReferences": "8.2.160729",
     "Sitecore.Analytics.Outcome.NoReferences": "8.2.160729",
-    "Sitecore.Forms.Core": "8.1.0.151217",
+    "Sitecore.Forms.Core.NoReferences": "8.2.160801",
     "Sitecore.Kernel.NoReferences": "8.2.160729",
-    "Sitecore.WFFM.Abstractions": "8.1.0.151217",
-    "Sitecore.WFFM.Actions": "8.1.0.151217"
+    "Sitecore.WFFM.Abstractions.NoReferences": "8.2.160801",
+    "Sitecore.WFFM.Actions.NoReferences": "8.2.160801"
   },
   "frameworks": {
     "net46": {}
