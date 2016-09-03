@@ -58,23 +58,23 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.8.1.0.160519\lib\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.NoReferences.8.1.0.160519\lib\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Analytics.8.1.0.160519\lib\Sitecore.ContentSearch.Analytics.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Analytics.NoReferences.8.1.0.160519\lib\Sitecore.ContentSearch.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Linq.8.1.0.160519\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Linq.NoReferences.8.1.0.160519\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.8.1.0.160519\lib\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.1.0.160519\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.8.1.0.160519\lib\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.8.1.0.160519\lib\Sitecore.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
