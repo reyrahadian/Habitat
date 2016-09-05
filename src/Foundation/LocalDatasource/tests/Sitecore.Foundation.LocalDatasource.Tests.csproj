@@ -70,13 +70,13 @@
       <HintPath>..\..\..\..\packages\Sitecore.FakeDb.AutoFixture.1.1.1\lib\net45\Sitecore.FakeDb.AutoFixture.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.1.0.160519\lib\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.160729\lib\NET452\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="sitecore.nexus, Version=1.0.0.4407, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\sitecore.nexus.NoReferences.8.1.0.160519\lib\sitecore.nexus.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Nexus, Version=1.0.4415.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Nexus.NoReferences.8.2.160729\lib\NET452\Sitecore.Nexus.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
