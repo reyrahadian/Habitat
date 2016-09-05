@@ -1,23 +1,13 @@
-﻿@using Sitecore.Feature.PageContent
-@using Sitecore.Foundation.Alerts
-@using Sitecore.Foundation.Alerts.Extensions
-@using Sitecore.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
-
-@if (!Model?.Item?.IsDerived(Templates.HasPageContent.ID) ?? true)
-{
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
-  return;
-}
+﻿@model Sitecore.Feature.PageContent.Feature.PageContent._HasPageContent
 
 <header>
   <h1>
-    @Html.Sitecore().Field(Templates.HasPageContent.Fields.Title, Model.Item)
+   @Html.Glass().Editable(Model, x => x.Title)
   </h1>
-  @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (!String.IsNullOrWhiteSpace(Model.Summary) || Html.Glass().IsInEditingMode)
   {
     <div class="lead">
-      @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary, Model.Item)
+      @Html.Glass().Editable(Model, x => x.Summary)
     </div>
   }
 </header>
