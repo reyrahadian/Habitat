@@ -24,6 +24,7 @@
   <!-- Latest compiled and minified JavaScript -->
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()
+  <link href="/Coveo/css/CoveoLayout.css" rel="stylesheet" />
   @Html.Sitecore().VisitorIdentification()
 </head>
 <body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
