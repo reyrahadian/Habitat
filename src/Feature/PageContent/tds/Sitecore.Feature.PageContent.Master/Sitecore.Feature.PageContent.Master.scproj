@@ -20,10 +20,15 @@
     <AssemblyName>Sitecore.Feature.PageContent.Master</AssemblyName>
     <Name>Sitecore.Feature.PageContent.Master</Name>
     <RootNamespace>Sitecore.Feature.PageContent.Master</RootNamespace>
-    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
     <ManageRoles>True</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Feature.PageContent</CodeGenTargetProject>
+    <CodeGenFile>GlassModels.cs</CodeGenFile>
+    <BaseTransformFile />
+    <HeaderTransformFile>glassv4header.tt</HeaderTransformFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -127,6 +132,8 @@
     <SitecoreItem Include="sitecore\templates\Feature\PageContent.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <CodeGenTemplate>GlassV4Item.tt</CodeGenTemplate>
+      <CodeGenNamespace>Feature.PageContent</CodeGenNamespace>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\PageContent\_HasPageContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -161,6 +168,15 @@
   </ItemGroup>
   <ItemGroup>
     <SitecoreRole Include="Sitecore Roles\modules\Feature PageContent Admin.role" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\glassv4header.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\GlassV4Item.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\Helpers.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\Inflector.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\ItemPaths.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\stringextensions.tt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
