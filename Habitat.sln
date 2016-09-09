@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.SitecoreExtensions", "src\foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj", "{B535703F-8D07-4F23-A533-2974BB4CC7B1}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		gulp-config.js = gulp-config.js
 		gulpfile-ci.js = gulpfile-ci.js
 		gulpfile.js = gulpfile.js
+		Habitat.CustomRules.ruleset = Habitat.CustomRules.ruleset
 		LICENSE = LICENSE
 		package.json = package.json
 		package.xml = package.xml
@@ -626,6 +627,8 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.LocalDa
 		{F10B8E08-67FE-4EF5-A1A8-B570AAE5D781} = {F10B8E08-67FE-4EF5-A1A8-B570AAE5D781}
 		{8FC51E9F-0C50-4C19-B45B-1E15B327BC50} = {8FC51E9F-0C50-4C19-B45B-1E15B327BC50}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Features", "src\Feature\Sitecore.Features\Sitecore.Features.csproj", "{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1491,6 +1494,14 @@ Global
 		{D28DCFC0-A1B4-4F91-8038-19E0E1103E6A}.Release|x64.ActiveCfg = Release|Any CPU
 		{D28DCFC0-A1B4-4F91-8038-19E0E1103E6A}.Release|x64.Build.0 = Release|Any CPU
 		{D28DCFC0-A1B4-4F91-8038-19E0E1103E6A}.Release|x64.Deploy.0 = Release|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Debug|x64.Build.0 = Debug|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Release|x64.ActiveCfg = Release|Any CPU
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1620,5 +1631,6 @@ Global
 		{5017B3BF-E175-4C13-9500-B64DDB3CE0A5} = {66E8BB68-FF26-4FEE-A336-3F8284F2F3E2}
 		{7791B7E8-0C05-41B7-8EA7-BBD4107581E0} = {6B260718-681F-41DB-AAFE-13BA15BB6711}
 		{D28DCFC0-A1B4-4F91-8038-19E0E1103E6A} = {65673857-6BDF-408E-ACD8-417A0BCCAB7A}
+		{7BF42CAB-1509-4243-9E25-B78C40DC5E3C} = {755F9E42-1707-4E1A-AE6D-3FD8A25118C0}
 	EndGlobalSection
 EndGlobal
