@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Enforce Habitat Conventions" Description=" " ToolsVersion="14.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="ScHab001" Action="Error" />
+    <Rule Id="ScHab002" Action="Error" />
+    <Rule Id="ScHab003" Action="Error" />
+    <Rule Id="ScHab004" Action="Error" />
+    <Rule Id="ScHab005" Action="Error" />
+    <Rule Id="ScHab006" Action="Error" />
+  </Rules>
+</RuleSet>
