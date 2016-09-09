@@ -137,6 +137,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.CloudPlatformClient.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.CloudPlatformClient.Custom.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.SearchProvider.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.SearchProvider.Custom.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.SearchProvider.Licensing.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.SearchProvider.Rest.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.SearchProvider.Rest.Custom.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.UI.Controls.config" />
+    <None Include="App_Config\Include\Coveo\SwitchMasterToWeb.Coveo.config.example" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Search\GlobalSearch.cshtml" />
     <Content Include="Views\Search\SearchResults.cshtml" />
