@@ -7,12 +7,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c69846fc-aaa9-4dcd-8227-ec0529219b33</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>
-    </SourceWebPhysicalPath>
-    <SourceWebProject>
-    </SourceWebProject>
-    <SourceWebVirtualPath>
-    </SourceWebVirtualPath>
+    <SourceWebPhysicalPath>..\Sitecore.Features</SourceWebPhysicalPath>
+    <SourceWebProject>{7bf42cab-1509-4243-9e25-b78c40dc5e3c}|src\Feature\Sitecore.Features\Sitecore.Features.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Sitecore.Features.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -23,6 +20,8 @@
     <AssemblyName>Sitecore.Features.Master</AssemblyName>
     <Name>Sitecore.Features.Master</Name>
     <RootNamespace>Sitecore.Features.Master</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1631,6 +1630,12 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Features\Sitecore.Features.csproj">
+      <Project>{7bf42cab-1509-4243-9e25-b78c40dc5e3c}</Project>
+      <Name>Sitecore.Features</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
