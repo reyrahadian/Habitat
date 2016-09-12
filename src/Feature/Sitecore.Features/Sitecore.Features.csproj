@@ -441,10 +441,6 @@
       <Project>{0d6ba4d8-c469-4ae9-9ebb-93bdf7d7e78f}</Project>
       <Name>Sitecore.Foundation.Dictionary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Foundation\FieldEditor\code\Sitecore.Foundation.FieldEditor.csproj">
-      <Project>{812c16c9-1e8a-42dc-a1c0-6896d570f63a}</Project>
-      <Name>Sitecore.Foundation.FieldEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\Forms\code\Sitecore.Foundation.Forms.csproj">
       <Project>{a7b7ec6a-5804-4352-9655-06eb07f033fa}</Project>
       <Name>Sitecore.Foundation.Forms</Name>

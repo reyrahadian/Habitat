@@ -216,9 +216,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{63F04251-177B-49CB-B1CF-206B56CCF889}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Forms", "src\Foundation\Forms\code\Sitecore.Foundation.Forms.csproj", "{A7B7EC6A-5804-4352-9655-06EB07F033FA}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7791B7E8-0C05-41B7-8EA7-BBD4107581E0} = {7791B7E8-0C05-41B7-8EA7-BBD4107581E0}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Forms.Tests", "src\Foundation\Forms\tests\Sitecore.Foundation.Forms.Tests.csproj", "{21D1A592-8E0D-4463-B68E-FA7EB6EF7182}"
 EndProject
@@ -257,10 +254,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FieldEditor", "FieldEditor", "{6B260718-681F-41DB-AAFE-13BA15BB6711}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.FieldEditor", "src\Foundation\FieldEditor\code\Sitecore.Foundation.FieldEditor.csproj", "{812C16C9-1E8A-42DC-A1C0-6896D570F63A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{031DE74A-D92D-4E68-90C3-8E99EC0D83A5} = {031DE74A-D92D-4E68-90C3-8E99EC0D83A5}
-		{5017B3BF-E175-4C13-9500-B64DDB3CE0A5} = {5017B3BF-E175-4C13-9500-B64DDB3CE0A5}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.FieldEditor.Tests", "src\Foundation\FieldEditor\tests\Sitecore.Foundation.FieldEditor.Tests.csproj", "{F1585C81-8BFD-44D5-8601-C4A4CF5BEA33}"
 EndProject

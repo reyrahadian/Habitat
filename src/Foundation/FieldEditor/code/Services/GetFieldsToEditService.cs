@@ -21,6 +21,7 @@ namespace Sitecore.Foundation.FieldEditor.Services
 
     public static PageEditFieldEditorOptions GetFieldEditorOptions(NameValueCollection form, string pipedFields, Item item)
     {
+            //var repo = new Sitecore.Feature.Accounts.Repositories.AccountRepository(null);
       var fields = pipedFields.Split('|').Where(fieldName => item.Fields[fieldName] != null).Select(fieldName => new FieldDescriptor(item, fieldName)).ToList();
       var options = new PageEditFieldEditorOptions(form, fields)
                     {

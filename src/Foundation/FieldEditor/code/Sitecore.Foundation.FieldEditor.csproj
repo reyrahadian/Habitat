@@ -36,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>CustomRuleset.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -124,6 +125,10 @@
     <Compile Include="Services\GetFieldsToEditService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\Sitecore.Features\Sitecore.Features.csproj">
+      <Project>{7bf42cab-1509-4243-9e25-b78c40dc5e3c}</Project>
+      <Name>Sitecore.Features</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
       <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>
@@ -151,7 +156,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\HedgehogDevelopment.FxCop.Habitat.1.0.0.4\build\HedgehogDevelopment.FxCop.Habitat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\HedgehogDevelopment.FxCop.Habitat.1.0.0.4\build\HedgehogDevelopment.FxCop.Habitat.targets'))" />
   </Target>
+  <Import Project="..\..\..\..\packages\HedgehogDevelopment.FxCop.Habitat.1.0.0.4\build\HedgehogDevelopment.FxCop.Habitat.targets" Condition="Exists('..\..\..\..\packages\HedgehogDevelopment.FxCop.Habitat.1.0.0.4\build\HedgehogDevelopment.FxCop.Habitat.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
