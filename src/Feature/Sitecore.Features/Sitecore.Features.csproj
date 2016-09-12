@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1636144-6246-4EF0-B3F9-40E2CD18E9C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Features</RootNamespace>
+    <AssemblyName>Sitecore.Features</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\Accounts\Accounts.js" />
+    <Content Include="Scripts\Demo\VisitDetails.js" />
+    <Content Include="Scripts\Maps\Maps.js" />
+    <Content Include="Scripts\Maps\markerclusterer.js" />
+    <Content Include="Sitecore\Shell\Applications\Content Manager\Dialogs\Maps\js\maplocationpickerdialog.js" />
+    <Content Include="Sitecore\Shell\Applications\Content Manager\Dialogs\Maps\MapLocationPickerDialog.xml" />
+    <Content Include="Styles\maps\maps.css" />
+    <Content Include="Styles\maps\maps.min.css" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Feature.Accounts.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Demo.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Language.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Maps.config" />
+    <Content Include="App_Config\Include\Feature\Feature.News.config" />
+    <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
+    <Content Include="App_Config\Include\Feature\Habitat.Person.config" />
+    <Content Include="Styles\maps\maps.scss" />
+    <Content Include="Views\Accounts\AccountsMenu.cshtml" />
+    <Content Include="Views\Accounts\EditProfile.cshtml" />
+    <Content Include="Views\Accounts\ForgotPassword.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\Accounts\Register.cshtml" />
+    <Content Include="Views\Accounts\_Login.cshtml" />
+    <Content Include="Views\Demo\DemoContent.cshtml" />
+    <Content Include="Views\Demo\EmptyLayout.cshtml" />
+    <Content Include="Views\Demo\ExperienceData.cshtml" />
+    <Content Include="Views\Demo\_ExperienceDataContent.cshtml" />
+    <Content Include="Views\Demo\_KeyBehaviourCacheList.cshtml" />
+    <Content Include="Views\Demo\_OnsiteBehavior.cshtml" />
+    <Content Include="Views\Demo\_OnsiteBehaviorProfiling.cshtml" />
+    <Content Include="Views\Demo\_PersonalInfo.cshtml" />
+    <Content Include="Views\Demo\_Referral.cshtml" />
+    <Content Include="Views\Demo\_Visits.cshtml" />
+    <Content Include="Views\FAQ\FaqAccordion.cshtml" />
+    <Content Include="Views\Identity\ContactInformation.cshtml" />
+    <Content Include="Views\Identity\Copyright.cshtml" />
+    <Content Include="Views\Identity\Logo.cshtml" />
+    <Content Include="Views\Language\LanguageSelector.cshtml" />
+    <Content Include="Views\Maps\Map.cshtml" />
+    <Content Include="Views\MediaFeature\LightboxGallery.cshtml" />
+    <Content Include="Views\MediaFeature\LightboxImage.cshtml" />
+    <Content Include="Views\MediaFeature\LightboxVideo.cshtml" />
+    <Content Include="Views\MediaFeature\MediaCarousel.cshtml" />
+    <Content Include="Views\MediaFeature\PageHeaderCarousel.cshtml" />
+    <Content Include="Views\MediaFeature\PageHeaderMedia.cshtml" />
+    <Content Include="Views\MediaFeature\SectionMedia.cshtml" />
+    <Content Include="Views\Metadata\PageMetadata.cshtml" />
+    <Content Include="Views\Multisite\SwitchSite.cshtml" />
+    <Content Include="Views\Navigation\Breadcrumb.cshtml" />
+    <Content Include="Views\Navigation\LinkMenu.cshtml" />
+    <Content Include="Views\Navigation\NavigationLinks.cshtml" />
+    <Content Include="Views\Navigation\PrimaryMenu.cshtml" />
+    <Content Include="Views\Navigation\SecondaryMenu.cshtml" />
+    <Content Include="Views\Navigation\_SecondaryMenuItems.cshtml" />
+    <Content Include="Views\News\LatestNews.cshtml" />
+    <Content Include="Views\News\NewsArticle.cshtml" />
+    <Content Include="Views\News\NewsList.cshtml" />
+    <Content Include="Views\News\NewsMetadata.cshtml" />
+    <Content Include="Views\News\NewsPageHeader.cshtml" />
+    <Content Include="Views\News\NewsSearchResult.cshtml" />
+    <Content Include="Views\News\NewsTeaser.cshtml" />
+    <Content Include="Views\PageContent\ChildPageList.cshtml" />
+    <Content Include="Views\PageContent\PageBody.cshtml" />
+    <Content Include="Views\PageContent\PageHeaderTitle.cshtml" />
+    <Content Include="Views\PageContent\PageImage.cshtml" />
+    <Content Include="Views\PageContent\PageImageHeader.cshtml" />
+    <Content Include="Views\PageContent\PageTeaser.cshtml" />
+    <Content Include="Views\PageContent\PageTitle.cshtml" />
+    <Content Include="Views\Person\EmployeeContactHeader.cshtml" />
+    <Content Include="Views\Person\EmployeeContactTeaser.cshtml" />
+    <Content Include="Views\Person\EmployeeDetails.cshtml" />
+    <Content Include="Views\Person\EmployeeHeader.cshtml" />
+    <Content Include="Views\Person\EmployeesCarousel.cshtml" />
+    <Content Include="Views\Person\EmployeeSearchResult.cshtml" />
+    <Content Include="Views\Person\EmployeesList.cshtml" />
+    <Content Include="Views\Person\EmployeeTeaser.cshtml" />
+    <Content Include="Views\Person\Quote.cshtml" />
+    <Content Include="Views\Search\GlobalSearch.cshtml" />
+    <Content Include="Views\Search\PagedSearchResults.cshtml" />
+    <Content Include="Views\Search\SearchResults.cshtml" />
+    <Content Include="Views\Search\SearchResultsHeader.cshtml" />
+    <Content Include="Views\Social\OpenGraph.cshtml" />
+    <Content Include="Views\Social\TwitterFeed.cshtml" />
+    <Content Include="Views\Teasers\Accordion.cshtml" />
+    <Content Include="Views\Teasers\Headline.cshtml" />
+    <Content Include="Views\Teasers\Jumbotron.cshtml" />
+    <Content Include="Views\Teasers\JumbotronCarousel.cshtml" />
+    <Content Include="Views\Teasers\JumbotronHeader.cshtml" />
+    <Content Include="Views\Teasers\Tabs.cshtml" />
+    <Content Include="Views\Teasers\TeaserCarousel.cshtml" />
+    <Content Include="Views\Teasers\TitleImageSummaryTeaser.cshtml" />
+    <Content Include="Views\Teasers\TitleImageTeaser.cshtml" />
+    <Content Include="Views\Teasers\TitleSummaryTeaser.cshtml" />
+    <Content Include="Views\Web.config" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\AccountsRedirectAuthenticatedAttribute.cs" />
+    <Compile Include="Attributes\PasswordMinLengthAttribute.cs" />
+    <Compile Include="Attributes\RedirectAuthenticatedAttribute.cs" />
+    <Compile Include="Attributes\RedirectUnauthenticatedAttribute.cs" />
+    <Compile Include="Attributes\ValidateModelAttribute.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
+    <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\MediaFeatureController.cs" />
+    <Compile Include="Controllers\MultisiteController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controller\TeasersController.cs" />
+    <Compile Include="Extensions\DynamicTeaserModelExtensions.cs" />
+    <Compile Include="Indexing\ContentPageIndexContentProvider.cs" />
+    <Compile Include="Indexing\NewsIndexContentProvider.cs" />
+    <Compile Include="Indexing\NewsIndexingProvider.cs" />
+    <Compile Include="Indexing\PageContentIndexingProvider.cs" />
+    <Compile Include="Indexing\PersonIndexingProvider.cs" />
+    <Compile Include="Models\Campaign.cs" />
+    <Compile Include="Models\DemoContent.cs" />
+    <Compile Include="Models\Device.cs" />
+    <Compile Include="Models\DynamicTeaserItem.cs" />
+    <Compile Include="Models\DynamicTeaserModel.cs" />
+    <Compile Include="Models\EditProfile.cs" />
+    <Compile Include="Models\EngagementPlanState.cs" />
+    <Compile Include="Models\ExperienceData.cs" />
+    <Compile Include="Models\Goal.cs" />
+    <Compile Include="Models\Language.cs" />
+    <Compile Include="Models\LanguageFactory.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\LoginInfo.cs" />
+    <Compile Include="Models\LoginResult.cs" />
+    <Compile Include="Models\MapPoint.cs" />
+    <Compile Include="Models\MediaBackgroundRenderingModel.cs" />
+    <Compile Include="Models\MediaSelectorElement.cs" />
+    <Compile Include="Models\MetaKeywordsModel.cs" />
+    <Compile Include="Models\NavigationItem.cs" />
+    <Compile Include="Models\NavigationItems.cs" />
+    <Compile Include="Models\OnsiteBehaviour.cs" />
+    <Compile Include="Models\Outcome.cs" />
+    <Compile Include="Models\PagedSearchResults.cs" />
+    <Compile Include="Models\PageView.cs" />
+    <Compile Include="Models\PagingSettings.cs" />
+    <Compile Include="Models\PasswordResetInfo.cs" />
+    <Compile Include="Models\PatternMatch.cs" />
+    <Compile Include="Models\PersonalInfo.cs" />
+    <Compile Include="Models\Profile.cs" />
+    <Compile Include="Models\ProfilingTypes.cs" />
+    <Compile Include="Models\Referral.cs" />
+    <Compile Include="Models\RegistrationInfo.cs" />
+    <Compile Include="Models\SearchContext.cs" />
+    <Compile Include="Models\SearchQuery.cs" />
+    <Compile Include="Models\SearchResult.cs" />
+    <Compile Include="Models\SearchResults.cs" />
+    <Compile Include="Models\SiteConfiguration.cs" />
+    <Compile Include="Models\SiteConfigurations.cs" />
+    <Compile Include="Models\TwitterFeedRenderingProperties.cs" />
+    <Compile Include="Models\Visits.cs" />
+    <Compile Include="Pipelines\RegisterWebApiRoutes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AccountRepository.cs" />
+    <Compile Include="Repositories\CampaignRepository.cs" />
+    <Compile Include="Repositories\DeviceRepository.cs" />
+    <Compile Include="Repositories\EngagementPlanStateRepository.cs" />
+    <Compile Include="Repositories\FaqRepository.cs" />
+    <Compile Include="Repositories\GoalRepository.cs" />
+    <Compile Include="Repositories\IAccountRepository.cs" />
+    <Compile Include="Repositories\ICampaignRepository.cs" />
+    <Compile Include="Repositories\IdentityRepository.cs" />
+    <Compile Include="Repositories\IMapPointRepository.cs" />
+    <Compile Include="Repositories\INavigationRepository.cs" />
+    <Compile Include="Repositories\INewsRepository.cs" />
+    <Compile Include="Repositories\INewsRepositoryFactory.cs" />
+    <Compile Include="Repositories\ISearchContextRepository.cs" />
+    <Compile Include="Repositories\ISiteConfigurationRepository.cs" />
+    <Compile Include="Repositories\LanguageRepository.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\MapPointRepository.cs" />
+    <Compile Include="Repositories\MediaSelectorElementsRepository.cs" />
+    <Compile Include="Repositories\MetadataRepository.cs" />
+    <Compile Include="Repositories\NavigationRepository.cs" />
+    <Compile Include="Repositories\NewsRepository.cs" />
+    <Compile Include="Repositories\NewsRepositoryFactory.cs" />
+    <Compile Include="Repositories\OnsiteBehaviorRepository.cs" />
+    <Compile Include="Repositories\OutcomeRepository.cs" />
+    <Compile Include="Repositories\PageViewRepository.cs" />
+    <Compile Include="Repositories\PersonalInfoRepository.cs" />
+    <Compile Include="Repositories\ProfileRepository.cs" />
+    <Compile Include="Repositories\QueryRepository.cs" />
+    <Compile Include="Repositories\ReferralRepository.cs" />
+    <Compile Include="Repositories\SearchContextRepository.cs" />
+    <Compile Include="Repositories\SiteConfigurationRepository.cs" />
+    <Compile Include="Repositories\VisitsRepository.cs" />
+    <Compile Include="Services\AccountsSettingsService.cs" />
+    <Compile Include="Services\AccountTrackerService.cs" />
+    <Compile Include="Services\BehaviorProfileDecorator.cs" />
+    <Compile Include="Services\ContactProfileService.cs" />
+    <Compile Include="Services\IAccountsSettingsService.cs" />
+    <Compile Include="Services\IAccountTrackerService.cs" />
+    <Compile Include="Services\IContactProfileService.cs" />
+    <Compile Include="Services\INotificationService.cs" />
+    <Compile Include="Services\IProfileProvider.cs" />
+    <Compile Include="Services\IProfileSettingsService.cs" />
+    <Compile Include="Services\IUserProfileProvider.cs" />
+    <Compile Include="Services\IUserProfileService.cs" />
+    <Compile Include="Services\NotificationService.cs" />
+    <Compile Include="Services\ProfileProvider.cs" />
+    <Compile Include="Services\ProfileSettingsService.cs" />
+    <Compile Include="Services\UserProfileProvider.cs" />
+    <Compile Include="Services\UserProfileService.cs" />
+    <Compile Include="Sitecore\Shell\Applications\Content Manager\Dialogs\Maps\MapLocationPickerDialog.cs" />
+    <Compile Include="Sitecore\Shell\Applications\ContentEditor\FieldTypes\MapField.cs" />
+    <Compile Include="Templates\Accounts.cs" />
+    <Compile Include="Templates\Demo.cs" />
+    <Compile Include="Templates\Faq.cs" />
+    <Compile Include="Templates\Identity.cs" />
+    <Compile Include="Templates\Language.cs" />
+    <Compile Include="Templates\Maps.cs" />
+    <Compile Include="Templates\Media.cs" />
+    <Compile Include="Templates\Metadata.cs" />
+    <Compile Include="Templates\Multisite.cs" />
+    <Compile Include="Templates\Navigation.cs" />
+    <Compile Include="Templates\News.cs" />
+    <Compile Include="Templates\PageContent.cs" />
+    <Compile Include="Templates\Person.cs" />
+    <Compile Include="Templates\Search.cs" />
+    <Compile Include="Templates\Social.cs" />
+    <Compile Include="Templates\Teasers.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3658</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3658/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
