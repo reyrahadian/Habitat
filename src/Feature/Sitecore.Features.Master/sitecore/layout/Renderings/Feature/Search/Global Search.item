@@ -14,9 +14,9 @@ created: 20160911T215524:636092277241400000
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 77
+content-length: 71
 
-Sitecore.Feature.Search.Controllers.SearchController, Sitecore.Feature.Search
+Sitecore.Feature.Search.Controllers.SearchController, Sitecore.Features
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -28,13 +28,13 @@ GlobalSearch
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
 key: open properties after add
-content-length: 1
+content-length: 0
 
--
+
 ----version----
 language: en
 version: 1
-revision: b689bf0f-4aa8-40b7-8b9c-9d5084184232
+revision: 2899bb50-766c-4c7d-bfff-0eacb2eb1f32
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,18 +49,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b689bf0f-4aa8-40b7-8b9c-9d5084184232
+2899bb50-766c-4c7d-bfff-0eacb2eb1f32
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151856Z
+20160912T180654Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin

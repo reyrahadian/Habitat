@@ -14,9 +14,9 @@ created: 20160911T215533:636092277332900000
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 79
+content-length: 72
 
-Sitecore.Feature.Teasers.Controller.TeasersController, Sitecore.Feature.Teasers
+Sitecore.Feature.Teasers.Controller.TeasersController, Sitecore.Features
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -48,7 +48,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 7f03fbfd-cee7-4098-8d6e-19bd4fd2323e
+revision: 2368605c-7c90-47fc-be34-0ae48d050da5
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -63,18 +63,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f03fbfd-cee7-4098-8d6e-19bd4fd2323e
+2368605c-7c90-47fc-be34-0ae48d050da5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181733Z
+20160912T180803Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
