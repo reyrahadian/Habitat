@@ -85,6 +85,10 @@
       <HintPath>..\..\..\packages\Sitecore.Analytics.Outcome.NoReferences.8.2.160729\lib\NET452\Sitecore.Analytics.Outcome.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.CES.DeviceDetection, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Sitecore.CES.DeviceDetection.NoReferences.8.2.160729\lib\NET452\Sitecore.CES.DeviceDetection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Cintel, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.Cintel.NoReferences.8.2.160729\lib\NET452\Sitecore.Cintel.dll</HintPath>
       <Private>True</Private>
@@ -99,6 +103,10 @@
     </Reference>
     <Reference Include="Sitecore.ExperienceEditor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.ExperienceEditor.NoReferences.8.2.160729\lib\NET452\Sitecore.ExperienceEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceExplorer.Business, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Sitecore.ExperienceExplorer.Business.NoReferences.8.2.160729\lib\NET452\Sitecore.ExperienceExplorer.Business.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
