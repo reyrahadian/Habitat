@@ -1,9 +1,6 @@
 
 
 
-
-
-
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -24,48 +21,9 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
+using Sitecore.Foundation.ORM;
 
 
-
-namespace Sitecore.Feature.PageContent
-{
-
-    public partial interface IGlassBase{
-        
-        [SitecoreId]
-        Guid Id{ get; }
-
-        [SitecoreInfo(SitecoreInfoType.Language)]
-        Language Language{ get; }
-
-        [SitecoreInfo(SitecoreInfoType.Version)]
-        int Version { get; }
-
-        [SitecoreInfo(SitecoreInfoType.Url)]
-        string Url { get; }
-
-        [SitecoreChildren(InferType=true, IsLazy = true)]
-        IEnumerable<IGlassBase> Children {get; }
-    }
-
-    public abstract partial class GlassBase : IGlassBase{
-        
-        [SitecoreId]
-        public virtual Guid Id{ get; private set;}
-
-        [SitecoreInfo(SitecoreInfoType.Language)]
-        public virtual Language Language{ get; private set; }
-
-        [SitecoreInfo(SitecoreInfoType.Version)]
-        public virtual int Version { get; private set; }
-
-        [SitecoreInfo(SitecoreInfoType.Url)]
-        public virtual string Url { get; private set; }
-
-        [SitecoreChildren(InferType=true, IsLazy = true)]
-        public virtual IEnumerable<IGlassBase> Children {get; private set;}
-    }
-}
 
 namespace Sitecore.Feature.PageContent.Feature.PageContent
 {
@@ -145,11 +103,11 @@ namespace Sitecore.Feature.PageContent.Feature.PageContent
             public static readonly ID TitleFieldId = new ID("c30a013f-3cc8-4961-9837-1c483277084a");
             public const string TitleFieldName = "Title";
             
-            
+        	
 
     }
 
-    
+	
     /// <summary>
     /// _HasPageContent
     /// <para></para>
@@ -204,6 +162,6 @@ namespace Sitecore.Feature.PageContent.Feature.PageContent
                 [SitecoreField(I_HasPageContentConstants.TitleFieldName)]
                 public virtual string Title  {get; set;}
                     
-            
+        	
     }
 }

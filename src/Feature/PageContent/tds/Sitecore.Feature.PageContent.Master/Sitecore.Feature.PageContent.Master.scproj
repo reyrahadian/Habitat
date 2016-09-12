@@ -170,13 +170,28 @@
     <SitecoreRole Include="Sitecore Roles\modules\Feature PageContent Admin.role" />
   </ItemGroup>
   <ItemGroup>
-    <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
+    <CodeGenTemplate Include="..\..\..\..\Foundation\ORM\tds\Sitecore.Foundation.ORM.Master\Code Generation Templates\GeneralExtensions.tt">
+      <Link>Code Generation Templates\GeneralExtensions.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\Foundation\ORM\tds\Sitecore.Foundation.ORM.Master\Code Generation Templates\GlassV4Item.tt">
+      <Link>Code Generation Templates\GlassV4Item.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\Foundation\ORM\tds\Sitecore.Foundation.ORM.Master\Code Generation Templates\Helpers.tt">
+      <Link>Code Generation Templates\Helpers.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\Foundation\ORM\tds\Sitecore.Foundation.ORM.Master\Code Generation Templates\Inflector.tt">
+      <Link>Code Generation Templates\Inflector.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\Foundation\ORM\tds\Sitecore.Foundation.ORM.Master\Code Generation Templates\ItemPaths.tt">
+      <Link>Code Generation Templates\ItemPaths.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\Foundation\ORM\tds\Sitecore.Foundation.ORM.Master\Code Generation Templates\stringextensions.tt">
+      <Link>Code Generation Templates\stringextensions.tt</Link>
+    </CodeGenTemplate>
     <CodeGenTemplate Include="Code Generation Templates\glassv4header.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\GlassV4Item.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\Helpers.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\Inflector.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\ItemPaths.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\stringextensions.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenReferencedProject Include="{9f68d9b7-31d8-453c-974c-e1366e5f9dfe}" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
