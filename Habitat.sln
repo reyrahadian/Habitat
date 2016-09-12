@@ -138,6 +138,7 @@ EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Common.Website.Core", "src\Project\Common\tds\Sitecore.Common.Website.Core\Sitecore.Common.Website.Core.scproj", "{96CB4D20-920C-4795-879C-80E92570EA41}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F10B8E08-67FE-4EF5-A1A8-B570AAE5D781} = {F10B8E08-67FE-4EF5-A1A8-B570AAE5D781}
+		{C1D8C7FA-3133-4754-BEBD-33547934DDA8} = {C1D8C7FA-3133-4754-BEBD-33547934DDA8}
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Habitat.Website.Master", "src\Project\Habitat\tds\Sitecore.Habitat.Website.Master\Sitecore.Habitat.Website.Master.scproj", "{D6CC9BAE-CF6B-4BF8-94B6-290A494B3DE4}"
