@@ -631,6 +631,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.DependencyInjection", "src\Foundation\Sitecore.Foundation.DependencyInjection\Sitecore.Foundation.DependencyInjection.csproj", "{EDDFE7C7-DEC3-4DBE-8D6A-88AC384844C8}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.DependencyInjection.Master", "src\Foundation\Sitecore.Foundation.DependencyInjection.Master\Sitecore.Foundation.DependencyInjection.Master.scproj", "{5D7D417F-9551-4510-92EA-06C81B96403A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{031DE74A-D92D-4E68-90C3-8E99EC0D83A5} = {031DE74A-D92D-4E68-90C3-8E99EC0D83A5}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1503,6 +1508,18 @@ Global
 		{EDDFE7C7-DEC3-4DBE-8D6A-88AC384844C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EDDFE7C7-DEC3-4DBE-8D6A-88AC384844C8}.Release|x64.ActiveCfg = Release|Any CPU
 		{EDDFE7C7-DEC3-4DBE-8D6A-88AC384844C8}.Release|x64.Build.0 = Release|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Debug|x64.Build.0 = Debug|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Release|x64.ActiveCfg = Release|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Release|x64.Build.0 = Release|Any CPU
+		{5D7D417F-9551-4510-92EA-06C81B96403A}.Release|x64.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1634,5 +1651,6 @@ Global
 		{D28DCFC0-A1B4-4F91-8038-19E0E1103E6A} = {65673857-6BDF-408E-ACD8-417A0BCCAB7A}
 		{CC7DE2C0-7D77-485D-8912-DA339E3121FE} = {D2CBE02E-6AA7-4343-9A01-891F971A17F5}
 		{EDDFE7C7-DEC3-4DBE-8D6A-88AC384844C8} = {CC7DE2C0-7D77-485D-8912-DA339E3121FE}
+		{5D7D417F-9551-4510-92EA-06C81B96403A} = {CC7DE2C0-7D77-485D-8912-DA339E3121FE}
 	EndGlobalSection
 EndGlobal

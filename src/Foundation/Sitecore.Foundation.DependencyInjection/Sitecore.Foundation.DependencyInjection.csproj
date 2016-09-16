@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.DependencyInjection.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -124,6 +125,7 @@
   <ItemGroup>
     <Compile Include="Container.cs" />
     <Compile Include="Pipelines\InitializeDependencyInjectionArgs.cs" />
+    <Compile Include="Pipelines\Initialize\InitializeDependencyInjection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
