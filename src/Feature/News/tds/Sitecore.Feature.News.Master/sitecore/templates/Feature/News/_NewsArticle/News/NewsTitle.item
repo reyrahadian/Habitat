@@ -8,6 +8,7 @@ name: NewsTitle
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20161006T142834:636113609148470000
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -16,6 +17,34 @@ key: type
 content-length: 16
 
 Single-Line Text
+----field----
+field: {337E20E1-999A-4EEA-85AD-B58A03AE75CC}
+name: Quick Action Bar
+key: quick action bar
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
+field: {21828437-EA4B-40A1-8C61-4CE60EA41DB6}
+name: Validate Button
+key: validate button
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
+field: {9C903E29-650D-4AF2-B9BD-526D5C14A1A5}
+name: Validator Bar
+key: validator bar
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
+field: {53C432C4-7122-4E2D-8296-DB4184FD1735}
+name: Workflow
+key: workflow
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
 ----field----
 field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
 name: __Security
@@ -26,7 +55,7 @@ ar|Everyone|pe|!*|+field:read|pd|!*|+field:read|ar|modules\Feature News Admin|pe
 ----version----
 language: en
 version: 1
-revision: 9b3386e4-c65d-43b0-9244-2def1c890d17
+revision: 6326e1c4-6f49-4541-a865-6d227b360896
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -55,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9b3386e4-c65d-43b0-9244-2def1c890d17
+6326e1c4-6f49-4541-a865-6d227b360896
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105335Z
+20161006T142834Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

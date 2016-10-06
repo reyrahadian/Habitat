@@ -2,17 +2,18 @@
 version: 1
 id: {1369C85E-3513-4F00-9A4C-505A97A5E55A}
 database: master
-path: /sitecore/content/Habitat/Global/Links/Footer Menu/Right/Best Practise Blogs
+path: /sitecore/content/Habitat/Global/Links/Footer Menu/Right/Best Practice Blogs
 parent: {B4D87E66-D2C5-4C06-8F9A-08AEAF38055A}
-name: Best Practise Blogs
+name: Best Practice Blogs
 master: {00000000-0000-0000-0000-000000000000}
 template: {390333C8-751B-4332-84A3-6360B969A19F}
 templatekey: Link Menu Item
+created: 20161006T142952:636113609921770000
 
 ----version----
 language: da
 version: 1
-revision: cc022864-a19b-446a-a7b6-4886fb57e162
+revision: 27f6787d-0418-4225-ab3f-82c65e9d5fc7
 
 ----field----
 field: {1B483E91-D8C4-4D19-BA03-462074B55936}
@@ -48,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cc022864-a19b-446a-a7b6-4886fb57e162
+27f6787d-0418-4225-ab3f-82c65e9d5fc7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212048Z
+20161006T142952Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,7 +67,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: a3c9721c-78cf-4785-a3df-9f16f33819cf
+revision: d313be41-4fd4-4b3f-80f0-2cf1843681c6
 
 ----field----
 field: {1B483E91-D8C4-4D19-BA03-462074B55936}
@@ -74,7 +75,7 @@ name: NavigationTitle
 key: navigationtitle
 content-length: 19
 
-Best Practise Blogs
+Best Practice Blogs
 ----field----
 field: {FE71C30E-F07D-4052-8594-C3028CD76E1F}
 name: Link
@@ -95,18 +96,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a3c9721c-78cf-4785-a3df-9f16f33819cf
+d313be41-4fd4-4b3f-80f0-2cf1843681c6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212048Z
+20161006T142952Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 17
 
-sitecore\admin
+default\Anonymous

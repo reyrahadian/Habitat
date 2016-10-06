@@ -8,6 +8,7 @@ name: Habitat
 master: {00000000-0000-0000-0000-000000000000}
 template: {0643D9D4-F30B-4B07-91D0-289CC324C9CF}
 templatekey: Site Root
+created: 20161006T142941:636113609816570000
 
 ----field----
 field: {ED71D374-8C33-4561-991D-77482AE01330}
@@ -52,6 +53,13 @@ content-length: 77
 
 {2403D44D-A04E-4C4F-B00B-5CE8CF531254}|{AF584191-45C9-4201-8740-5409F4CF8BDD}
 ----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+999
+----field----
 field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
 name: __Security
 key: __security
@@ -61,7 +69,7 @@ ar|habitat\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:
 ----version----
 language: da
 version: 1
-revision: 281ed2b2-5fad-41fa-a455-6580ed8994a2
+revision: e47b4dfb-b95a-4d4c-abf4-40c6215aeb36
 
 ----field----
 field: {E748D808-64C1-4DEC-9718-F35CF9689E4B}
@@ -104,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-281ed2b2-5fad-41fa-a455-6580ed8994a2
+e47b4dfb-b95a-4d4c-abf4-40c6215aeb36
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160622T160207Z
+20161006T142941Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -122,7 +130,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 1138ec0a-2577-45e8-81af-43efbe95d9b1
+revision: 1e51925c-6c4f-48a6-bc2d-d45e4d525744
 
 ----field----
 field: {835FA523-D28A-46A2-A589-6AA4A5BF0846}
@@ -142,16 +150,9 @@ content-length: 38
 field: {E748D808-64C1-4DEC-9718-F35CF9689E4B}
 name: Logo
 key: logo
-content-length: 211
+content-length: 104
 
-<image mediapath="/Default Website/sc_logo" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Default Website/sc_logo" mediaid="{60CB73C9-D101-4248-95FF-AF8AF939B7ED}" />
-----field----
-field: {31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}
-name: Logo Tagline
-key: logo tagline
-content-length: 25
-
-Sitecore Solution Example
+<image mediaid="{93AB35C2-44A0-4D5D-9EC0-B857D37F8B08}" alt="" height="" width="" hspace="" vspace="" />
 ----field----
 field: {02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}
 name: Copyright
@@ -191,9 +192,9 @@ content-length: 1
 field: {F07811D3-41E9-440A-9D81-310C1D78BED6}
 name: Title
 key: title
-content-length: 22
+content-length: 13
 
-Habitat - Example Site
+About Habitat
 ----field----
 field: {EFD4980A-030C-497C-8880-40B6030AC28B}
 name: OrganisationName
@@ -205,12 +206,10 @@ Sitecore Corporation
 field: {A24DF48F-C8A3-4163-966C-8C24BD8760B2}
 name: OrganisationAddress
 key: organisationaddress
-content-length: 48
+content-length: 44
 
 2320 Marinship Way
-
 Sausalito, CA 94965
-
 USA
 ----field----
 field: {005ED83C-2D2F-4D07-A7A9-EB64D873DE46}
@@ -239,14 +238,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1138ec0a-2577-45e8-81af-43efbe95d9b1
+1e51925c-6c4f-48a6-bc2d-d45e4d525744
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160622T160207Z
+20161006T142941Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

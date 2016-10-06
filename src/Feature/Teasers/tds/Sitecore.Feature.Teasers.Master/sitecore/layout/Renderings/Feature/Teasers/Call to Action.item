@@ -8,6 +8,7 @@ name: Call to Action
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
+created: 20161006T142906:636113609468970000
 
 ----field----
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
@@ -47,8 +48,15 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: d09750b0-fa12-4ce3-84f6-54425b3e9400
+revision: 16dd1060-962a-406f-977e-7cec3d667ca7
 
+----field----
+field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
+name: Supports Local Datasource
+key: supports local datasource
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d09750b0-fa12-4ce3-84f6-54425b3e9400
+16dd1060-962a-406f-977e-7cec3d667ca7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181733Z
+20161006T142906Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

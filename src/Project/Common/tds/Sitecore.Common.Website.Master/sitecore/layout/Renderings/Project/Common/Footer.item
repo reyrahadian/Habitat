@@ -8,6 +8,7 @@ name: Footer
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
+created: 20161006T142921:636113609613230000
 
 ----field----
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
@@ -30,10 +31,17 @@ key: __sortorder
 content-length: 4
 
 2200
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{D3189921-A536-44B8-AE9A-D517218F487F}" />
 ----version----
 language: en
 version: 1
-revision: 7a2ff6f9-7090-41d1-88c4-ad8b03a97c77
+revision: 50455928-8f95-4559-aa29-ab8bd705c352
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7a2ff6f9-7090-41d1-88c4-ad8b03a97c77
+50455928-8f95-4559-aa29-ab8bd705c352
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T145046Z
+20161006T142921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
