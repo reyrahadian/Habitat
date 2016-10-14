@@ -8,7 +8,7 @@ name: Jumbotron Carousel
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
-created: 20161006T142907:636113609470200000
+created: 20161014T180605:636120651657930000
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -24,6 +24,13 @@ key: controller action
 content-length: 17
 
 JumbotronCarousel
+----field----
+field: {FC5C3451-DFDE-4778-9901-5D0B1DA1E212}
+name: Area
+key: area
+content-length: 0
+
+
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -48,7 +55,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: afc05b7d-68ff-4f9a-9087-dbb4247d00a6
+revision: 183d7ffd-4893-45a9-a052-a4bf82bdfa48
 
 ----field----
 field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
@@ -70,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-afc05b7d-68ff-4f9a-9087-dbb4247d00a6
+183d7ffd-4893-45a9-a052-a4bf82bdfa48
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161006T142907Z
+20161014T180605Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,7 +8,7 @@ name: Habitat
 master: {00000000-0000-0000-0000-000000000000}
 template: {0643D9D4-F30B-4B07-91D0-289CC324C9CF}
 templatekey: Site Root
-created: 20161006T142941:636113609816570000
+created: 20161014T180636:636120651967570000
 
 ----field----
 field: {ED71D374-8C33-4561-991D-77482AE01330}
@@ -69,7 +69,7 @@ ar|habitat\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:
 ----version----
 language: da
 version: 1
-revision: e47b4dfb-b95a-4d4c-abf4-40c6215aeb36
+revision: e63bbd1f-2a54-44f4-a877-d689e3f29146
 
 ----field----
 field: {E748D808-64C1-4DEC-9718-F35CF9689E4B}
@@ -112,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e47b4dfb-b95a-4d4c-abf4-40c6215aeb36
+e63bbd1f-2a54-44f4-a877-d689e3f29146
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161006T142941Z
+20161014T180636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -130,7 +130,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 1e51925c-6c4f-48a6-bc2d-d45e4d525744
+revision: 06916365-9986-48d7-a012-a3e3efb6fbbc
 
 ----field----
 field: {835FA523-D28A-46A2-A589-6AA4A5BF0846}
@@ -153,6 +153,13 @@ key: logo
 content-length: 104
 
 <image mediaid="{93AB35C2-44A0-4D5D-9EC0-B857D37F8B08}" alt="" height="" width="" hspace="" vspace="" />
+----field----
+field: {31D027BB-FAB5-4E1A-A66D-9F5B0FD4F005}
+name: Logo Tagline
+key: logo tagline
+content-length: 0
+
+
 ----field----
 field: {02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}
 name: Copyright
@@ -238,14 +245,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1e51925c-6c4f-48a6-bc2d-d45e4d525744
+06916365-9986-48d7-a012-a3e3efb6fbbc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161006T142941Z
+20161014T180636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
