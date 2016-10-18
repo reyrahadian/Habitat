@@ -15,24 +15,18 @@ This version of Habitat is using Team Development For Sitecore for Item Serializ
 
 Team Development for Sitecore is a Visual Studio plug-in managed by Hedgehog Development. At its core, it provides companies with the ability to automate their Sitecore builds or set up a continuous deployment scenarios. TDS provides several additional features its users find valuable, for more information visit: www.teamdevelopmentforsitecore.com.
 
-There was a duplicate named item at `/sitecore/content/Habitat/Global/Media/Dependencies`. In the TDS version we've renamed one of these items to `DependenciesFolder` instead.
 
 ## Differences in Installation:
 
 1. Clone this repository to your local file system.
-2. Set up a clean Sitecore 8.1 website in the URL http://habitat.local/ and the location C:\Websites\Habitat.local\ (We recommend using Sitecore Instance Manager).
-3. Install the Webforms for Marketers module
-4. Restore npm modules
-  - Make sure you have the version 4+ of node.js [Download here](https://nodejs.org/en/)
-  - Open an administrator command-line and run 'npm install' in the root of repository.
-5. Open the solution in Visual Studio.
-6. (optional) Configuring your settings if you are using other settings than default:
+2. Set up a clean Sitecore 8.2 website (We recommend using Sitecore Instance Manager). The configs have these default settings (Change them as needed, but understand where they need to be changed in the appropriate configs as well):-
+ - URL: http://habitat.dev.local/ 
+ - Location: C:\Websites\Habitat.local\
+3. Install the Webforms for Marketers module.
+4. Open the solution in Visual Studio.
+5. (optional) Configure your settings if you are using other settings than default:
 To change the standard location of source, website files and website URL modify the following files:
   - /Configuration/z.Habitat.DevSettings.config
-  - /Configuration/gulp-config.js
-  - /Configuration/TdsGlobal.config
-7. Open the Visual Studio 2015 Task Runner Explorer (View | Other Windows | Task Runner Explorer).
-8. Run the 01-Copy-Sitecore-Lib task. 
-9. Deploy the Solution (Right click on the solution file -> Deploy Solution) in Visual Studio 2015 to deploy all Sitecore Items and Project Items.
-10. Run the 03_Apply-Xml-Transform task. (To be replaced in the future)
-11. Be productive!
+  - /Configuration/TdsGlobal.config 
+6. Deploy the Solution (Right click on the solution file -> Deploy Solution) in Visual Studio 2015. This will restore all NuGet packages, build the code, and deploy all Sitecore Items and Project Items to your local website.
+7. Be productive!
