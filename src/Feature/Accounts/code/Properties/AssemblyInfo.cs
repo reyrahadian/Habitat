@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using Hedgehog.ZeroDeploy.Client.Attributes;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -34,5 +35,11 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
+#if ZERODEPLOY
+[assembly: AssemblyVersion("1.0.*")]
+[assembly: ZeroDeployAssembly]
+#else
 [assembly: AssemblyVersion("1.0.0.0")]
+#endif
+
 [assembly: AssemblyFileVersion("1.0.0.0")]
