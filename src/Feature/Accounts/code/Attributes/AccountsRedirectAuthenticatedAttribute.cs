@@ -1,7 +1,7 @@
 ﻿namespace Sitecore.Feature.Accounts.Attributes
 {
   using System.Web.Mvc;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Services;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
 
   public class AccountsRedirectAuthenticatedAttribute : RedirectAuthenticatedAttribute
