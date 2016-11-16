@@ -228,9 +228,18 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\ZZZ\ZeroDeploy.Foundation.Installer.config">
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.Debug.config">
+      <DependentUpon>ZeroDeploy.Foundation.Installer.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.Release.config">
+      <DependentUpon>ZeroDeploy.Foundation.Installer.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Foundation.Installer.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
     <None Include="web.config.transform" />

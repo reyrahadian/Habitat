@@ -141,6 +141,15 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Indexing.config" />
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Indexing.Debug.config">
+      <DependentUpon>ZeroDeploy.Foundation.Indexing.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Indexing.Release.config">
+      <DependentUpon>ZeroDeploy.Foundation.Indexing.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Indexing.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Foundation.Indexing.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">

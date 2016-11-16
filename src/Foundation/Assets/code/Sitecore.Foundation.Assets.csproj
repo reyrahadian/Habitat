@@ -140,7 +140,16 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Fonudation.Assets.config" />
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Assets.config" />
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Assets.Debug.config">
+      <DependentUpon>ZeroDeploy.Foundation.Assets.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Assets.Release.config">
+      <DependentUpon>ZeroDeploy.Foundation.Assets.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Assets.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Foundation.Assets.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
