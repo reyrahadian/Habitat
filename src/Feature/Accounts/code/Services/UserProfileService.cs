@@ -7,8 +7,9 @@
   using Sitecore.Feature.Accounts.Models;
   using Sitecore.Foundation.Dictionary.Repositories;
   using Sitecore.Security;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
 
-  public class UserProfileService : IUserProfileService
+    public class UserProfileService : IUserProfileService
   {
     private readonly IProfileSettingsService profileSettingsService;
     private readonly IUserProfileProvider userProfileProvider;

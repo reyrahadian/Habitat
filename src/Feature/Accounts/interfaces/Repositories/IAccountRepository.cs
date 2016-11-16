@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Accounts.Repositories
+﻿namespace Sitecore.Feature.Accounts.Interfaces.Repositories
 {
   public interface IAccountRepository
   {

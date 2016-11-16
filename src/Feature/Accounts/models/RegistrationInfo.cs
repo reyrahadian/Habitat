@@ -1,7 +1,7 @@
 ﻿namespace Sitecore.Feature.Accounts.Models
 {
   using System.ComponentModel.DataAnnotations;
-  using Sitecore.Feature.Accounts.Attributes;
+  using Sitecore.Feature.Accounts.Models.Attributes;
   using Sitecore.Foundation.Dictionary.Repositories;
 
   public class RegistrationInfo

@@ -9,8 +9,9 @@
   using Sitecore.Diagnostics;
   using Sitecore.Exceptions;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
 
-  public class AccountsSettingsService : IAccountsSettingsService
+    public class AccountsSettingsService : IAccountsSettingsService
   {
     public static readonly string PageNotFoundUrl = Settings.GetSetting("Sitecore.Feature.Accounts.PageNotFoundUrl", "/404");
     public static AccountsSettingsService Instance => new AccountsSettingsService();

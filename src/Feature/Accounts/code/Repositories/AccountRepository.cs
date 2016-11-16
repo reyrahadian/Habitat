@@ -6,8 +6,10 @@
   using Sitecore.Feature.Accounts.Services;
   using Sitecore.Security.Accounts;
   using Sitecore.Security.Authentication;
+  using Sitecore.Feature.Accounts.Interfaces.Repositories;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
 
-  public class AccountRepository : IAccountRepository
+    public class AccountRepository : IAccountRepository
   {
     private readonly IAccountTrackerService accountTrackerService;
 

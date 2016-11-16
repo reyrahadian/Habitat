@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Accounts.Services
+﻿namespace Sitecore.Feature.Accounts.Interfaces.Services
 {
   public interface IAccountTrackerService
   {

@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Accounts.Attributes
+﻿namespace Sitecore.Feature.Accounts.Models.Attributes
 {
   using System;
   using System.ComponentModel.DataAnnotations;

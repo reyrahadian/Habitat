@@ -3,8 +3,9 @@
   using Sitecore.Configuration;
   using Sitecore.Data;
   using Sitecore.Foundation.SitecoreExtensions.Services;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
 
-  public class AccountTrackerService : IAccountTrackerService
+    public class AccountTrackerService : IAccountTrackerService
   {
     private readonly IAccountsSettingsService accountsSettingsService;
     private readonly ITrackerService trackerService;

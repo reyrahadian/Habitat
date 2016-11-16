@@ -9,8 +9,9 @@
   using Sitecore.Diagnostics;
   using Sitecore.Security;
   using Sitecore.SecurityModel;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
 
-  public class UserProfileProvider : IUserProfileProvider
+    public class UserProfileProvider : IUserProfileProvider
   {
     public IDictionary<string, string> GetCustomProperties(UserProfile userProfile)
     {

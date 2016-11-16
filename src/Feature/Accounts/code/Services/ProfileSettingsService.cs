@@ -9,8 +9,9 @@
   using Sitecore.Diagnostics;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
   using Sitecore.SecurityModel;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
 
-  public class ProfileSettingsService : IProfileSettingsService
+    public class ProfileSettingsService : IProfileSettingsService
   {
     public virtual Item GetUserDefaultProfile()
     {

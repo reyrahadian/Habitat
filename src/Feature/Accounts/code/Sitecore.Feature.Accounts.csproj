@@ -177,30 +177,16 @@
     <Compile Include="Attributes\RedirectAuthenticatedAttribute.cs" />
     <Compile Include="Attributes\RedirectUnauthenticatedAttribute.cs" />
     <Compile Include="Attributes\ValidateModelAttribute.cs" />
-    <Compile Include="Models\LoginInfo.cs" />
-    <Compile Include="Models\EditProfile.cs" />
     <Compile Include="Services\ContactProfileService.cs" />
-    <Compile Include="Services\IContactProfileService.cs" />
     <Compile Include="Services\AccountTrackerService.cs" />
-    <Compile Include="Services\IAccountsSettingsService.cs" />
-    <Compile Include="Services\IAccountTrackerService.cs" />
-    <Compile Include="Services\IProfileSettingsService.cs" />
-    <Compile Include="Services\IUserProfileProvider.cs" />
-    <Compile Include="Services\IUserProfileService.cs" />
     <Compile Include="Services\ProfileSettingsService.cs" />
     <Compile Include="Services\UserProfileProvider.cs" />
     <Compile Include="Services\UserProfileService.cs" />
-    <Compile Include="Models\LoginResult.cs" />
     <Compile Include="Pipelines\RegisterWebApiRoutes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Attributes\PasswordMinLengthAttribute.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
-    <Compile Include="Services\INotificationService.cs" />
     <Compile Include="Services\NotificationService.cs" />
-    <Compile Include="Models\PasswordResetInfo.cs" />
-    <Compile Include="Models\RegistrationInfo.cs" />
     <Compile Include="Repositories\AccountRepository.cs" />
-    <Compile Include="Repositories\IAccountRepository.cs" />
     <Compile Include="Services\AccountsSettingsService.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
@@ -220,6 +206,14 @@
     <ProjectReference Include="..\..\..\foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
       <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\interfaces\Sitecore.Feature.Accounts.Interfaces.csproj">
+      <Project>{02187a38-af98-4662-b213-0ebda3741dd5}</Project>
+      <Name>Sitecore.Feature.Accounts.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\models\Sitecore.Feature.Accounts.Models.csproj">
+      <Project>{9d5ee66f-a405-4d8f-8b8a-ae93112f2431}</Project>
+      <Name>Sitecore.Feature.Accounts.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
