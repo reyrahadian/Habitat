@@ -120,6 +120,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.PageContent.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\PageContent\ChildPageList.cshtml" />
     <Content Include="Views\PageContent\PageTeaser.cshtml" />

@@ -37,7 +37,7 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'ZeroDeploy' ">
     <DebugSymbols>true</DebugSymbols>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>bin\ZeroDeploy\</OutputPath>
+    <OutputPath>.\bin\ZeroDeploy\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

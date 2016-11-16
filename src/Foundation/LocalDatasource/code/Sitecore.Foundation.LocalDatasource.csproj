@@ -129,6 +129,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.LocalDatasource.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
