@@ -148,6 +148,13 @@
 
     private void AddSiteAssetsFromConfiguration()
     {
+      if (!SiteAssets.Any())
+      {
+                SiteAssets.Add(new Asset(AssetType.Css, ScriptLocation.Body, "/styles/vendor.min.css"));
+                SiteAssets.Add(new Asset(AssetType.Css, ScriptLocation.Body, "/styles/niteflight.min.css"));
+                SiteAssets.Add(new Asset(AssetType.JavaScript, ScriptLocation.Head, "/scripts/Sitecore.Foundation.Theming.min.js"));
+      }
+
       foreach (var asset in this.SiteAssets)
       {
         AssetRepository.Current.Add(asset, true);

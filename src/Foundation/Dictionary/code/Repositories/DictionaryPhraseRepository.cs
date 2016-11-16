@@ -35,7 +35,7 @@
 
       if (HttpContext.Current != null)
       {
-        HttpContext.Current.Items.Add("DictionaryPhraseRepository.Current", returnValue);
+         HttpContext.Current.Items["DictionaryPhraseRepository.Current"] = returnValue;
       }
       return returnValue;
     }
