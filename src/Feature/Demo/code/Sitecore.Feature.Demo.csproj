@@ -156,6 +156,15 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.Demo.config" />
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Demo.Debug.config">
+      <DependentUpon>ZeroDeploy.Feature.Demo.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Demo.Release.config">
+      <DependentUpon>ZeroDeploy.Feature.Demo.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Demo.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Feature.Demo.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Demo\_KeyBehaviourCacheList.cshtml" />
     <Content Include="Scripts\Demo\VisitDetails.js" />

@@ -151,6 +151,15 @@
     <Content Include="App_Config\Include\ZZZ\ZeroDeploy.Feature.Account.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="App_Config\Include\ZZZ\ZeroDeploy.Feature.Account.Debug.config">
+      <DependentUpon>ZeroDeploy.Feature.Account.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\ZZZ\ZeroDeploy.Feature.Account.Release.config">
+      <DependentUpon>ZeroDeploy.Feature.Account.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\ZZZ\ZeroDeploy.Feature.Account.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Feature.Account.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Scripts\Accounts\Accounts.js" />
     <Content Include="Views\Accounts\Login.cshtml" />
