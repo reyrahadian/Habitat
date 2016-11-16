@@ -1,7 +1,7 @@
 ﻿namespace Sitecore.Feature.Accounts.Attributes
 {
   using System.Web.Mvc;
-  using Sitecore.Feature.Accounts.Services;
+  using Sitecore.Feature.Accounts.Interfaces.Services;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
 
   public class AccountsRedirectAuthenticatedAttribute : RedirectAuthenticatedAttribute
@@ -13,8 +13,9 @@
       this.accountsSettingsService = accountsSettingsService;
     }
 
-    public AccountsRedirectAuthenticatedAttribute() : this(new AccountsSettingsService())
+    public AccountsRedirectAuthenticatedAttribute()
     {
+        this.accountsSettingsService = (IAccountsSettingsService)Sitecore.DependencyInjection.ServiceLocator.ServiceProvider.GetService(typeof(IAccountsSettingsService));
     }
 
     protected override string GetRedirectUrl(ActionExecutingContext filterContext)
