@@ -149,6 +149,8 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\Feature\Feature.Accounts.IoC.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\ZZZ\ZeroDeploy.Feature.Account.config">
       <SubType>Designer</SubType>
     </Content>
