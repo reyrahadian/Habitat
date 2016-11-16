@@ -20,9 +20,9 @@
     protected virtual string PhoneNumber => this.Profile.Fields[Templates.UserProfile.Fields.PhoneNumber].Name;
     protected virtual string Interest => this.Profile.Fields[Templates.UserProfile.Fields.Interest].Name;
 
-    public UserProfileService() : this(new ProfileSettingsService(), new UserProfileProvider())
-    {
-    }
+    //public UserProfileService() : this(new ProfileSettingsService(), new UserProfileProvider())
+    //{
+    //}
 
     public UserProfileService(IProfileSettingsService profileSettingsService, IUserProfileProvider userProfileProvider)
     {

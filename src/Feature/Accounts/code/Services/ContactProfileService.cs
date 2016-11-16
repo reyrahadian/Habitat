@@ -13,9 +13,9 @@
     private const string PrimaryPhoneKey = "Primary";
     private readonly IContactProfileProvider contactProfileProvider;
 
-    public ContactProfileService() : this(new ContactProfileProvider())
-    {
-    }
+    //public ContactProfileService() : this(new ContactProfileProvider())
+    //{
+    //}
 
     public ContactProfileService(IContactProfileProvider contactProfileProvider)
     {
