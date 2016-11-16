@@ -113,6 +113,7 @@
     </Content>
     <Content Include="sitecore\shell\Applications\Dialogs\Multisite\DatasourceSettings.xml" />
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Multisite.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

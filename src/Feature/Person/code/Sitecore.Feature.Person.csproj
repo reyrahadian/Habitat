@@ -123,6 +123,7 @@
     <Content Include="Views\Person\EmployeeSearchResult.cshtml" />
     <Content Include="Views\Person\EmployeesCarousel.cshtml" />
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.Person.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
