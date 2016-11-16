@@ -6,4 +6,5 @@
     <ZeroDeployViewExtensions>.cshtml</ZeroDeployViewExtensions>
     <ZeroDeployApplicationName>Habitat</ZeroDeployApplicationName>
   </PropertyGroup>
+  <Import Project=".\ZeroDeploy.props.user" Condition="Exists('.\ZeroDeploy.props.user')" />
 </Project>
