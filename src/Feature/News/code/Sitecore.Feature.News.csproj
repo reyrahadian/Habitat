@@ -121,6 +121,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.News.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\News\NewsTeaser.cshtml" />
     <Content Include="Views\News\NewsPageHeader.cshtml" />
