@@ -1,4 +1,5 @@
 var gulp = require("gulp");
+var del = require("del");
 var msbuild = require("gulp-msbuild");
 var debug = require("gulp-debug");
 var foreach = require("gulp-foreach");
@@ -89,6 +90,12 @@ gulp.task("05-Sync-Unicorn", function (callback) {
 gulp.task("06-Deploy-Transforms", function () {
   return gulp.src("./src/**/code/**/*.transform")
       .pipe(gulp.dest(config.websiteRoot + "/temp/transforms"));
+});
+
+gulp.task("07-SwitchToZeroDeploy", function (callback) {
+    return runSequence(
+        "Publish-All-ZeroDeployConfigs",
+        "Remove-All-ZeroDeployDLLs", callback);
 });
 
 /*****************************
@@ -220,18 +227,27 @@ gulp.task("Publish-All-Configs", function () {
 
 gulp.task("Publish-All-ZeroDeployConfigs", function () {
     var root = "./src";
-    var relativeDir = "/**/code/**/App_Config/Include/zzz";
+    var relativeDir = "/**/code/App_Config/Include/zzz";
 
     var files = [root + relativeDir + "/ZeroDeploy.*.config",
                  "!" + root + relativeDir + "/ZeroDeploy.*.Debug.config",
                  "!" + root + relativeDir + "/ZeroDeploy.*.Release.config",
                  "!" + root + relativeDir + "/ZeroDeploy.*.ZeroDeploy.config",
-                 "!" + root + relativeDir + "/**/obj/**/App_Config"]
+                 "!" + root + relativeDir + "/**/obj/**/App_Config"];
     var destination = config.websiteRoot + "\\App_Config\\Include\\zzz";
 
     return gulp.src(files, { base: relativeDir })
             .pipe(debug({ title: "Copying " }))
             .pipe(gulp.dest(destination));
+});
+
+gulp.task("Remove-All-ZeroDeployDLLs", function () {
+    var zeroDeployDlls = [config.websiteRoot + "/bin/Sitecore.Feature.*",
+                          config.websiteRoot + "/bin/Sitecore.Foundation.*",
+                          config.websiteRoot + "/bin/Sitecore.Common.Website.*",
+                          config.websiteRoot + "/bin/Sitecore.Habitat.Website.*",
+                          "!" + config.websiteRoot + "/bin/Sitecore.Foundation.SitecoreExtensions.*"]
+    return del(zeroDeployDlls, { force: true });
 });
 
 /*****************************
