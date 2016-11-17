@@ -40,7 +40,7 @@
     <DebugSymbols>true</DebugSymbols>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <DisableFileDeployment>True</DisableFileDeployment>
-    <OutputPath>bin\ZeroDeploy\</OutputPath>
+    <OutputPath>.\bin\ZeroDeploy\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

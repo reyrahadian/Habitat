@@ -35,5 +35,11 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
+#if ZERODEPLOY
+[assembly: AssemblyVersion("1.0.*")]
+[assembly: ZeroDeployAssembly]
+#else
 [assembly: AssemblyVersion("1.0.0.0")]
+#endif
+
 [assembly: AssemblyFileVersion("1.0.0.0")]

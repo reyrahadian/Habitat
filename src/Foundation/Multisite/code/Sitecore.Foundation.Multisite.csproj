@@ -3,7 +3,6 @@
   <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <Import Project="..\..\..\..\ZeroDeploy.props" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -203,6 +202,7 @@
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets'))" />
   </Target>
+  <Import Project="..\..\..\..\ZeroDeploy.props" />
   <Import Project="..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
