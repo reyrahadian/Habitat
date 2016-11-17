@@ -27,7 +27,7 @@ gulp.task("default", function (callback) {
     "04-Apply-Xml-Transform",
     "05-Sync-Unicorn",
     "06-Deploy-Transforms",
-	callback);
+    callback);
 });
 
 /*****************************
@@ -118,6 +118,9 @@ gulp.task("Copy-Local-Assemblies", function () {
 
 /*****************************
   Publish
+  @param {string} location
+  @param {string} dest
+  @returns async
 *****************************/
 var publishProjects = function (location, dest) {
   dest = dest || config.websiteRoot;
@@ -227,7 +230,7 @@ gulp.task("Publish-All-Configs", function () {
 
 gulp.task("Publish-All-ZeroDeployConfigs", function () {
     var root = "./src";
-    var relativeDir = "/**/code/App_Config/Include/zzz";
+    var relativeDir = "/**/**/code/App_Config/Include/zzz";
 
     var files = [root + relativeDir + "/ZeroDeploy.*.config",
                  "!" + root + relativeDir + "/ZeroDeploy.*.Debug.config",
