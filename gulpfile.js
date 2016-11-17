@@ -218,6 +218,22 @@ gulp.task("Publish-All-Configs", function () {
   );
 });
 
+gulp.task("Publish-All-ZeroDeployConfigs", function () {
+    var root = "./src";
+    var relativeDir = "/**/code/**/App_Config/Include/zzz";
+
+    var files = [root + relativeDir + "/ZeroDeploy.*.config",
+                 "!" + root + relativeDir + "/ZeroDeploy.*.Debug.config",
+                 "!" + root + relativeDir + "/ZeroDeploy.*.Release.config",
+                 "!" + root + relativeDir + "/ZeroDeploy.*.ZeroDeploy.config",
+                 "!" + root + relativeDir + "/**/obj/**/App_Config"]
+    var destination = config.websiteRoot + "\\App_Config\\Include\\zzz";
+
+    return gulp.src(files, { base: relativeDir })
+            .pipe(debug({ title: "Copying " }))
+            .pipe(gulp.dest(destination));
+});
+
 /*****************************
  Watchers
 *****************************/
