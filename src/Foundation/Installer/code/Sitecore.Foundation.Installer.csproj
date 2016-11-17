@@ -3,7 +3,6 @@
   <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <Import Project="..\..\..\..\ZeroDeploy.props" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -228,9 +227,18 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\ZZZ\ZeroDeploy.Foundation.Installer.config">
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.Debug.config">
+      <DependentUpon>ZeroDeploy.Foundation.Installer.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.Release.config">
+      <DependentUpon>ZeroDeploy.Foundation.Installer.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Installer.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Foundation.Installer.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
     <None Include="web.config.transform" />
@@ -318,6 +326,7 @@
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets'))" />
   </Target>
+  <Import Project="..\..\..\..\ZeroDeploy.props" />
   <Import Project="..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.2\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
