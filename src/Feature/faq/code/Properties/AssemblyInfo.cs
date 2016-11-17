@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using Hedgehog.ZeroDeploy.Client.Attributes;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
