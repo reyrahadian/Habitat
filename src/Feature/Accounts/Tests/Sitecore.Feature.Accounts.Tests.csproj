@@ -256,6 +256,14 @@
       <Project>{3F61C57D-50D9-4194-8196-EF5F7AA4CCE5}</Project>
       <Name>Sitecore.Feature.Accounts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\interfaces\Sitecore.Feature.Accounts.Interfaces.csproj">
+      <Project>{02187a38-af98-4662-b213-0ebda3741dd5}</Project>
+      <Name>Sitecore.Feature.Accounts.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\models\Sitecore.Feature.Accounts.Models.csproj">
+      <Project>{9d5ee66f-a405-4d8f-8b8a-ae93112f2431}</Project>
+      <Name>Sitecore.Feature.Accounts.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
