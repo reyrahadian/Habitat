@@ -95,7 +95,8 @@ gulp.task("06-Deploy-Transforms", function () {
 gulp.task("07-SwitchToZeroDeploy", function (callback) {
     return runSequence(
         "Publish-All-ZeroDeployConfigs",
-        "Remove-All-ZeroDeployDLLs", callback);
+        "Remove-All-ZeroDeployDLLs",
+        "Turn-On-Zero-Deploy-Config", callback);
 });
 
 /*****************************
@@ -251,6 +252,32 @@ gulp.task("Remove-All-ZeroDeployDLLs", function () {
                           config.websiteRoot + "/bin/Sitecore.Habitat.Website.*",
                           "!" + config.websiteRoot + "/bin/Sitecore.Foundation.SitecoreExtensions.*"]
     return del(zeroDeployDlls, { force: true });
+});
+
+gulp.task("Turn-On-Zero-Deploy-Config", function () {
+    var includeFolder = config.websiteRoot + "/App_Config/Include";
+    var zeroDeployConfigName = includeFolder + "/ZeroDeploy.config"
+    var disabledFilename = zeroDeployConfigName + ".disabled"
+
+    gulp.src(disabledFilename)
+        .pipe(rename(zeroDeployConfigName))
+        .pipe(gulp.dest("."));
+
+    del(disabledFilename, { force: true });
+
+});
+
+gulp.task("Turn-Off-Zero-Deploy-Config", function () {
+    var includeFolder = config.websiteRoot + "/App_Config/Include";
+    var zeroDeployConfigName = includeFolder + "/ZeroDeploy.config"
+    var disabledFilename = zeroDeployConfigName + ".disabled"
+
+    gulp.src(zeroDeployConfigName)
+        .pipe(rename(disabledFilename))
+        .pipe(gulp.dest("."));
+
+    del(zeroDeployConfigName, { force: true });
+
 });
 
 /*****************************
