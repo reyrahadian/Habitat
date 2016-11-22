@@ -94,15 +94,15 @@ gulp.task("06-Deploy-Transforms", function () {
 
 gulp.task("07-SwitchToZeroDeploy", function (callback) {
     return runSequence(
-        "Publish-All-Zero-Deploy-Configs",
-        "Remove-All-Zero-Deploy-DLLs",
-        "Turn-On-Base-Zero-Deploy-Config", callback);
+        "ZD-Publish-All-Zero-Deploy-Configs",
+        "ZD-Remove-All-Zero-Deploy-DLLs",
+        "ZD-Turn-On-Base-Zero-Deploy-Config", callback);
 });
 
 gulp.task("08-SwitchOffZeroDeploy", function (callback) {
     return runSequence(
-        "Delete-All-Zero-Deploy-Configs",
-        "Turn-Off-Base-Zero-Deploy-Config",
+        "ZD-Remove-All-Zero-Deploy-Configs",
+        "ZD-Turn-Off-Base-Zero-Deploy-Config",
         "Publish-Assemblies", callback);
 });
 
@@ -236,7 +236,7 @@ gulp.task("Publish-All-Configs", function () {
   );
 });
 
-gulp.task("Publish-All-Zero-Deploy-Configs", function () {
+gulp.task("ZD-Publish-All-Zero-Deploy-Configs", function () {
     var root = "./src";
     var relativeDir = "/**/**/code/App_Config/Include/zzz";
 
@@ -252,14 +252,14 @@ gulp.task("Publish-All-Zero-Deploy-Configs", function () {
             .pipe(gulp.dest(destination));
 });
 
-gulp.task("Delete-All-Zero-Deploy-Configs", function () {
+gulp.task("ZD-Remove-All-Zero-Deploy-Configs", function () {
 
     var zeroDeployFiles = [config.websiteRoot + "/App_Config/Include/zzz/ZeroDeploy.*.config"];
 
     return del(zeroDeployFiles, { force: true });
 });
 
-gulp.task("Remove-All-Zero-Deploy-DLLs", function () {
+gulp.task("ZD-Remove-All-Zero-Deploy-DLLs", function () {
     var zeroDeployDlls = [config.websiteRoot + "/bin/Sitecore.Feature.*",
                           config.websiteRoot + "/bin/Sitecore.Foundation.*",
                           config.websiteRoot + "/bin/Sitecore.Common.Website.*",
@@ -268,7 +268,7 @@ gulp.task("Remove-All-Zero-Deploy-DLLs", function () {
     return del(zeroDeployDlls, { force: true });
 });
 
-gulp.task("Turn-On-Base-Zero-Deploy-Config", function () {
+gulp.task("ZD-Turn-On-Base-Zero-Deploy-Config", function () {
     var includeFolder = config.websiteRoot + "/App_Config/Include";
     var zeroDeployConfigName = includeFolder + "/ZeroDeploy.config"
     var disabledFilename = zeroDeployConfigName + ".disabled"
@@ -281,7 +281,7 @@ gulp.task("Turn-On-Base-Zero-Deploy-Config", function () {
 
 });
 
-gulp.task("Turn-Off-Base-Zero-Deploy-Config", function () {
+gulp.task("ZD-Turn-Off-Base-Zero-Deploy-Config", function () {
     var includeFolder = config.websiteRoot + "/App_Config/Include";
     var zeroDeployConfigName = includeFolder + "/ZeroDeploy.config"
     var disabledFilename = zeroDeployConfigName + ".disabled"
