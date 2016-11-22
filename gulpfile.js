@@ -94,8 +94,8 @@ gulp.task("06-Deploy-Transforms", function () {
 
 gulp.task("07-SwitchToZeroDeploy", function (callback) {
     return runSequence(
-        "Publish-All-ZeroDeployConfigs",
-        "Remove-All-ZeroDeployDLLs",
+        "Publish-All-Zero-Deploy-Configs",
+        "Remove-All-Zero-Deploy-DLLs",
         "Turn-On-Base-Zero-Deploy-Config", callback);
 });
 
