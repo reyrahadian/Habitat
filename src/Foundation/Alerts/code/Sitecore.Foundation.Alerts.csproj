@@ -127,16 +127,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Alerts.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Alerts.Debug.config">
-      <DependentUpon>ZeroDeploy.Foundation.Alerts.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Alerts.Release.config">
-      <DependentUpon>ZeroDeploy.Foundation.Alerts.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Alerts.ZeroDeploy.config">
-      <DependentUpon>ZeroDeploy.Foundation.Alerts.config</DependentUpon>
-    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Alerts.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>

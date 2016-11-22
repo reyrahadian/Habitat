@@ -128,16 +128,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.LocalDatasource.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.LocalDatasource.Debug.config">
-      <DependentUpon>ZeroDeploy.Foundation.LocalDatasource.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.LocalDatasource.Release.config">
-      <DependentUpon>ZeroDeploy.Foundation.LocalDatasource.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.LocalDatasource.ZeroDeploy.config">
-      <DependentUpon>ZeroDeploy.Foundation.LocalDatasource.config</DependentUpon>
-    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.LocalDatasource.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">

@@ -120,16 +120,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.News.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.News.Debug.config">
-      <DependentUpon>ZeroDeploy.Feature.News.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.News.Release.config">
-      <DependentUpon>ZeroDeploy.Feature.News.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.News.ZeroDeploy.config">
-      <DependentUpon>ZeroDeploy.Feature.News.config</DependentUpon>
-    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.News.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\News\NewsTeaser.cshtml" />
     <Content Include="Views\News\NewsPageHeader.cshtml" />
