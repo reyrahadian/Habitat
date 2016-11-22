@@ -237,19 +237,20 @@ gulp.task("Publish-All-Configs", function () {
 });
 
 gulp.task("ZD-Publish-All-Zero-Deploy-Configs", function () {
-    var root = "./src";
-    var relativeDir = "/**/**/code/App_Config/Include/zzz";
-
-    var files = [root + relativeDir + "/ZeroDeploy.*.config",
-                 "!" + root + relativeDir + "/ZeroDeploy.*.Debug.config",
-                 "!" + root + relativeDir + "/ZeroDeploy.*.Release.config",
-                 "!" + root + relativeDir + "/ZeroDeploy.*.ZeroDeploy.config",
-                 "!" + root + relativeDir + "/**/obj/**/App_Config"];
-    var destination = config.websiteRoot + "\\App_Config\\Include\\zzz";
-
-    return gulp.src(files, { base: relativeDir })
-            .pipe(debug({ title: "Copying " }))
-            .pipe(gulp.dest(destination));
+  var root = "./src";
+  var roots = [root + "/**/App_Config/Include/zzz", "!" + root + "/**/obj/**/App_Config/Include/zzz"];
+  var files = "/**/ZeroDeploy*.config";
+  var destination = config.websiteRoot + "\\App_Config\\Include\\zzz";
+  return gulp.src(roots, { base: root }).pipe(
+    foreach(function (stream, folder) {
+      console.log("Publishing from " + folder.path);
+      gulp.src(folder.path + files, { base: folder.path })
+        .pipe(newer(destination))
+        .pipe(debug({ title: "Copying " }))
+        .pipe(gulp.dest(destination));
+      return stream;
+    })
+  );
 });
 
 gulp.task("ZD-Remove-All-Zero-Deploy-Configs", function () {
