@@ -19,6 +19,7 @@
   using Sitecore.Feature.Demo.Controllers;
   using Sitecore.Feature.Demo.Models;
   using Sitecore.Feature.Demo.Services;
+  using Sitecore.Feature.Demo.Interfaces.Services;
   using Sitecore.Foundation.Accounts.Providers;
   using Sitecore.Foundation.Alerts.Exceptions;
   using Sitecore.Foundation.SitecoreExtensions.Services;

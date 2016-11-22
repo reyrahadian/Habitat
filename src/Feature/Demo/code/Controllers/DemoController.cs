@@ -7,6 +7,7 @@ namespace Sitecore.Feature.Demo.Controllers
   using Sitecore.ExperienceExplorer.Business.Managers;
   using Sitecore.Feature.Demo.Models;
   using Sitecore.Feature.Demo.Services;
+  using Sitecore.Feature.Demo.Interfaces.Services;
   using Sitecore.Foundation.Accounts.Providers;
   using Sitecore.Foundation.Alerts.Exceptions;
   using Sitecore.Foundation.SitecoreExtensions.Attributes;
@@ -21,10 +22,6 @@ namespace Sitecore.Feature.Demo.Controllers
   {
     private readonly IContactProfileProvider contactProfileProvider;
     private readonly IProfileProvider profileProvider;
-
-    public DemoController() : this(new ContactProfileProvider(), new ProfileProvider())
-    {
-    }
 
     public DemoController(IContactProfileProvider contactProfileProvider, IProfileProvider profileProvider)
     {

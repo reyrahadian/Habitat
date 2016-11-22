@@ -11,6 +11,7 @@
   using Sitecore.Data.Fields;
   using Sitecore.Diagnostics;
   using Sitecore.Feature.Demo.Models;
+  using Sitecore.Feature.Demo.Interfaces.Services;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
   using Sitecore.Resources.Media;
 

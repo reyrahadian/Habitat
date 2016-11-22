@@ -7,6 +7,7 @@
   using Sitecore.Analytics;
   using Sitecore.Analytics.Tracking;
   using Sitecore.Feature.Demo.Models;
+  using Sitecore.Feature.Demo.Interfaces.Repositories;
   using Sitecore.Feature.Demo.Repositories;
   using Sitecore.Foundation.Testing.Attributes;
   using Xunit;
