@@ -150,7 +150,6 @@
     <Content Include="App_Config\Include\Feature\Feature.Accounts.IoC.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.Account.config">
     <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Account.config">
       <SubType>Designer</SubType>
     </None>
