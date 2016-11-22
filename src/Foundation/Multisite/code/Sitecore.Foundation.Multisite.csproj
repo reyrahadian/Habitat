@@ -112,16 +112,7 @@
     </Content>
     <Content Include="sitecore\shell\Applications\Dialogs\Multisite\DatasourceSettings.xml" />
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Multisite.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Multisite.Debug.config">
-      <DependentUpon>ZeroDeploy.Foundation.Multisite.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Multisite.Release.config">
-      <DependentUpon>ZeroDeploy.Foundation.Multisite.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Multisite.ZeroDeploy.config">
-      <DependentUpon>ZeroDeploy.Foundation.Multisite.config</DependentUpon>
-    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Foundation.Multisite.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

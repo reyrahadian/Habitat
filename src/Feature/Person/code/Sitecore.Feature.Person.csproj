@@ -122,16 +122,7 @@
     <Content Include="Views\Person\EmployeeSearchResult.cshtml" />
     <Content Include="Views\Person\EmployeesCarousel.cshtml" />
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\ZeroDeploy.Feature.Person.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Person.Debug.config">
-      <DependentUpon>ZeroDeploy.Feature.Person.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Person.Release.config">
-      <DependentUpon>ZeroDeploy.Feature.Person.config</DependentUpon>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Person.ZeroDeploy.config">
-      <DependentUpon>ZeroDeploy.Feature.Person.config</DependentUpon>
-    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Feature.Person.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
