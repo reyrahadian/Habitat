@@ -238,7 +238,7 @@ gulp.task("Publish-All-Configs", function () {
 
 gulp.task("ZD-Publish-All-Zero-Deploy-Configs", function () {
   var root = "./src";
-  var roots = [root + "/**/App_Config/Include/zzz", "!" + root + "/**/obj/**/App_Config/Include/zzz"];
+  var roots = [root + "/**/App_Config/Include/zzz", "!" + root + "/**/obj/**/App_Config/Include/zzz", "!" + root + "/**/bin/**"];
   var files = "/**/ZeroDeploy*.config";
   var destination = config.websiteRoot + "\\App_Config\\Include\\zzz";
   return gulp.src(roots, { base: root }).pipe(
