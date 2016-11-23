@@ -102,10 +102,6 @@
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.160729\lib\NET452\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Logging">
-      <HintPath>..\..\..\..\packages\Sitecore.Logging.NoReferences.8.2.160729\lib\NET452\Sitecore.Logging.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Sitecore.Logging, Version=1.2.0.30715, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\packages\Sitecore.Logging.NoReferences.8.2.160729\lib\NET452\Sitecore.Logging.dll</HintPath>
@@ -191,8 +187,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\foundation\Indexing\code\Sitecore.Foundation.Indexing.csproj">
-      <Project>{80213F24-577F-4F0B-A3B8-62485EA4D2F3}</Project>
+      <Project>{80213f24-577f-4f0b-a3b8-62485ea4d2f3}</Project>
       <Name>Sitecore.Foundation.Indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Indexing\contracts\Sitecore.Foundation.Indexing.Contracts.csproj">
+      <Project>{8551de64-6274-4c4f-b968-24565f763b87}</Project>
+      <Name>Sitecore.Foundation.Indexing.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Testing\code\Sitecore.Foundation.Testing.csproj">
       <Project>{7cc3d72b-4518-4b78-be48-630a263c0f5b}</Project>
