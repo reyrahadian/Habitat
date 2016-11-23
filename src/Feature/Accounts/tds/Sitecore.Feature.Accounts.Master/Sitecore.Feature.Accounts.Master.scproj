@@ -23,6 +23,7 @@
     <ManageRoles>True</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <ProjectReportReportName>Sitecore.Feature.Accounts.Master</ProjectReportReportName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

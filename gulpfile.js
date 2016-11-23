@@ -265,9 +265,7 @@ gulp.task("ZD-Remove-All-Zero-Deploy-DLLs", function () {
                           config.websiteRoot + "/bin/Sitecore.Foundation.*",
                           config.websiteRoot + "/bin/Sitecore.Common.Website.*",
                           config.websiteRoot + "/bin/Sitecore.Habitat.Website.*",
-                          "!" + config.websiteRoot + "/bin/Sitecore.Foundation.SitecoreExtensions.*",
-                          "!" + config.websiteRoot + "/bin/Sitecore.*.Interfaces.*",
-                          "!" + config.websiteRoot + "/bin/Sitecore.*.Models.*"];
+                          "!" + config.websiteRoot + "/bin/Sitecore.Foundation.SitecoreExtensions.*"];
     return del(zeroDeployDlls, { force: true });
 });
 
