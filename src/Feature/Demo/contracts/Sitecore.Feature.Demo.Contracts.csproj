@@ -63,7 +63,7 @@
     <Compile Include="Services\IProfileProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sitecore.Feature.Demo.Models\Sitecore.Feature.Demo.Models.csproj">
+    <ProjectReference Include="..\models\Sitecore.Feature.Demo.Models.csproj">
       <Project>{5c5a8fd7-fad2-47c8-8b86-dc1596f954ec}</Project>
       <Name>Sitecore.Feature.Demo.Models</Name>
     </ProjectReference>

@@ -620,7 +620,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Accounts.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Demo.Contracts", "src\Feature\Demo\contracts\Sitecore.Feature.Demo.Contracts.csproj", "{8C588ACD-7805-4A93-B223-7DD213BF8D71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Demo.Models", "src\Feature\Demo\Sitecore.Feature.Demo.Models\Sitecore.Feature.Demo.Models.csproj", "{5C5A8FD7-FAD2-47C8-8B86-DC1596F954EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Demo.Models", "src\Feature\Demo\models\Sitecore.Feature.Demo.Models.csproj", "{5C5A8FD7-FAD2-47C8-8B86-DC1596F954EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Indexing.Contracts", "src\Foundation\Indexing\contracts\Sitecore.Foundation.Indexing.Contracts.csproj", "{8551DE64-6274-4C4F-B968-24565F763B87}"
 EndProject

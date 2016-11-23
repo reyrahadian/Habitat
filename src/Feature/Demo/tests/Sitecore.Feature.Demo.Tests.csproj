@@ -256,7 +256,7 @@
       <Project>{8c588acd-7805-4a93-b223-7dd213bf8d71}</Project>
       <Name>Sitecore.Feature.Demo.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Feature.Demo.Models\Sitecore.Feature.Demo.Models.csproj">
+    <ProjectReference Include="..\models\Sitecore.Feature.Demo.Models.csproj">
       <Project>{5c5a8fd7-fad2-47c8-8b86-dc1596f954ec}</Project>
       <Name>Sitecore.Feature.Demo.Models</Name>
     </ProjectReference>
