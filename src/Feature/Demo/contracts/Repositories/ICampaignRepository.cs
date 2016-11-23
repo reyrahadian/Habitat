@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Demo.Interfaces.Repositories
+﻿namespace Sitecore.Feature.Demo.Contracts.Repositories
 {
   using System.Collections.Generic;
   using Sitecore.Feature.Demo.Models;

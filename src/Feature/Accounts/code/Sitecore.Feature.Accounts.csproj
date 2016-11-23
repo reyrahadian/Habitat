@@ -209,9 +209,9 @@
       <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\interfaces\Sitecore.Feature.Accounts.Interfaces.csproj">
+    <ProjectReference Include="..\contracts\Sitecore.Feature.Accounts.Contracts.csproj">
       <Project>{02187a38-af98-4662-b213-0ebda3741dd5}</Project>
-      <Name>Sitecore.Feature.Accounts.Interfaces</Name>
+      <Name>Sitecore.Feature.Accounts.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\models\Sitecore.Feature.Accounts.Models.csproj">
       <Project>{9d5ee66f-a405-4d8f-8b8a-ae93112f2431}</Project>

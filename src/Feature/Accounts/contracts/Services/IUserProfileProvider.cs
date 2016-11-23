@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Accounts.Interfaces.Services
+﻿namespace Sitecore.Feature.Accounts.Contracts.Services
 {
   using System.Collections.Generic;
   using Sitecore.Security;

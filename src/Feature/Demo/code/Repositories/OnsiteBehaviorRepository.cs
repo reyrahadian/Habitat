@@ -2,7 +2,7 @@
 {
   using System.Linq;
   using Sitecore.Feature.Demo.Models;
-  using Sitecore.Feature.Demo.Interfaces.Services;
+  using Sitecore.Feature.Demo.Contracts.Services;
 
   public class OnsiteBehaviorRepository
   {

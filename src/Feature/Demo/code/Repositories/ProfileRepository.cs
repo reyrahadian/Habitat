@@ -4,7 +4,7 @@
   using System.Linq;
   using Sitecore.Analytics;
   using Sitecore.Feature.Demo.Models;
-  using Sitecore.Feature.Demo.Interfaces.Services;
+  using Sitecore.Feature.Demo.Contracts.Services;
 
   internal class ProfileRepository
   {

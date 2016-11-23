@@ -611,16 +611,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Testing
 		{0FFDA52A-7BE3-44B0-A1C3-5A7305B4CA89} = {0FFDA52A-7BE3-44B0-A1C3-5A7305B4CA89}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Accounts.Interfaces", "src\Feature\Accounts\interfaces\Sitecore.Feature.Accounts.Interfaces.csproj", "{02187A38-AF98-4662-B213-0EBDA3741DD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Accounts.Contracts", "src\Feature\Accounts\contracts\Sitecore.Feature.Accounts.Contracts.csproj", "{02187A38-AF98-4662-B213-0EBDA3741DD5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9D5EE66F-A405-4D8F-8B8A-AE93112F2431} = {9D5EE66F-A405-4D8F-8B8A-AE93112F2431}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Accounts.Models", "src\Feature\Accounts\models\Sitecore.Feature.Accounts.Models.csproj", "{9D5EE66F-A405-4D8F-8B8A-AE93112F2431}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Demo.Interfaces", "src\Feature\Demo\Sitecore.Feature.Demo.Interfaces\Sitecore.Feature.Demo.Interfaces.csproj", "{8C588ACD-7805-4A93-B223-7DD213BF8D71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Demo.Contracts", "src\Feature\Demo\contracts\Sitecore.Feature.Demo.Contracts.csproj", "{8C588ACD-7805-4A93-B223-7DD213BF8D71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Demo.Models", "src\Feature\Demo\Sitecore.Feature.Demo.Models\Sitecore.Feature.Demo.Models.csproj", "{5C5A8FD7-FAD2-47C8-8B86-DC1596F954EC}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Indexing.Contracts", "src\Foundation\Indexing\contracts\Sitecore.Foundation.Indexing.Contracts.csproj", "{8551DE64-6274-4C4F-B968-24565F763B87}"
 EndProject
 Global

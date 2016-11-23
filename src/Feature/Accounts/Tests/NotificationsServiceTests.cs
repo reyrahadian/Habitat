@@ -5,7 +5,7 @@
   using FluentAssertions;
   using netDumbster.smtp;
   using NSubstitute;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Services;
   using Sitecore.Feature.Accounts.Services;
   using Sitecore.Feature.Accounts.Tests.Extensions;
   using Sitecore.Feature.Accounts.Tests.FixtureContext;

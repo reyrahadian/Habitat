@@ -19,8 +19,8 @@
   using Sitecore.FakeDb.Sites;
   using Sitecore.Feature.Accounts.Controllers;
   using Sitecore.Feature.Accounts.Models;
-  using Sitecore.Feature.Accounts.Interfaces.Repositories;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Repositories;
+  using Sitecore.Feature.Accounts.Contracts.Services;
   using Sitecore.Foundation.Alerts;
   using Sitecore.Foundation.Alerts.Models;
   using Sitecore.Foundation.Dictionary.Repositories;

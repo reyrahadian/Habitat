@@ -12,7 +12,7 @@
   using Sitecore.FakeDb.AutoFixture;
   using Sitecore.FakeDb.Sites;
   using Sitecore.Feature.Accounts.Attributes;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Services;
   using Sitecore.Feature.Accounts.Tests.Extensions;
   using Sitecore.Foundation.Testing.Attributes;
   using Sitecore.Sites;

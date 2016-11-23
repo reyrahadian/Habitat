@@ -7,7 +7,7 @@
   using Sitecore.Data;
   using Sitecore.Foundation.Dictionary.Repositories;
   using Sitecore.Feature.Demo.Models;
-  using Sitecore.Feature.Demo.Interfaces.Repositories;
+  using Sitecore.Feature.Demo.Contracts.Repositories;
   using Sitecore.Marketing.Definitions;
   using Sitecore.Marketing.Definitions.Campaigns;
   using Sitecore.Marketing.Taxonomy;

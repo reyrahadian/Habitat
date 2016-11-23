@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Demo.Interfaces.Services
+﻿namespace Sitecore.Feature.Demo.Contracts.Services
 {
   using System.Collections.Generic;
   using Sitecore.Analytics.Data.Items;

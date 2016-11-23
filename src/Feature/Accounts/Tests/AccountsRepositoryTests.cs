@@ -15,7 +15,7 @@
   using Sitecore.FakeDb.Sites;
   using Sitecore.Feature.Accounts.Models;
   using Sitecore.Feature.Accounts.Repositories;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Services;
   using Sitecore.Feature.Accounts.Tests.Extensions;
   using Sitecore.Foundation.Testing.Attributes;
   using Sitecore.Security.Accounts;

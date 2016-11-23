@@ -7,7 +7,7 @@ namespace Sitecore.Feature.Demo.Controllers
   using Sitecore.ExperienceExplorer.Business.Managers;
   using Sitecore.Feature.Demo.Models;
   using Sitecore.Feature.Demo.Services;
-  using Sitecore.Feature.Demo.Interfaces.Services;
+  using Sitecore.Feature.Demo.Contracts.Services;
   using Sitecore.Foundation.Accounts.Providers;
   using Sitecore.Foundation.Alerts.Exceptions;
   using Sitecore.Foundation.SitecoreExtensions.Attributes;

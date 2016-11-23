@@ -4,7 +4,7 @@
   using System.Linq;
   using Sitecore.Analytics;
   using Sitecore.Feature.Demo.Models;
-  using Sitecore.Feature.Demo.Interfaces.Repositories;
+  using Sitecore.Feature.Demo.Contracts.Repositories;
 
   public class ReferralRepository
   {

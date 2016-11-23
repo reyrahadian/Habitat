@@ -7,8 +7,8 @@
     <ProjectGuid>{02187A38-AF98-4662-B213-0EBDA3741DD5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Feature.Accounts.Interfaces</RootNamespace>
-    <AssemblyName>Sitecore.Feature.Accounts.Interfaces</AssemblyName>
+    <RootNamespace>Sitecore.Feature.Accounts.Contracts</RootNamespace>
+    <AssemblyName>Sitecore.Feature.Accounts.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

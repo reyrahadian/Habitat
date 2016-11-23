@@ -9,7 +9,7 @@
   using Sitecore.Diagnostics;
   using Sitecore.Exceptions;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Services;
 
     public class AccountsSettingsService : IAccountsSettingsService
   {

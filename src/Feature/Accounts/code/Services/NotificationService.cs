@@ -1,6 +1,6 @@
 ﻿namespace Sitecore.Feature.Accounts.Services
 {
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Services;
     public class NotificationService : INotificationService
   {
     private readonly IAccountsSettingsService siteSettings;

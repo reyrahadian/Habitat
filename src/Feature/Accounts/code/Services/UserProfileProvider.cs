@@ -9,7 +9,7 @@
   using Sitecore.Diagnostics;
   using Sitecore.Security;
   using Sitecore.SecurityModel;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Services;
 
     public class UserProfileProvider : IUserProfileProvider
   {

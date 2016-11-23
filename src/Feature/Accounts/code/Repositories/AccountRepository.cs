@@ -6,8 +6,8 @@
   using Sitecore.Feature.Accounts.Services;
   using Sitecore.Security.Accounts;
   using Sitecore.Security.Authentication;
-  using Sitecore.Feature.Accounts.Interfaces.Repositories;
-  using Sitecore.Feature.Accounts.Interfaces.Services;
+  using Sitecore.Feature.Accounts.Contracts.Repositories;
+  using Sitecore.Feature.Accounts.Contracts.Services;
 
     public class AccountRepository : IAccountRepository
   {
