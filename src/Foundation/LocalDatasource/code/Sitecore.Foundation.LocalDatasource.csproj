@@ -143,6 +143,10 @@
       <Project>{80213F24-577F-4F0B-A3B8-62485EA4D2F3}</Project>
       <Name>Sitecore.Foundation.Indexing</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Indexing\contracts\Sitecore.Foundation.Indexing.Contracts.csproj">
+      <Project>{8551de64-6274-4c4f-b968-24565f763b87}</Project>
+      <Name>Sitecore.Foundation.Indexing.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
       <Project>{B535703F-8D07-4F23-A533-2974BB4CC7B1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>

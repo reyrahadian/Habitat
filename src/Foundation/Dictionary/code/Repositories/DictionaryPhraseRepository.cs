@@ -48,16 +48,16 @@
       }
       if (Context.Database == null)
       {
-        return defaultValue;
+        return defaultValue + "[No Value]";
       }
 
       var dictionaryItem = this.GetOrAutoCreateItem(relativePath, defaultValue);
       if (dictionaryItem == null)
       {
-        return defaultValue;
+        return defaultValue + "[No Value]";
       }
 
-      return dictionaryItem.Fields[Templates.DictionaryEntry.Fields.Phrase].Value ?? defaultValue;
+      return dictionaryItem.Fields[Templates.DictionaryEntry.Fields.Phrase].Value ?? defaultValue + "[No Value]";
     }
 
     public Item GetItem([NotNull] string relativePath, string defaultValue = "")

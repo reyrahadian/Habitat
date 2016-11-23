@@ -157,14 +157,7 @@
     <Compile Include="Infrastructure\Fields\AllTemplatesComputedField.cs" />
     <Compile Include="Infrastructure\Providers\FallbackIndexingProvider.cs" />
     <Compile Include="Infrastructure\Fields\HasPresentationComputedField.cs" />
-    <Compile Include="Models\IQueryPredicateProvider.cs" />
-    <Compile Include="Models\ISearchResultFormatter.cs" />
     <Compile Include="Models\IndexedItem.cs" />
-    <Compile Include="Models\IPageable.cs" />
-    <Compile Include="Models\IQuery.cs" />
-    <Compile Include="Models\ISearchResult.cs" />
-    <Compile Include="Models\ISearchResults.cs" />
-    <Compile Include="Models\ISearchSettings.cs" />
     <Compile Include="Models\SearchResult.cs" />
     <Compile Include="Models\SearchResultFactory.cs" />
     <Compile Include="Models\SearchResults.cs" />
@@ -182,6 +175,10 @@
     <ProjectReference Include="..\..\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
       <Project>{B535703F-8D07-4F23-A533-2974BB4CC7B1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\contracts\Sitecore.Foundation.Indexing.Contracts.csproj">
+      <Project>{8551de64-6274-4c4f-b968-24565f763b87}</Project>
+      <Name>Sitecore.Foundation.Indexing.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
