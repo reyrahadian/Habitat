@@ -201,6 +201,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\contracts\Sitecore.Foundation.Indexing.Contracts.csproj">
+      <Project>{8551de64-6274-4c4f-b968-24565f763b87}</Project>
+      <Name>Sitecore.Foundation.Indexing.Contracts</Name>
+    </ProjectReference>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
     <ProjectReference Include="..\..\..\feature\Media\code\Sitecore.Feature.Media.csproj">
       <Project>{1417B162-F987-4CBD-8642-CA4C4119E705}</Project>
