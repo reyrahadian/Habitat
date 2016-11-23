@@ -48,7 +48,7 @@
       }
       if (Context.Database == null)
       {
-                return defaultValue;
+        return defaultValue;
       }
 
       var dictionaryItem = this.GetOrAutoCreateItem(relativePath, defaultValue);
