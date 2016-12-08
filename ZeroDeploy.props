@@ -5,6 +5,7 @@
     <ZeroDeploySitecoreUrl>http://habitat.dev.local</ZeroDeploySitecoreUrl>
     <ZeroDeployViewExtensions>.cshtml</ZeroDeployViewExtensions>
     <ZeroDeployApplicationName>Habitat</ZeroDeployApplicationName>
+    <ZeroDeploySitecoreWebRoot>C:\inetpub\Sitecore\habitat.dev.local\Website</ZeroDeploySitecoreWebRoot>
   </PropertyGroup>
   <Import Project=".\ZeroDeploy.props.user" Condition="Exists('.\ZeroDeploy.props.user')" />
 </Project>
