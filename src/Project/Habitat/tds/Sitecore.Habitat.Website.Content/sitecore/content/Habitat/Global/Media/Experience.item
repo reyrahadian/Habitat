@@ -8,11 +8,12 @@ name: Experience
 master: {00000000-0000-0000-0000-000000000000}
 template: {F1C095E2-B3E0-46D0-B838-02A9E8B880D9}
 templatekey: Video
+created: 20161226T040945Z
 
 ----version----
 language: da
 version: 1
-revision: f5c90ad0-bed2-403c-92c4-830db981110b
+revision: ebf0c5cd-62f0-476a-afca-92a3df0b45bd
 
 ----field----
 field: {2628705D-9434-4448-978C-C3BF166FA1EB}
@@ -48,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f5c90ad0-bed2-403c-92c4-830db981110b
+ebf0c5cd-62f0-476a-afca-92a3df0b45bd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151922Z
+20161226T040945Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,15 +67,15 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: e7dbb047-4fe2-4172-a7ca-4eda347bb8be
+revision: d2cd1c2d-730f-4b41-b25e-4b8573019739
 
 ----field----
 field: {2628705D-9434-4448-978C-C3BF166FA1EB}
 name: MediaVideoLink
 key: mediavideolink
-content-length: 141
+content-length: 79
 
-<link id="{B0CF0C13-99F5-4FE0-85C0-1FE6495BF04A}" target="" text="Youtube link" url="/Habitat/Videos/Sitecore Experience" linktype="media" />
+<link linktype="media" target="" id="{B0CF0C13-99F5-4FE0-85C0-1FE6495BF04A}" />
 ----field----
 field: {63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}
 name: MediaTitle
@@ -109,18 +110,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e7dbb047-4fe2-4172-a7ca-4eda347bb8be
+d2cd1c2d-730f-4b41-b25e-4b8573019739
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160405T151922Z
+20161226T040945Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 17
 
-sitecore\admin
+default\Anonymous

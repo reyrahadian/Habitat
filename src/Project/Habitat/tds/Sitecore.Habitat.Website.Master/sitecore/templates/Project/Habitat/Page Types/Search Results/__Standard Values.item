@@ -8,6 +8,14 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {92168572-385B-45F0-B40F-3D987AD20E5C}
 templatekey: Search Results
+created: 20161226T041004Z
+
+----field----
+field: {5585A30D-B115-4753-93CE-422C3455DEB2}
+name: ShowInNavigation
+key: showinnavigation
+content-length: 0
+
 
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
@@ -19,7 +27,7 @@ content-length: 3664
 ----version----
 language: en
 version: 1
-revision: 45446ca2-1d97-4338-a305-0f90aa0fa91c
+revision: 1b454e93-11c5-4104-8def-10468394e5fa
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -36,19 +44,19 @@ content-length: 58
 
 <image mediaid="{88032F9C-B464-44CB-B76D-513D60B9C127}" />
 ----field----
-field: {1B483E91-D8C4-4D19-BA03-462074B55936}
-name: NavigationTitle
-key: navigationtitle
-content-length: 5
-
-$name
-----field----
 field: {80E30DD8-8021-45F5-9FE1-23D2702CC206}
 name: SearchBoxTitle
 key: searchboxtitle
 content-length: 29
 
 Enter a text to search for...
+----field----
+field: {1B483E91-D8C4-4D19-BA03-462074B55936}
+name: NavigationTitle
+key: navigationtitle
+content-length: 5
+
+$name
 ----field----
 field: {0EE2F208-1FEE-42FC-8051-6696D49A92BF}
 name: OpenGraphTitle
@@ -83,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-45446ca2-1d97-4338-a305-0f90aa0fa91c
+1b454e93-11c5-4104-8def-10468394e5fa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160411T220308Z
+20161226T041005Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,11 +8,12 @@ name: Accounts
 master: {00000000-0000-0000-0000-000000000000}
 template: {94A8C8E9-690B-4E65-98E7-F95800222767}
 templatekey: Article
+created: 20161226T040948Z
 
 ----version----
 language: en
 version: 1
-revision: d06f8efa-ae22-4869-b40c-d1d50bfdc1ca
+revision: be6cf12d-85b3-4524-9527-f4fb8a50cc40
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -62,9 +63,9 @@ Accounts
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
 key: __final renderings
-content-length: 275
+content-length: 559
 
-<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{927D47AD-A496-49B3-BD5B-C5F93D8BC701}" p:before="*" s:id="{03112E88-1499-4132-9D5F-E213AFD2019C}" s:ph="/page-layout/section-narrow" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{8AEF98DC-DFD6-4711-874F-04774D755D71}" p:before="*" s:ds="{43186E7B-CADD-4D79-8F65-D49806BCE96D}" s:id="{97459D5B-3C92-46C2-A329-138C1E277465}" s:ph="/page-layout/section-narrow/col-wide-1_927d47ad-a496-49b3-bd5b-c5f93d8bc701" /><r uid="{927D47AD-A496-49B3-BD5B-C5F93D8BC701}" p:after="r[@uid='{8AEF98DC-DFD6-4711-874F-04774D755D71}']" s:id="{03112E88-1499-4132-9D5F-E213AFD2019C}" s:ph="/page-layout/section-narrow" /></d></r>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -78,14 +79,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d06f8efa-ae22-4869-b40c-d1d50bfdc1ca
+be6cf12d-85b3-4524-9527-f4fb8a50cc40
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160705T192602Z
+20161226T040948Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

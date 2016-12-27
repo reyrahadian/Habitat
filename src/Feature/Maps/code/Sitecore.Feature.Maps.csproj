@@ -112,7 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\Maps\maps.js" />
-    <Content Include="packages.config" />
     <Content Include="App_Config\Include\Feature\Feature.Maps.config">
       <SubType>Designer</SubType>
     </Content>

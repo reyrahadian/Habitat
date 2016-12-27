@@ -8,6 +8,7 @@ name: MetaKeywords
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20161226T040641Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -20,9 +21,9 @@ Treelist
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
 key: source
-content-length: 50
+content-length: 42
 
-/sitecore/content/Habitat/Global/Metadata Keywords
+/sitecore/system/Settings/Feature/Metadata
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,7 +41,7 @@ ar|Everyone|pe|!*|+field:read|pd|!*|+field:read|ar|modules\Feature Metadata Admi
 ----version----
 language: en
 version: 1
-revision: 4670530d-7a54-4a67-b07d-0e0e1db75b38
+revision: 6bcd16a0-8dfc-4316-a092-09ed1b14c3de
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -69,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4670530d-7a54-4a67-b07d-0e0e1db75b38
+6bcd16a0-8dfc-4316-a092-09ed1b14c3de
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105323Z
+20161226T040641Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

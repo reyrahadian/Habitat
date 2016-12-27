@@ -8,6 +8,7 @@ name: Leave an Email
 master: {00000000-0000-0000-0000-000000000000}
 template: {FFB1DA32-2764-47DB-83B0-95B843546A7E}
 templatekey: Form
+created: 20161226T041004Z
 
 ----field----
 field: {A42052F7-6C18-424A-A2A1-7A72054CB1A6}
@@ -20,16 +21,16 @@ content-length: 1
 field: {46FB324A-9741-43BD-A0C9-5081A39D40AA}
 name: Show Introduction
 key: show introduction
-content-length: 1
+content-length: 0
 
-0
+
 ----field----
 field: {FAEACD39-B059-4F46-BEC4-74BA468A97B8}
 name: Show Footer
 key: show footer
-content-length: 1
+content-length: 0
 
-0
+
 ----field----
 field: {A7F779B9-5FCF-45CC-866B-7C973F5C4FAC}
 name: Save Actions
@@ -68,7 +69,7 @@ content-length: 740
 ----version----
 language: en
 version: 1
-revision: c54f20a7-0d8d-46e3-b288-934f70abcf27
+revision: 874ea1d3-a08e-4643-9832-d579235fe731
 
 ----field----
 field: {86D6A401-5A20-49C9-A2F8-0312398EE946}
@@ -109,23 +110,23 @@ content-length: 16
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-c54f20a7-0d8d-46e3-b288-934f70abcf27
+874ea1d3-a08e-4643-9832-d579235fe731
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105435Z
+20161226T041004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,6 +8,7 @@ name: FAQ Accordion
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
+created: 20161226T040633Z
 
 ----field----
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
@@ -29,11 +30,11 @@ name: __Thumbnail
 key: __thumbnail
 content-length: 58
 
-<image mediaid="{85C963E8-6944-4B79-A532-195E57F87423}" />
+<image mediaid="{8D08FAFF-178F-4D67-88F5-98205C05B9E5}" />
 ----version----
 language: en
 version: 1
-revision: 0e0b7d7e-fa16-437c-8753-884529335eb9
+revision: 5da4c239-61d7-4dc9-aafb-a73eb9feeceb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0e0b7d7e-fa16-437c-8753-884529335eb9
+5da4c239-61d7-4dc9-aafb-a73eb9feeceb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181415Z
+20161226T040633Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
