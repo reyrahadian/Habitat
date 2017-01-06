@@ -8,7 +8,7 @@ name: Habitat
 master: {00000000-0000-0000-0000-000000000000}
 template: {0643D9D4-F30B-4B07-91D0-289CC324C9CF}
 templatekey: Site Root
-created: 20161014T180636:636120651967570000
+created: 20170101T210131Z
 
 ----field----
 field: {ED71D374-8C33-4561-991D-77482AE01330}
@@ -25,6 +25,13 @@ content-length: 39
 
 /sitecore/content/Habitat/Home/Register
 ----field----
+field: {60745023-FFD5-400E-8F80-4BCA9F2ABB29}
+name: Login Page
+key: login page
+content-length: 36
+
+/sitecore/content/Habitat/Home/Login
+----field----
 field: {F3CD2BB8-472B-4DF0-87C0-A13098E391CA}
 name: Forgot Password Page
 key: forgot password page
@@ -35,9 +42,9 @@ content-length: 52
 field: {B128E2B3-3865-4F1C-A147-5F248676D3F5}
 name: After Login Page
 key: after login page
-content-length: 30
+content-length: 43
 
-/sitecore/content/Habitat/Home
+/sitecore/content/Habitat/Home/Edit Profile
 ----field----
 field: {365254C4-1C1C-493A-9710-671574717898}
 name: Forgot Password Mail Template
@@ -69,7 +76,7 @@ ar|habitat\Project Habitat Content Author|pe|+item:write|+item:read|!*|pd|+item:
 ----version----
 language: da
 version: 1
-revision: e63bbd1f-2a54-44f4-a877-d689e3f29146
+revision: b4ae0fe4-4381-4570-8320-ea910aaaa505
 
 ----field----
 field: {E748D808-64C1-4DEC-9718-F35CF9689E4B}
@@ -112,14 +119,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e63bbd1f-2a54-44f4-a877-d689e3f29146
+b4ae0fe4-4381-4570-8320-ea910aaaa505
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161014T180636Z
+20170101T210131Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -130,7 +137,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 06916365-9986-48d7-a012-a3e3efb6fbbc
+revision: 03f760f2-07c7-4084-ab3b-c8c48de6bf33
 
 ----field----
 field: {835FA523-D28A-46A2-A589-6AA4A5BF0846}
@@ -164,9 +171,10 @@ content-length: 0
 field: {02115632-FE1E-4B3D-9AD4-A4DDF1F782F0}
 name: Copyright
 key: copyright
-content-length: 121
+content-length: 329
 
-Copyright © 2015 <a href="http://sitecore.net" target="_blank" title="Opens in a new window">Sitecore Corporation A/S</a>
+<p>© Copyright 2017, <a href="http://sitecore.net" target="_blank" title="Opens in a new window">Sitecore</a>. All Rights Reserved<br />
+<small>&ldquo;Habitat&rdquo; as used here is for demonstration purposes only and to represent the software and services provided by Sitecore further described at www.sitecore.net.</small></p>
 ----field----
 field: {235AE392-97AC-4822-BE38-837DA3E7724E}
 name: SiteBrowserTitle
@@ -202,6 +210,13 @@ key: title
 content-length: 13
 
 About Habitat
+----field----
+field: {53B5AF0A-265F-4E60-B2B2-4576CE0BECCF}
+name: Theme
+key: theme
+content-length: 38
+
+{9025588B-C765-458B-829C-1886A98AD3A7}
 ----field----
 field: {EFD4980A-030C-497C-8880-40B6030AC28B}
 name: OrganisationName
@@ -245,18 +260,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-06916365-9986-48d7-a012-a3e3efb6fbbc
+03f760f2-07c7-4084-ab3b-c8c48de6bf33
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161014T180636Z
+20170101T210131Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 17
 
-extranet\Anonymous
+habitat\Anonymous

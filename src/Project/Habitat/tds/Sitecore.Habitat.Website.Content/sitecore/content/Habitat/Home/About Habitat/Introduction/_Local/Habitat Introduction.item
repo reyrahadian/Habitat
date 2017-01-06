@@ -8,19 +8,20 @@ name: Habitat Introduction
 master: {00000000-0000-0000-0000-000000000000}
 template: {F1C095E2-B3E0-46D0-B838-02A9E8B880D9}
 templatekey: Video
+created: 20170101T210138Z
 
 ----version----
 language: en
 version: 1
-revision: 9c37e1c5-7119-4cdb-8170-ebc360213945
+revision: cc5e1320-3a1f-4200-896e-a8932274b39d
 
 ----field----
 field: {2628705D-9434-4448-978C-C3BF166FA1EB}
 name: MediaVideoLink
 key: mediavideolink
-content-length: 63
+content-length: 83
 
-<link linktype="external" url="https://youtu.be/2CELqflPhm0" />
+<link linktype="external" url="https://youtu.be/RchuR18xLa0" anchor="" target="" />
 ----field----
 field: {63DDA48B-B0CB-45A7-9A1B-B26DDB41009B}
 name: MediaTitle
@@ -32,9 +33,9 @@ Habitat Introduction
 field: {302C9F8D-F703-4F76-A4AB-73D222648232}
 name: MediaDescription
 key: mediadescription
-content-length: 90
+content-length: 89
 
-<p>Video introducing the concepts and thoughts behind the Sitecore Habitat methodology</p>
+<p>Video introducing the concepts and thoughts behind the Sitecore Helix methodology.</p>
 ----field----
 field: {4FF62B0A-D73B-4436-BEA2-023154F2FFC4}
 name: MediaThumbnail
@@ -55,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9c37e1c5-7119-4cdb-8170-ebc360213945
+cc5e1320-3a1f-4200-896e-a8932274b39d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181805Z
+20170101T210138Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

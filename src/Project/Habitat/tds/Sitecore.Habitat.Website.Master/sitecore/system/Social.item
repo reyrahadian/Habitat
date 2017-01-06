@@ -8,6 +8,7 @@ name: Social
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
+created: 20161115T161134Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
@@ -19,7 +20,7 @@ Network/32x32/earth_connection.png
 ----version----
 language: da
 version: 1
-revision: b815a234-7ef3-4a6c-bf8f-82fbfac76522
+revision: 487c2022-776b-4114-a74d-e115692aab77
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -41,7 +42,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115255Z
+20161115T163808Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b815a234-7ef3-4a6c-bf8f-82fbfac76522
+487c2022-776b-4114-a74d-e115692aab77
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115255Z
+20161115T163808Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +74,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 9d7b2823-70c6-4d82-9512-66f8ded985c1
+revision: 6b760a52-f6fb-4cb5-a38f-ee2c48eb5bbf
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -95,7 +96,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115419Z
+20161115T164233Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -109,14 +110,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9d7b2823-70c6-4d82-9512-66f8ded985c1
+6b760a52-f6fb-4cb5-a38f-ee2c48eb5bbf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115419Z
+20161115T164233Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -174,7 +175,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 7c68e0fb-1f30-4a92-b178-df65434b6b7b
+revision: 632a7c8c-8153-447c-83bd-0a34c784c628
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -196,7 +197,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115544Z
+20161115T164627Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -210,14 +211,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c68e0fb-1f30-4a92-b178-df65434b6b7b
+632a7c8c-8153-447c-83bd-0a34c784c628
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115544Z
+20161115T164627Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

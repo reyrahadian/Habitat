@@ -8,6 +8,7 @@ name: Accounts
 master: {00000000-0000-0000-0000-000000000000}
 template: {F77FC8C9-8888-414D-8FC7-D20609B52C59}
 templatekey: Account Folder
+created: 20161115T161134Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
@@ -19,7 +20,7 @@ content-length: 0
 ----version----
 language: da
 version: 1
-revision: d7f3a155-215e-4ba7-92eb-f9aaf9d6f966
+revision: cc4793b3-31f7-4bf0-9238-8d3d7213a88b
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -41,7 +42,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115305Z
+20161115T163832Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d7f3a155-215e-4ba7-92eb-f9aaf9d6f966
+cc4793b3-31f7-4bf0-9238-8d3d7213a88b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115305Z
+20161115T163832Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +74,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: ed5eae4a-dbf9-4c2b-bc92-1f75a296def8
+revision: 093271fe-239b-4cdc-9a5e-4b5bef5fb2b8
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -95,7 +96,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115430Z
+20161115T164300Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -109,14 +110,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed5eae4a-dbf9-4c2b-bc92-1f75a296def8
+093271fe-239b-4cdc-9a5e-4b5bef5fb2b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115430Z
+20161115T164300Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -174,7 +175,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 04165bf5-656e-41b0-8ca4-e8d4777a9cf6
+revision: 995d850e-cc29-4953-830b-7d5db7c3f886
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -196,7 +197,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115557Z
+20161115T164655Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -210,14 +211,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-04165bf5-656e-41b0-8ca4-e8d4777a9cf6
+995d850e-cc29-4953-830b-7d5db7c3f886
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115557Z
+20161115T164655Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
