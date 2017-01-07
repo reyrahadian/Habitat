@@ -164,6 +164,12 @@
     <Content Include="favicon.ico" />
     <None Include="App_Config\Security\domains.config.transform" />
     <Content Include="packages.config" />
+    <None Include="App_Config\Security\Domains.Debug.config">
+      <DependentUpon>Domains.config</DependentUpon>
+    </None>
+    <None Include="App_Config\Security\Domains.Release.config">
+      <DependentUpon>Domains.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="App_Config\Include\Project\z.Habitat.DevSettings.config">
       <SubType>Designer</SubType>

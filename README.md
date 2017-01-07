@@ -9,11 +9,17 @@ The architecture and methodology focuses on:
 
 For more information, please check out the [Habitat Wiki](https://github.com/Sitecore/Habitat/wiki)
 
-## Differences than the original
+## Differences from the original repo
 
 This version of Habitat is using Team Development For Sitecore for Item Serialization and Deployments.
 
 Team Development for Sitecore is a Visual Studio plug-in managed by Hedgehog Development. At its core, it provides companies with the ability to automate their Sitecore builds or set up a continuous deployment scenarios. TDS provides several additional features its users find valuable, for more information visit: www.teamdevelopmentforsitecore.com.
+
+Config transforms are implemented through XDT transforms using Visual Studio builds and TDS's in-build transforming capabilities. Therefore:-
+App_Config/Security/Domains.config is patched, and directly has the transforms from the Foundation.Accounts and Project.Habitat modules in it. (Deployed from the Project.Habitat module)
+Web.config is patched, and directly has the transforms from the Foundation.Forms, Foundation.Installer and Project.Common modules in it. (Deployed from the Project.Habitat module)
+
+
 
 
 ## Differences in Installation:

@@ -90,7 +90,6 @@
     <None Include="App_Config\Security\domains.config.transform" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="App_Config\Security\Domains.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
