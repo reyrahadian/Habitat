@@ -8,6 +8,7 @@ name: Rendering Options
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
+created: 20161115T161134Z
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
@@ -26,7 +27,7 @@ content-length: 38
 ----version----
 language: da
 version: 1
-revision: 586c5b2e-63b7-4a94-b06d-5f4e574a7b33
+revision: ad597927-330a-4974-8903-213a8496b24f
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -48,7 +49,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115306Z
+20161115T163835Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-586c5b2e-63b7-4a94-b06d-5f4e574a7b33
+ad597927-330a-4974-8903-213a8496b24f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115306Z
+20161115T163835Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +81,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 1a02dd8d-ded5-4ccd-bf26-4b4011cbe434
+revision: 1677c520-ffcf-42fb-bb82-66acd5b8e963
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -102,7 +103,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115431Z
+20161115T164303Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -116,14 +117,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1a02dd8d-ded5-4ccd-bf26-4b4011cbe434
+1677c520-ffcf-42fb-bb82-66acd5b8e963
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115431Z
+20161115T164303Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -181,7 +182,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 8b888090-ef82-4af2-9e3f-2593d0ae9d3d
+revision: 431d1bc6-8073-463e-a210-c323cba6da65
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -203,7 +204,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115558Z
+20161115T164658Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -217,14 +218,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b888090-ef82-4af2-9e3f-2593d0ae9d3d
+431d1bc6-8073-463e-a210-c323cba6da65
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115558Z
+20161115T164658Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

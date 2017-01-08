@@ -8,6 +8,7 @@ name: Field types
 master: {00000000-0000-0000-0000-000000000000}
 template: {239F9CF4-E5A0-44E0-B342-0F32CD4C6D8B}
 templatekey: Node
+created: 20161115T161134Z
 
 ----field----
 field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
@@ -40,7 +41,7 @@ content-length: 38
 ----version----
 language: da
 version: 1
-revision: 1c16e764-a230-41ac-adbf-2d9907038cad
+revision: e8b4dd65-ef4e-448e-98cd-e12962c869a0
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -62,7 +63,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115219Z
+20161115T163550Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -76,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1c16e764-a230-41ac-adbf-2d9907038cad
+e8b4dd65-ef4e-448e-98cd-e12962c869a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115219Z
+20161115T163550Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,7 +95,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: adfbc19e-6c96-4c16-be46-5e0e8df8ecd7
+revision: 8a318a82-e0dd-4050-b6ac-9ab5aa4621a0
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -116,7 +117,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115346Z
+20161115T164053Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -130,14 +131,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-adfbc19e-6c96-4c16-be46-5e0e8df8ecd7
+8a318a82-e0dd-4050-b6ac-9ab5aa4621a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115346Z
+20161115T164053Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -195,7 +196,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: d1651ce0-008b-4681-821b-e71d4e0db407
+revision: c3672096-1fc7-412e-9a83-a027080da4b8
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -217,7 +218,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115507Z
+20161115T164446Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -231,14 +232,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1651ce0-008b-4681-821b-e71d4e0db407
+c3672096-1fc7-412e-9a83-a027080da4b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115507Z
+20161115T164446Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
