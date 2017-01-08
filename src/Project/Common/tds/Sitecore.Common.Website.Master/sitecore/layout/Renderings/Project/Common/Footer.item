@@ -8,6 +8,7 @@ name: Footer
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
+created: 20161014T180620:636120651804570000
 
 ----field----
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
@@ -16,6 +17,13 @@ key: path
 content-length: 38
 
 /Views/Common/Sublayouts/Footer.cshtml
+----field----
+field: {7D24E54F-5C16-4314-90C9-6051AA1A7DA1}
+name: Parameters Template
+key: parameters template
+content-length: 0
+
+
 ----field----
 field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
 name: Open Properties after Add
@@ -30,10 +38,17 @@ key: __sortorder
 content-length: 4
 
 2200
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{D3189921-A536-44B8-AE9A-D517218F487F}" />
 ----version----
 language: en
 version: 1
-revision: 7a2ff6f9-7090-41d1-88c4-ad8b03a97c77
+revision: 78c4d93a-4218-4b38-8cb0-65e0e570b128
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7a2ff6f9-7090-41d1-88c4-ad8b03a97c77
+78c4d93a-4218-4b38-8cb0-65e0e570b128
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T145046Z
+20161014T180620Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

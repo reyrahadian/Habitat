@@ -8,6 +8,7 @@ name: content
 master: {00000000-0000-0000-0000-000000000000}
 template: {E3E2D58C-DF95-4230-ADC9-279924CECE84}
 templatekey: Main section
+created: 20161115T161133Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
@@ -33,7 +34,7 @@ content-length: 0
 ----version----
 language: da
 version: 1
-revision: b6c8dfaa-67ff-44c2-8090-3d4cbf633fec
+revision: ba2c786b-b6ef-4946-8348-973329c009a1
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -69,7 +70,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115202Z
+20161115T163503Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -83,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b6c8dfaa-67ff-44c2-8090-3d4cbf633fec
+ba2c786b-b6ef-4946-8348-973329c009a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115202Z
+20161115T163503Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +102,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: e1ea2de4-b9f2-4563-868b-1e2c8a5dbab4
+revision: 25b70111-c376-4ba5-91fa-5f17bef77c3e
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -137,7 +138,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115327Z
+20161115T164005Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -151,14 +152,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e1ea2de4-b9f2-4563-868b-1e2c8a5dbab4
+25b70111-c376-4ba5-91fa-5f17bef77c3e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115327Z
+20161115T164005Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -223,7 +224,7 @@ sitecore\Admin
 ----version----
 language: ja-JP
 version: 1
-revision: 88494ca6-ce43-4dd9-80f3-1c55d3984c64
+revision: cea328ce-9240-432c-8c48-c68cf85cba70
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -259,7 +260,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115447Z
+20161115T164355Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -273,14 +274,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-88494ca6-ce43-4dd9-80f3-1c55d3984c64
+cea328ce-9240-432c-8c48-c68cf85cba70
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115447Z
+20161115T164355Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,6 +8,7 @@ name: Primary Menu
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
+created: 20161014T180528:636120651283300000
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -23,10 +24,24 @@ key: controller action
 content-length: 11
 
 PrimaryMenu
+----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 0
+
+
+----field----
+field: {308E88F5-CD6E-4F8F-BAFE-95A47DEDEFDC}
+name: Editable
+key: editable
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
-revision: 7b77dd71-4c70-4f0b-9851-0d09be6fe252
+revision: f2e57504-f261-42f3-8d29-1b7b8fffc6e7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b77dd71-4c70-4f0b-9851-0d09be6fe252
+f2e57504-f261-42f3-8d29-1b7b8fffc6e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160622T160050Z
+20161014T180528Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,6 +8,7 @@ name: Inner 2 Column 6-6
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
+created: 20161006T142921:636113609618230000
 
 ----field----
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
@@ -36,11 +37,11 @@ name: __Thumbnail
 key: __thumbnail
 content-length: 58
 
-<image mediaid="{6630A67F-0EB4-4CFF-A75B-D0F7899918CA}" />
+<image mediaid="{C4EE127E-ED5A-4838-B717-112CFD6EA5F9}" />
 ----version----
 language: en
 version: 1
-revision: d8e7e920-3cca-4422-acee-35e1b422b92f
+revision: ef95d532-7495-4ba3-a2bb-db5e4097a5c3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d8e7e920-3cca-4422-acee-35e1b422b92f
+ef95d532-7495-4ba3-a2bb-db5e4097a5c3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181742Z
+20161006T142921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

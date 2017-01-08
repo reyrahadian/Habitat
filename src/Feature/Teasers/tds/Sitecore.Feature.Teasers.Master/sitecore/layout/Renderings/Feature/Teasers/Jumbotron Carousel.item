@@ -8,6 +8,7 @@ name: Jumbotron Carousel
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
+created: 20161226T040908Z
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -23,6 +24,13 @@ key: controller action
 content-length: 17
 
 JumbotronCarousel
+----field----
+field: {FC5C3451-DFDE-4778-9901-5D0B1DA1E212}
+name: Area
+key: area
+content-length: 0
+
+
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -44,11 +52,25 @@ key: compatible renderings
 content-length: 38
 
 {5D35C31F-0770-4498-BAB8-C88BEF41F153}
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{4194EFD1-5B6A-4077-AAA8-52F60B7EC879}" />
 ----version----
 language: en
 version: 1
-revision: 6dd51020-b572-4025-abb6-0bece29c9e2d
+revision: 6bb5f7c9-df36-4da4-8a7e-a27cdc77102f
 
+----field----
+field: {1C307764-806C-42F0-B7CE-FC173AC8372B}
+name: Supports Local Datasource
+key: supports local datasource
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6dd51020-b572-4025-abb6-0bece29c9e2d
+6bb5f7c9-df36-4da4-8a7e-a27cdc77102f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160617T181733Z
+20161226T040908Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

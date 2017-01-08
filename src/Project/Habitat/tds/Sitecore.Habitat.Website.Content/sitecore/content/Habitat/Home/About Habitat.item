@@ -8,6 +8,7 @@ name: About Habitat
 master: {00000000-0000-0000-0000-000000000000}
 template: {8EE208F9-A6A6-41E2-88A0-C188737A178C}
 templatekey: Section
+created: 20170101T210131Z
 
 ----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
@@ -26,7 +27,7 @@ content-length: 1
 ----version----
 language: da
 version: 1
-revision: 9cf2d222-2271-4cb3-800c-594d0720a0a8
+revision: e69dc16d-0a25-4457-a449-74d75a5a7540
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -90,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9cf2d222-2271-4cb3-800c-594d0720a0a8
+e69dc16d-0a25-4457-a449-74d75a5a7540
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212042Z
+20170101T210131Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,7 +109,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 24363564-fe2d-47b3-b723-bc11c6c6a8d9
+revision: ae7c4d27-d39b-495a-801e-5cdac661f833
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -121,16 +122,18 @@ About Habitat
 field: {AC3FD4DB-8266-476D-9635-67814D91E901}
 name: Summary
 key: summary
-content-length: 124
+content-length: 244
 
-Sitecore Habitat is a set of principles and conventions focused on increasing productivity and quality in Sitecore projects.
+<p>Habitat sites are demonstration sites for the Sitecore&reg; Experience Platform&trade;.
+</p>
+<p>The sites demonstrate the full set of capabilities and potential of the platform through a number of both technical and business scenarios.</p>
 ----field----
 field: {D74F396D-5C5E-4916-BD0A-BFD58B6B1967}
 name: Body
 key: body
-content-length: 124
+content-length: 231
 
-Sitecore Habitat is a set of principles and conventions focused on increasing productivity and quality in Sitecore projects.
+The Sitecore Habitat demos are built on the <a href="http://helix.sitecore.net" target="_blank">Helix principles</a>, which is a set of principles and conventions focused on increasing productivity and quality in Sitecore projects.
 ----field----
 field: {1B483E91-D8C4-4D19-BA03-462074B55936}
 name: NavigationTitle
@@ -158,14 +161,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-24363564-fe2d-47b3-b723-bc11c6c6a8d9
+ae7c4d27-d39b-495a-801e-5cdac661f833
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160128T212042Z
+20170101T210131Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

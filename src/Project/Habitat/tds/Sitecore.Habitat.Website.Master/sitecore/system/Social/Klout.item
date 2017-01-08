@@ -8,6 +8,7 @@ name: Klout
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
+created: 20161115T161134Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
@@ -19,7 +20,7 @@ custom/32x32/klout.png
 ----version----
 language: da
 version: 1
-revision: 6a772e58-8f34-47e7-9aa9-0790a9032804
+revision: 07edc5dd-d214-42bd-a2db-27ade1b78ed7
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -41,7 +42,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115305Z
+20161115T163833Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6a772e58-8f34-47e7-9aa9-0790a9032804
+07edc5dd-d214-42bd-a2db-27ade1b78ed7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115305Z
+20161115T163833Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +74,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 1c5d79c1-8365-46f7-a31b-6faca0937089
+revision: 1b8b1cb1-70fd-453a-a64c-887e19a64a5c
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -95,7 +96,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115430Z
+20161115T164301Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -109,14 +110,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1c5d79c1-8365-46f7-a31b-6faca0937089
+1b8b1cb1-70fd-453a-a64c-887e19a64a5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115430Z
+20161115T164301Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -174,7 +175,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 19f3355e-c202-4288-a311-147e8b733b3d
+revision: bab7c810-a755-4c47-a825-eadb9c3ba667
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -196,7 +197,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151207T115557Z
+20161115T164656Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -210,14 +211,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-19f3355e-c202-4288-a311-147e8b733b3d
+bab7c810-a755-4c47-a825-eadb9c3ba667
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151207T115557Z
+20161115T164656Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

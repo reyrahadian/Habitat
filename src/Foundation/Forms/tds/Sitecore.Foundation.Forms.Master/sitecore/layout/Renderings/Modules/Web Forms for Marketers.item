@@ -3,11 +3,12 @@ version: 1
 id: {78E9CEDE-760C-44BC-BBB8-ED1DD0101276}
 database: master
 path: /sitecore/layout/Renderings/Modules/Web Forms for Marketers
-parent: {A268AC8B-66F0-4DFD-A5A4-47B03CD90214}
+parent: {23EB4DF2-74AC-4F05-ADA1-CD7E02093616}
 name: Web Forms for Marketers
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
+created: 20080418T143514Z
 
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
@@ -213,114 +214,6 @@ content-length: 0
 
 
 ----version----
-language: da
-version: 1
-revision: f03a42eb-de93-4010-9a00-a94f4d60453f
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 31
-
-Webformularer til markedsførere
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 18
-
-sitecore\Anonymous
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20160617T171751Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 18
-
-sitecore\Anonymous
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-f03a42eb-de93-4010-9a00-a94f4d60453f
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20160617T171751Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 18
-
-sitecore\Anonymous
-----version----
-language: de-DE
-version: 1
-revision: e0ecad71-8df5-4635-b361-1f7070ccbfd1
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 25
-
-Webformulare für Marketer
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 18
-
-sitecore\Anonymous
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20160617T172007Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 18
-
-sitecore\Anonymous
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-e0ecad71-8df5-4635-b361-1f7070ccbfd1
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20160617T172007Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 18
-
-sitecore\Anonymous
-----version----
 language: en
 version: 1
 revision: b25d02a5-5322-4baa-bdfe-807485a72572
@@ -444,57 +337,3 @@ key: __lock
 content-length: 0
 
 
-----version----
-language: ja-JP
-version: 1
-revision: 62df3d68-e3e7-409f-a217-a59f20bd75a8
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 23
-
-Web Forms for Marketers
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 18
-
-sitecore\Anonymous
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20160617T172148Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 18
-
-sitecore\Anonymous
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-62df3d68-e3e7-409f-a217-a59f20bd75a8
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20160617T172148Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 18
-
-sitecore\Anonymous

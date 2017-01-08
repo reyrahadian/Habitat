@@ -8,6 +8,14 @@ name: About Habitat
 master: {00000000-0000-0000-0000-000000000000}
 template: {C7D9D293-4EF8-4380-8E10-C4632E729F39}
 templatekey: Teaser
+created: 20161014T180641:636120652014300000
+
+----field----
+field: {3AF50903-63A9-464B-A375-B94983624E7D}
+name: Teaser Icon
+key: teaser icon
+content-length: 0
+
 
 ----field----
 field: {E8AB122C-6F54-4D4E-AEC6-F81ADDC558FC}
@@ -19,15 +27,8 @@ content-length: 130
 ----version----
 language: da
 version: 1
-revision: cbd8b99e-4c43-421e-a9d9-cddbe812b94c
+revision: f81eb724-cc61-40e4-b253-192514a4338c
 
-----field----
-field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
-name: TeaserImage
-key: teaserimage
-content-length: 58
-
-<image mediaid="{D85C1120-43E8-4F4A-A43E-DC472A985E10}" />
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
 name: TeaserTitle
@@ -35,6 +36,13 @@ key: teasertitle
 content-length: 10
 
 Om Habitat
+----field----
+field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
+name: TeaserImage
+key: teaserimage
+content-length: 58
+
+<image mediaid="{D85C1120-43E8-4F4A-A43E-DC472A985E10}" />
 ----field----
 field: {13D97A52-7C4E-407C-960D-FADDE8A3C1B1}
 name: TeaserSummary
@@ -62,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbd8b99e-4c43-421e-a9d9-cddbe812b94c
+f81eb724-cc61-40e4-b253-192514a4338c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160622T160209Z
+20161014T180641Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +88,7 @@ sitecore\unicorn
 ----version----
 language: en
 version: 1
-revision: 80b7adf5-7d5b-4265-96dd-2bf1487daeed
+revision: 4372bcdc-b16d-44b7-9d67-fd450b7061c2
 
 ----field----
 field: {4A59D072-5B41-4A79-A157-2B2CCAC10F2B}
@@ -90,12 +98,20 @@ content-length: 13
 
 About Habitat
 ----field----
+field: {0F6B5546-E0AB-4487-81DE-640C1AA1B65B}
+name: TeaserImage
+key: teaserimage
+content-length: 0
+
+
+----field----
 field: {13D97A52-7C4E-407C-960D-FADDE8A3C1B1}
 name: TeaserSummary
 key: teasersummary
-content-length: 162
+content-length: 218
 
-Sitecore Habitat is a methodology for developing Sitecore Solutions. It is based on a layered and modular architecture focusing on high efficiency and simplicity.
+Habitat sites are demonstration sites for the Sitecore® Experience Platform™.
+The sites demonstrate the full set of capabilities and potential of the platform through a number of both technical and business scenarios.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -109,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-80b7adf5-7d5b-4265-96dd-2bf1487daeed
+4372bcdc-b16d-44b7-9d67-fd450b7061c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160622T160209Z
+20161014T180641Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

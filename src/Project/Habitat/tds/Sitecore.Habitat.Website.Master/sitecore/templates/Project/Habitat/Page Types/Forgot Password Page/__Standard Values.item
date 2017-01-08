@@ -8,14 +8,15 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {8707A0B7-4A7D-44E4-ABD6-A1CCB21049CF}
 templatekey: Forgot Password Page
+created: 20161226T041004Z
 
 ----field----
 field: {5585A30D-B115-4753-93CE-422C3455DEB2}
 name: ShowInNavigation
 key: showinnavigation
-content-length: 1
+content-length: 0
 
-0
+
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
@@ -26,7 +27,7 @@ content-length: 3499
 ----version----
 language: en
 version: 1
-revision: 5547e016-9fa0-483e-a414-79453de06c38
+revision: 6ad81511-56b8-416e-a5c5-aa162af2ef5f
 
 ----field----
 field: {C30A013F-3CC8-4961-9837-1C483277084A}
@@ -76,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5547e016-9fa0-483e-a414-79453de06c38
+6ad81511-56b8-416e-a5c5-aa162af2ef5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160622T160244Z
+20161226T041004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
