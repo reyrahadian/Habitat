@@ -7,7 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F8100FB-5CD6-491C-83F9-6F1EF7332B4E}</ProjectGuid>
+    <ProjectGuid>{7CC3D72B-4518-4B78-BE48-630A263C0F5B}</ProjectGuid>
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
