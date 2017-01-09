@@ -227,17 +227,9 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
-    <BundledProject Include="..\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj">
-      <ProjectId>{aec741a2-5bc2-4c9a-807e-c6bc56ff8031}</ProjectId>
-    </BundledProject>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\code\Sitecore.Feature.Accounts.csproj">
       <Project>{3f61c57d-50d9-4194-8196-ef5f7aa4cce5}</Project>
       <Name>Sitecore.Feature.Accounts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
