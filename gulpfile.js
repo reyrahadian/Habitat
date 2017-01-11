@@ -21,12 +21,15 @@ module.exports.config = config;
 gulp.task("default", function (callback) {
   config.runCleanBuilds = true;
   return runSequence(
-    "01-Copy-Sitecore-License",
+    /*"01-Copy-Sitecore-License",
     "02-Nuget-Restore",
     "03-Publish-All-Projects",
     "04-Apply-Xml-Transform",
     "05-Sync-Unicorn",
-    "06-Deploy-Transforms",
+    "06-Deploy-Transforms",*/
+    "Publish-TDS-Foundation-Projects",
+    "Publish-TDS-Feature-Projects",
+    "Publish-TDS-Project-Projects",
 	callback);
 });
 
@@ -138,6 +141,30 @@ var publishStream = function (stream, dest) {
     }));
 }
 
+var publishTDSStream = function (stream, dest) {
+    var targets = ["Build"];
+    if (config.runCleanBuilds) {
+        targets = ["Clean", "Build"];
+    }
+
+    return stream
+      .pipe(debug({ title: "Deploying project:" }))
+      .pipe(msbuild({
+          targets: targets,
+          configuration: config.buildConfiguration,
+          logCommand: false,
+          verbosity: "normal",
+          stdout: true,
+          maxBuffer: 4000*1024,
+          errorOnFail: true,
+          maxcpucount: 1,
+          toolsVersion: 14.0,
+          properties: {
+              SolutionDir: "D:\\Github\\Habitat"
+          }
+      }));
+}
+
 var publishProject = function (location, dest) {
   dest = dest || config.websiteRoot;
 
@@ -156,6 +183,26 @@ var publishProjects = function (location, dest) {
     .pipe(foreach(function (stream, file) {
       return publishStream(stream, dest);
     }));
+};
+
+var publishTDSProject = function (location, dest) {
+    dest = dest || config.websiteRoot;
+
+    //console.log("deploying single module " + "./src/" + location + "/tds/**/*.scproj");
+
+    return gulp.src(["./src/" + location + "/tds/**/*.scproj"])
+      .pipe(foreach(function (stream, file) {
+          return publishTDSStream(stream, dest);
+      }));
+}
+
+var publishTDSProjects = function (location, dest) {
+    dest = dest || config.websiteRoot;
+
+    return gulp.src([location + "/**/tds/**/*.scproj"])
+      .pipe(foreach(function (stream, file) {
+          return publishTDSStream(stream, dest);
+      }));
 };
 
 gulp.task("Build-Solution", function () {
@@ -187,6 +234,47 @@ gulp.task("Publish-Feature-Projects", function () {
 
 gulp.task("Publish-Project-Projects", function () {
   return publishProjects("./src/Project");
+});
+
+gulp.task("Publish-TDS-Foundation-Projects", function () {
+    var dest = config.websiteRoot;
+
+    console.log("deploying multiple TDS projects ./src/Foundation/**/tds/**/*.scproj");
+    return gulp.src(["./src/Foundation/Serialization/tds/**/*.Core.scproj",
+                     "./src/Foundation/Serialization/tds/**/*.Master.scproj",
+                     "./src/Foundation/SitecoreExtensions/tds/**/*.Core.scproj", 
+                     "./src/Foundation/SitecoreExtensions/tds/**/*.Master.scproj",
+                     "./src/Foundation/Assets/tds/**/*.Master.scproj",
+                     "./src/Foundation/Dictionary/tds/**/*.scproj",
+                     "./src/Foundation/Indexing/tds/**/*.scproj",
+                     "./src/Foundation/Accounts/tds/**/*.scproj",
+                     "./src/Foundation/Alerts/tds/**/*.scproj",
+                     "./src/Foundation/FieldEditor/tds/**/*.scproj",
+                     "./src/Foundation/Forms/tds/**/*.scproj",
+                     "./src/Foundation/Installer/tds/**/*.scproj",
+                     "./src/Foundation/LocalDatasource/tds/**/*.scproj",
+                     "./src/Foundation/Multisite/tds/**/*.scproj",
+                     "./src/Foundation/Testing/tds/**/*.scproj",
+                     "./src/Foundation/Theming/tds/**/*.scproj"])
+            .pipe(foreach(function (stream, file) {
+                return publishTDSStream(stream, dest);
+            }));
+});
+
+gulp.task("Publish-TDS-Feature-Projects", function () {
+    return publishTDSProjects("./src/Feature");
+});
+
+gulp.task("Publish-TDS-Project-Projects", function () {
+    var dest = config.websiteRoot;
+    return gulp.src(["./src/Project/Common/tds/**/*.Core.scproj",
+                  "./src/Project/Common/tds/**/*.Master.scproj",
+                  "./src/Project/Habitat/tds/**/*.Master.scproj",
+                  "./src/Project/Habitat/tds/**/*.Media.scproj",
+                  "./src/Project/Habitat/tds/**/*.Content.scproj"])
+          .pipe(foreach(function (stream, file) {
+              return publishTDSStream(stream, dest);
+    }));
 });
 
 gulp.task("Publish-Project", function () {
