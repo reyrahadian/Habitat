@@ -160,7 +160,7 @@ var publishTDSStream = function (stream) {
           maxcpucount: 1,
           toolsVersion: 14.0,
           properties: {
-              SolutionDir: "D:\\Github\\Habitat"
+              SolutionDir: "./"
           }
       }));
 }
@@ -185,17 +185,15 @@ var publishProjects = function (location, dest) {
     }));
 };
 
-var publishTDSProject = function (location) {
-
-    //console.log("deploying single module " + "./src/" + location + "/tds/**/*.scproj");
-
+var deployTDSProject = function (location) {
+    
     return gulp.src(["./src/" + location + "/tds/**/*.scproj"])
       .pipe(foreach(function (stream, file) {
           return publishTDSStream(stream)
       }));
 }
 
-var publishTDSProjects = function (location) {
+var deployTDSProjects = function (location) {
 
     return gulp.src([location + "/**/tds/**/*.scproj"])
       .pipe(foreach(function (stream, file) {
@@ -236,12 +234,13 @@ gulp.task("Publish-Project-Projects", function () {
 
 gulp.task("Publish-TDS-Foundation-Projects", function () {
 
-    console.log("deploying multiple TDS projects ./src/Foundation/**/tds/**/*.scproj");
+    console.log("Deploying Foundation layer projects.");
+
     return gulp.src(["./src/Foundation/Serialization/tds/**/*.Core.scproj",
                      "./src/Foundation/Serialization/tds/**/*.Master.scproj",
                      "./src/Foundation/SitecoreExtensions/tds/**/*.Core.scproj", 
                      "./src/Foundation/SitecoreExtensions/tds/**/*.Master.scproj",
-                     "./src/Foundation/Assets/tds/**/*.Master.scproj",
+                     "./src/Foundation/Assets/tds/**/*.scproj",
                      "./src/Foundation/Dictionary/tds/**/*.scproj",
                      "./src/Foundation/Indexing/tds/**/*.scproj",
                      "./src/Foundation/Accounts/tds/**/*.scproj",
@@ -259,11 +258,15 @@ gulp.task("Publish-TDS-Foundation-Projects", function () {
 });
 
 gulp.task("Publish-TDS-Feature-Projects", function () {
-    return publishTDSProjects("./src/Feature");
+
+    console.log("Deploying Feature layer projects.");
+    return deployTDSProjects("./src/Feature");
 });
 
 gulp.task("Publish-TDS-Project-Projects", function () {
-    var dest = config.websiteRoot;
+
+    console.log("Deploying Project layer projects.");
+
     return gulp.src(["./src/Project/Common/tds/**/*.Core.scproj",
                   "./src/Project/Common/tds/**/*.Master.scproj",
                   "./src/Project/Habitat/tds/**/*.Master.scproj",
