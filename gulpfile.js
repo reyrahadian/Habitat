@@ -141,7 +141,7 @@ var publishStream = function (stream, dest) {
     }));
 }
 
-var publishTDSStream = function (stream, dest) {
+var publishTDSStream = function (stream) {
     var targets = ["Build"];
     if (config.runCleanBuilds) {
         targets = ["Clean", "Build"];
@@ -185,23 +185,21 @@ var publishProjects = function (location, dest) {
     }));
 };
 
-var publishTDSProject = function (location, dest) {
-    dest = dest || config.websiteRoot;
+var publishTDSProject = function (location) {
 
     //console.log("deploying single module " + "./src/" + location + "/tds/**/*.scproj");
 
     return gulp.src(["./src/" + location + "/tds/**/*.scproj"])
       .pipe(foreach(function (stream, file) {
-          return publishTDSStream(stream, dest);
+          return publishTDSStream(stream)
       }));
 }
 
-var publishTDSProjects = function (location, dest) {
-    dest = dest || config.websiteRoot;
+var publishTDSProjects = function (location) {
 
     return gulp.src([location + "/**/tds/**/*.scproj"])
       .pipe(foreach(function (stream, file) {
-          return publishTDSStream(stream, dest);
+          return publishTDSStream(stream);
       }));
 };
 
@@ -237,7 +235,6 @@ gulp.task("Publish-Project-Projects", function () {
 });
 
 gulp.task("Publish-TDS-Foundation-Projects", function () {
-    var dest = config.websiteRoot;
 
     console.log("deploying multiple TDS projects ./src/Foundation/**/tds/**/*.scproj");
     return gulp.src(["./src/Foundation/Serialization/tds/**/*.Core.scproj",
@@ -257,7 +254,7 @@ gulp.task("Publish-TDS-Foundation-Projects", function () {
                      "./src/Foundation/Testing/tds/**/*.scproj",
                      "./src/Foundation/Theming/tds/**/*.scproj"])
             .pipe(foreach(function (stream, file) {
-                return publishTDSStream(stream, dest);
+                return publishTDSStream(stream);
             }));
 });
 
@@ -273,7 +270,7 @@ gulp.task("Publish-TDS-Project-Projects", function () {
                   "./src/Project/Habitat/tds/**/*.Media.scproj",
                   "./src/Project/Habitat/tds/**/*.Content.scproj"])
           .pipe(foreach(function (stream, file) {
-              return publishTDSStream(stream, dest);
+              return publishTDSStream(stream);
     }));
 });
 
