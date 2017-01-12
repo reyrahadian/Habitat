@@ -27,9 +27,11 @@ gulp.task("default", function (callback) {
     "04-Apply-Xml-Transform",
     "05-Sync-Unicorn",
     "06-Deploy-Transforms",*/
-    "Publish-TDS-Foundation-Projects",
-    "Publish-TDS-Feature-Projects",
-    "Publish-TDS-Project-Projects",
+    "02-Nuget-Restore",
+    "Deploy-TDS-Foundation-Projects",
+    "Deploy-TDS-Feature-Projects",
+    "Deploy-TDS-Project-Projects",
+    "Build-Tests-Projects",
 	callback);
 });
 
@@ -185,6 +187,16 @@ var publishProjects = function (location, dest) {
     }));
 };
 
+gulp.task("Build-Tests-Projects", function () {
+
+    console.log("Building Tests projects.");
+
+    return gulp.src(["./src/**/tests/*.Tests.csproj"])
+          .pipe(foreach(function (stream, file) {
+              return publishTDSStream(stream);
+          }));
+});
+
 var deployTDSProject = function (location) {
     
     return gulp.src(["./src/" + location + "/tds/**/*.scproj"])
@@ -232,7 +244,7 @@ gulp.task("Publish-Project-Projects", function () {
   return publishProjects("./src/Project");
 });
 
-gulp.task("Publish-TDS-Foundation-Projects", function () {
+gulp.task("Deploy-TDS-Foundation-Projects", function () {
 
     console.log("Deploying Foundation layer projects.");
 
@@ -257,13 +269,13 @@ gulp.task("Publish-TDS-Foundation-Projects", function () {
             }));
 });
 
-gulp.task("Publish-TDS-Feature-Projects", function () {
+gulp.task("Deploy-TDS-Feature-Projects", function () {
 
     console.log("Deploying Feature layer projects.");
     return deployTDSProjects("./src/Feature");
 });
 
-gulp.task("Publish-TDS-Project-Projects", function () {
+gulp.task("Deploy-TDS-Project-Projects", function () {
 
     console.log("Deploying Project layer projects.");
 
