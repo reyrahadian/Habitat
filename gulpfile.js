@@ -160,7 +160,7 @@ var publishTDSStream = function (stream) {
           maxcpucount: 1,
           toolsVersion: 14.0,
           properties: {
-              SolutionDir: "./"
+              SolutionDir: config.solutionDirectory
           }
       }));
 }
