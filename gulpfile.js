@@ -31,7 +31,6 @@ gulp.task("default", function (callback) {
     "Deploy-TDS-Foundation-Projects",
     "Deploy-TDS-Feature-Projects",
     "Deploy-TDS-Project-Projects",
-    "Build-Tests-Projects",
 	callback);
 });
 
@@ -186,16 +185,6 @@ var publishProjects = function (location, dest) {
       return publishStream(stream, dest);
     }));
 };
-
-gulp.task("Build-Tests-Projects", function () {
-
-    console.log("Building Tests projects.");
-
-    return gulp.src(["./src/**/tests/*.Tests.csproj"])
-          .pipe(foreach(function (stream, file) {
-              return publishTDSStream(stream);
-          }));
-});
 
 var deployTDSProject = function (location) {
     
