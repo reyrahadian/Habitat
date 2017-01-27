@@ -46,8 +46,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.5\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.12\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -172,10 +172,10 @@
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.5\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.5\build\Hedgehog.ZeroDeploy.Build.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets'))" />
   </Target>
   <Import Project="..\..\..\..\ZeroDeploy.props" />
-  <Import Project="..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.5\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.5\build\Hedgehog.ZeroDeploy.Build.targets')" />
+  <Import Project="..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\..\..\..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
