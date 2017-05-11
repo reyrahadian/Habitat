@@ -39,9 +39,8 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.14, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.14\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.15\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.NoReferences.8.2.160729\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
