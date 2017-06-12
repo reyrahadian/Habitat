@@ -30,6 +30,17 @@ gulp.task("default", function (callback) {
 	callback);
 });
 
+gulp.task("deploy", function (callback) {
+  config.runCleanBuilds = true;
+  return runSequence(
+    "01-Copy-Sitecore-License",
+    "02-Nuget-Restore",
+    "03-Publish-All-Projects",
+    "04-Apply-Xml-Transform",
+	"06-Deploy-Transforms",
+	callback);
+});
+
 /*****************************
   Initial setup
 *****************************/
@@ -68,8 +79,9 @@ gulp.task("04-Apply-Xml-Transform", function () {
           stdout: true,
           errorOnFail: true,
           maxcpucount: 0,
-          toolsVersion: 14.0,
+          toolsVersion: config.buildToolsVersion,
           properties: {
+            Platform: config.buildPlatform,
             WebConfigToTransform: config.websiteRoot,
             TransformFile: file.path,
             FileToTransform: fileToTransform
@@ -126,8 +138,9 @@ var publishStream = function (stream, dest) {
       stdout: true,
       errorOnFail: true,
       maxcpucount: 0,
-      toolsVersion: 14.0,
+      toolsVersion: config.buildToolsVersion,
       properties: {
+        Platform: config.publishPlatform,
         DeployOnBuild: "true",
         DeployDefaultTarget: "WebPublish",
         WebPublishMethod: "FileSystem",
@@ -163,6 +176,7 @@ gulp.task("Build-Solution", function () {
   if (config.runCleanBuilds) {
     targets = ["Clean", "Build"];
   }
+
   var solution = "./" + config.solutionName + ".sln";
   return gulp.src(solution)
       .pipe(msbuild({
@@ -173,7 +187,10 @@ gulp.task("Build-Solution", function () {
           stdout: true,
           errorOnFail: true,
           maxcpucount: 0,
-          toolsVersion: 14.0
+          toolsVersion: config.buildToolsVersion,
+          properties: {
+            Platform: config.buildPlatform
+          }
         }));
 });
 
@@ -269,7 +286,7 @@ gulp.task("Auto-Publish-Views", function () {
   var roots = [root + "/**/Views", "!" + root + "/**/obj/**/Views"];
   var files = "/**/*.cshtml";
   var destination = config.websiteRoot + "\\Views";
-  gulp.src(roots, { base: root }).pipe(
+  return gulp.src(roots, { base: root }).pipe(
     foreach(function (stream, rootFolder) {
       gulp.watch(rootFolder.path + files, function (event) {
         if (event.type === "changed") {

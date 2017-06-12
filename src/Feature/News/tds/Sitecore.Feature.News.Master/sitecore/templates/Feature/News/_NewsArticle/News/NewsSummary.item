@@ -8,7 +8,7 @@ name: NewsSummary
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20161006T142834:636113609147470000
+created: 20170612T151806Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -69,7 +69,7 @@ ar|Everyone|pe|!*|+field:read|pd|!*|+field:read|ar|modules\Feature News Admin|pe
 ----version----
 language: en
 version: 1
-revision: 284de953-9eba-4de5-9ac7-6d3481cb41e9
+revision: 6bbec95c-9050-4c36-818f-8cf343b59b73
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -98,14 +98,61 @@ name: __Revision
 key: __revision
 content-length: 36
 
-284de953-9eba-4de5-9ac7-6d3481cb41e9
+6bbec95c-9050-4c36-818f-8cf343b59b73
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161006T142834Z
+20170612T151806Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: 3356da75-e4d9-46fa-b5b5-98f0d1a5337f
+
+----field----
+field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
+name: Title
+key: title
+content-length: 6
+
+ニュース概要
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170323T054816Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3356da75-e4d9-46fa-b5b5-98f0d1a5337f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170612T151806Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

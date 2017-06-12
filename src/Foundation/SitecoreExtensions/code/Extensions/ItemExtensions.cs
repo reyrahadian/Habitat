@@ -19,9 +19,7 @@
         public static string Url(this Item item, UrlOptions options = null)
         {
             if (item == null)
-            {
                 throw new ArgumentNullException(nameof(item));
-            }
 
             if (options != null)
                 return LinkManager.GetItemUrl(item, options);
@@ -31,20 +29,30 @@
         public static string ImageUrl(this Item item, ID imageFieldId, MediaUrlOptions options = null)
         {
             if (item == null)
-            {
                 throw new ArgumentNullException(nameof(item));
-            }
 
             var imageField = (ImageField)item.Fields[imageFieldId];
             return imageField?.MediaItem == null ? string.Empty : imageField.ImageUrl(options);
         }
 
+        public static string ImageUrl(this MediaItem mediaItem, int width, int height)
+        {
+            if (mediaItem == null)
+                throw new ArgumentNullException(nameof(mediaItem));
+
+            var options = new MediaUrlOptions { Height = height, Width = width };
+            var url = MediaManager.GetMediaUrl(mediaItem, options);
+            var cleanUrl = StringUtil.EnsurePrefix('/', url);
+            var hashedUrl = HashingUtils.ProtectAssetUrl(cleanUrl);
+
+            return hashedUrl;
+        }
+
+
         public static Item TargetItem(this Item item, ID linkFieldId)
         {
             if (item == null)
-            {
                 throw new ArgumentNullException(nameof(item));
-            }
             if (item.Fields[linkFieldId] == null || !item.Fields[linkFieldId].HasValue)
                 return null;
             return ((LinkField)item.Fields[linkFieldId]).TargetItem ?? ((ReferenceField)item.Fields[linkFieldId]).TargetItem;
@@ -70,9 +78,7 @@
         public static Item GetAncestorOrSelfOfTemplate(this Item item, ID templateID)
         {
             if (item == null)
-            {
                 throw new ArgumentNullException(nameof(item));
-            }
 
             return item.IsDerived(templateID) ? item : item.Axes.GetAncestors().LastOrDefault(i => i.IsDerived(templateID));
         }
@@ -80,17 +86,13 @@
         public static IList<Item> GetAncestorsAndSelfOfTemplate(this Item item, ID templateID)
         {
             if (item == null)
-            {
                 throw new ArgumentNullException(nameof(item));
-            }
 
             var returnValue = new List<Item>();
             if (item.IsDerived(templateID))
-            {
                 returnValue.Add(item);
-            }
 
-            returnValue.AddRange(item.Axes.GetAncestors().Where(i => i.IsDerived(templateID)));
+            returnValue.AddRange(item.Axes.GetAncestors().Reverse().Where(i => i.IsDerived(templateID)));
             return returnValue;
         }
 
@@ -105,12 +107,38 @@
                 throw new ArgumentNullException(nameof(fieldID));
             }
             var field = item.Fields[fieldID];
-            if (field == null)
+            if (field == null || !(FieldTypeManager.GetField(field) is LinkField))
             {
                 return string.Empty;
             }
-            var linkUrl = new LinkUrl();
-            return linkUrl.GetUrl(item, fieldID.ToString());
+            else {
+                LinkField linkField = (LinkField)field;
+                switch (linkField.LinkType.ToLower())
+                {
+                    case "internal":
+                        // Use LinkMananger for internal links, if link is not empty
+                        return linkField.TargetItem != null ? Sitecore.Links.LinkManager.GetItemUrl(linkField.TargetItem) : string.Empty;
+                    case "media":
+                        // Use MediaManager for media links, if link is not empty
+                        return linkField.TargetItem != null ? Sitecore.Resources.Media.MediaManager.GetMediaUrl(linkField.TargetItem) : string.Empty;
+                    case "external":
+                        // Just return external links
+                        return linkField.Url;
+                    case "anchor":
+                        // Prefix anchor link with # if link if not empty
+                        return !string.IsNullOrEmpty(linkField.Anchor) ? "#" + linkField.Anchor : string.Empty;
+                    case "mailto":
+                        // Just return mailto link
+                        return linkField.Url;
+                    case "javascript":
+                        // Just return javascript
+                        return linkField.Url;
+                    default:
+                        // Just please the compiler, this
+                        // condition will never be met
+                        return linkField.Url;
+                }
+            }
         }
 
         public static string LinkFieldTarget(this Item item, ID fieldID)
@@ -149,9 +177,7 @@
         public static bool IsDerived(this Item item, ID templateId)
         {
             if (item == null)
-            {
                 return false;
-            }
 
             return !templateId.IsNull && item.IsDerived(item.Database.Templates[templateId]);
         }
@@ -159,14 +185,10 @@
         private static bool IsDerived(this Item item, Item templateItem)
         {
             if (item == null)
-            {
                 return false;
-            }
 
             if (templateItem == null)
-            {
                 return false;
-            }
 
             var itemTemplate = TemplateManager.GetTemplate(item);
             return itemTemplate != null && (itemTemplate.ID == templateItem.ID || itemTemplate.DescendsFrom(templateItem.ID));

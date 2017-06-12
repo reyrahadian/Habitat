@@ -8,7 +8,7 @@ name: Search Results Header
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
-created: 20161014T180544:636120651448600000
+created: 20170612T151820Z
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -24,6 +24,13 @@ key: controller action
 content-length: 19
 
 SearchResultsHeader
+----field----
+field: {13F89250-AD6B-4548-882E-118A12C18094}
+name: Parameters Template
+key: parameters template
+content-length: 38
+
+{D1D3E60F-E571-48D2-84CF-B053EE660C13}
 ----field----
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
@@ -48,7 +55,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: e23e0bd0-6ff2-4d98-8c33-8a2f5dd6817d
+revision: 5c13325d-ad4b-483d-8c8d-1f7e982d3b34
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -63,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e23e0bd0-6ff2-4d98-8c33-8a2f5dd6817d
+5c13325d-ad4b-483d-8c8d-1f7e982d3b34
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20161014T180544Z
+20170612T151820Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

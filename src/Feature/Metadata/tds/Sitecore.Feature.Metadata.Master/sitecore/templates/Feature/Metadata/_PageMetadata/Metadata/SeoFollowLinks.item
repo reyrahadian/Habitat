@@ -8,6 +8,7 @@ name: SeoFollowLinks
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20170612T151532Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -54,7 +55,7 @@ ar|Everyone|pe|!*|+field:read|pd|!*|+field:read|ar|modules\Feature Metadata Admi
 ----version----
 language: en
 version: 1
-revision: 1df9fdca-8c0b-4d46-ac69-0d2cf53021ef
+revision: 46f4fd8e-71e3-4851-8e85-6b61ac66eb08
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -83,14 +84,61 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1df9fdca-8c0b-4d46-ac69-0d2cf53021ef
+46f4fd8e-71e3-4851-8e85-6b61ac66eb08
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160412T105325Z
+20170612T151535Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: bfcf9272-aedc-4db8-a277-e9914d81bf19
+
+----field----
+field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
+name: Title
+key: title
+content-length: 11
+
+SEO フォローリンク
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170323T054812Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bfcf9272-aedc-4db8-a277-e9914d81bf19
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170612T151535Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
