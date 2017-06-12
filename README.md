@@ -9,6 +9,9 @@ The architecture and methodology focuses on:
 
 For more information, please check out the [Habitat Wiki](https://github.com/Sitecore/Habitat/wiki)
 
+## How to Increase Build and Deployment Times ##
+When creating your own Helix-based solutions, please consider some of the ways that you can improve build and deployment times. Some possible solutions for this can be found here:- http://sitecore.stackexchange.com/questions/4076/slow-build-performance-using-tds-helix-inspired/4114
+
 ## Differences from the [original repo](https://github.com/Sitecore/Habitat) ##
 
 ### Serialization and Deployment ###
@@ -30,7 +33,7 @@ After that we have enforced the deployment of the Foundation modules alphaetical
 The Test projects are then deployed, in order of Foundation (alphabetical) then Feature (alphabetical).
 
 This Build Order is setup by explicitly adding dependencies to previous modules using Visual Studio's 'Build Dependencies -> Project Dependencies' dialog.
-In order to achieve the appropriate order, each module's code project is explicitly set to depend on the previous project's TDS project. i.e Feature.Media.csproj will depend on Feature.Maps.Master.scproj.
+In order to achieve the appropriate order, each module's TDS project is explicitly set to depend on the previous module's TDS project. i.e Feature.Media.Master.scproj will depend on Feature.Maps.Master.scproj. Therefore, explicitly added dependencies are only linked between TDS projects, not code projects.
 
 ## Installation: ##
 

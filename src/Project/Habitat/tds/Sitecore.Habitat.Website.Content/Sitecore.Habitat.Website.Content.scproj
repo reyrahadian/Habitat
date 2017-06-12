@@ -1751,6 +1751,22 @@
       <ExcludeItemFrom>
       </ExcludeItemFrom>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Habitat\Home\Modules\Feature\Demo\Fake GeoData.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Habitat\Home\Modules\Feature\Demo\Fake IP Address.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Habitat\Home\Modules\Feature\Demo\Fake Page.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Habitat\Home\Modules\Feature\Demo\Fake Referrer.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Habitat\Home\Modules\Feature\FAQ.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -2200,6 +2216,10 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ExcludeItemFrom>
       </ExcludeItemFrom>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />

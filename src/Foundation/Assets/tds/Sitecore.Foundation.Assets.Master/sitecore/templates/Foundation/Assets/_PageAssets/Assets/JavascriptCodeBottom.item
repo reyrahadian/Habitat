@@ -8,6 +8,7 @@ name: JavascriptCodeBottom
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20170612T151545Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -40,7 +41,7 @@ ar|Everyone|pe|!*|+field:read|pd|+field:read|!*|ar|modules\Foundation Assets Adm
 ----version----
 language: en
 version: 1
-revision: b25ccd07-24f0-40e9-8b3f-ba4e0e47b0fb
+revision: 014af00f-875b-49ca-968d-145b159a5dea
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
@@ -69,14 +70,61 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b25ccd07-24f0-40e9-8b3f-ba4e0e47b0fb
+014af00f-875b-49ca-968d-145b159a5dea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160413T144909Z
+20170612T151547Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: 3ae03ed2-621b-416e-a11b-d8f9c2384a51
+
+----field----
+field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
+name: Title
+key: title
+content-length: 22
+
+JavaScript コード ( ボトム )
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170323T054833Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3ae03ed2-621b-416e-a11b-d8f9c2384a51
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170612T151547Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

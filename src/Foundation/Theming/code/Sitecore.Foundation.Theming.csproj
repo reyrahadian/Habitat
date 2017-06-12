@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -62,10 +62,6 @@
     <Content Include="scripts\Sitecore.Foundation.Frameworks.min.js">
       <DependentUpon>Sitecore.Foundation.Frameworks.js</DependentUpon>
     </Content>
-    <Content Include="styles\dayfrost.css" />
-    <Content Include="styles\dayfrost.min.css">
-      <DependentUpon>dayfrost.css</DependentUpon>
-    </Content>
     <Content Include="styles\default.css" />
     <Content Include="styles\default.min.css">
       <DependentUpon>default.css</DependentUpon>
@@ -74,17 +70,9 @@
     <Content Include="styles\editor.min.css">
       <DependentUpon>editor.css</DependentUpon>
     </Content>
-    <Content Include="styles\niteflight.css" />
-    <Content Include="styles\niteflight.min.css">
-      <DependentUpon>niteflight.css</DependentUpon>
-    </Content>
     <Content Include="styles\vendor.css" />
     <Content Include="styles\vendor.min.css">
       <DependentUpon>vendor.css</DependentUpon>
-    </Content>
-    <Content Include="styles\white-wonder.css" />
-    <Content Include="styles\white-wonder.min.css">
-      <DependentUpon>white-wonder.css</DependentUpon>
     </Content>
     <None Include="bundleconfig.json" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -182,8 +170,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -264,15 +252,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\..\..\..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets" Condition="Exists('..\..\..\..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets')" />
+  <Import Project="..\..\..\..\packages\BuildBundlerMinifier.2.4.337\build\BuildBundlerMinifier.targets" Condition="Exists('..\..\..\..\packages\BuildBundlerMinifier.2.4.337\build\BuildBundlerMinifier.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\..\..\..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\BuildBundlerMinifier.2.4.337\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\BuildBundlerMinifier.2.4.337\build\BuildBundlerMinifier.targets'))" />
   </Target>
-  <Import Project="..\..\..\..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets" Condition="Exists('..\..\..\..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
