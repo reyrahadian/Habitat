@@ -433,7 +433,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Diction
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.FieldEditor.Core", "src\Foundation\FieldEditor\tds\Sitecore.Foundation.FieldEditor.Core\Sitecore.Foundation.FieldEditor.Core.scproj", "{7791B7E8-0C05-41B7-8EA7-BBD4107581E0}"
 	ProjectSection(ProjectDependencies) = postProject
-		{690482D5-10CC-4F8D-A301-7EF8C17A2E18} = {690482D5-10CC-4F8D-A301-7EF8C17A2E18}
+		{65E58FF2-DE32-4FD3-B858-A07219E0769E} = {65E58FF2-DE32-4FD3-B858-A07219E0769E}
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.LocalDatasource.Master", "src\Foundation\LocalDatasource\tds\Sitecore.Foundation.LocalDatasource.Master\Sitecore.Foundation.LocalDatasource.Master.scproj", "{D28DCFC0-A1B4-4F91-8038-19E0E1103E6A}"
@@ -453,6 +453,9 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Depende
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.FieldEditor.Master", "src\Foundation\FieldEditor\tds\Sitecore.Foundation.FieldEditor.Master\Sitecore.Foundation.FieldEditor.Master.scproj", "{65E58FF2-DE32-4FD3-B858-A07219E0769E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{690482D5-10CC-4F8D-A301-7EF8C17A2E18} = {690482D5-10CC-4F8D-A301-7EF8C17A2E18}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

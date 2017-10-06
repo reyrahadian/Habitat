@@ -7,9 +7,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7791b7e8-0c05-41b7-8ea7-bbd4107581e0</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
-    <SourceWebProject>{812c16c9-1e8a-42dc-a1c0-6896d570f63a}|src\Foundation\FieldEditor\code\Sitecore.Foundation.FieldEditor.csproj</SourceWebProject>
-    <SourceWebVirtualPath>/Sitecore.Foundation.FieldEditor.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -41,12 +38,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\code\Sitecore.Foundation.FieldEditor.csproj">
-      <Project>{812c16c9-1e8a-42dc-a1c0-6896d570f63a}</Project>
-      <Name>Sitecore.Foundation.FieldEditor</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.item">
