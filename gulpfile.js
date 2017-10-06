@@ -3,20 +3,27 @@ var msbuild = require("gulp-msbuild");
 var debug = require("gulp-debug");
 var foreach = require("gulp-foreach");
 var rename = require("gulp-rename");
-var watch = require("gulp-watch");
-var merge = require("merge-stream");
 var newer = require("gulp-newer");
 var util = require("gulp-util");
 var runSequence = require("run-sequence");
-var path = require("path");
-var config = require("./gulp-config.js")();
 var nugetRestore = require('gulp-nuget-restore');
 var fs = require('fs');
+var yargs = require("yargs").argv;
 var unicorn = require("./scripts/unicorn.js");
 var habitat = require("./scripts/habitat.js");
-var yargs = require("yargs").argv;
+var helix = require("./scripts/helix.js");
+
+var config;
+if (fs.existsSync('./gulp-config.js.user')) {
+    config = require("./gulp-config.js.user")();
+}
+else {
+    config = require("./gulp-config.js")()
+}
 
 module.exports.config = config;
+
+helix.header("The Habitat source code, tools and processes are examples of Sitecore Helix.", "Habitat is not supported by Sitecore and should be used at your own risk.");
 
 gulp.task("default", function (callback) {
   config.runCleanBuilds = true;
@@ -75,10 +82,11 @@ gulp.task("04-Apply-Xml-Transform", function () {
           targets: ["ApplyTransform"],
           configuration: config.buildConfiguration,
           logCommand: false,
-          verbosity: "minimal",
+          verbosity: config.buildVerbosity,
           stdout: true,
           errorOnFail: true,
-          maxcpucount: 0,
+          maxcpucount: config.buildMaxCpuCount,
+          nodeReuse: false,
           toolsVersion: config.buildToolsVersion,
           properties: {
             Platform: config.buildPlatform,
@@ -93,7 +101,7 @@ gulp.task("04-Apply-Xml-Transform", function () {
 gulp.task("05-Sync-Unicorn", function (callback) {
   var options = {};
   options.siteHostName = habitat.getSiteUrl();
-  options.authenticationConfigFile = config.websiteRoot + "/App_config/Include/Unicorn/Unicorn.UI.config";
+  options.authenticationConfigFile = config.websiteRoot + "/App_config/Include/Unicorn.SharedSecret.config";
 
   unicorn(function() { return callback() }, options);
 });
@@ -134,10 +142,11 @@ var publishStream = function (stream, dest) {
       targets: targets,
       configuration: config.buildConfiguration,
       logCommand: false,
-      verbosity: "minimal",
+      verbosity: config.buildVerbosity,
       stdout: true,
       errorOnFail: true,
-      maxcpucount: 0,
+      maxcpucount: config.buildMaxCpuCount,
+      nodeReuse: false,
       toolsVersion: config.buildToolsVersion,
       properties: {
         Platform: config.publishPlatform,
@@ -183,10 +192,11 @@ gulp.task("Build-Solution", function () {
           targets: targets,
           configuration: config.buildConfiguration,
           logCommand: false,
-          verbosity: "minimal",
+          verbosity: config.buildVerbosity,
           stdout: true,
           errorOnFail: true,
-          maxcpucount: 0,
+          maxcpucount: config.buildMaxCpuCount,
+          nodeReuse: false,
           toolsVersion: config.buildToolsVersion,
           properties: {
             Platform: config.buildPlatform
@@ -317,4 +327,144 @@ gulp.task("Auto-Publish-Assemblies", function () {
       return stream;
     })
   );
+});
+
+/*****************************
+ Package
+*****************************/
+var websiteRootBackup = config.websiteRoot;
+var path = require("path");
+var rimrafDir = require("rimraf");
+var rimraf = require("gulp-rimraf");
+var xmlpoke = require("xmlpoke");
+
+/* publish files to temp location */
+gulp.task("Package-Publish", function (callback) {
+    config.websiteRoot = path.resolve("./temp");
+    config.buildConfiguration = "Release";
+    fs.mkdirSync(config.websiteRoot);
+    runSequence(
+      "Build-Solution",
+      "Publish-Foundation-Projects",
+      "Publish-Feature-Projects",
+      "Publish-Project-Projects", callback);
+});
+
+/* Remove unwanted files */
+gulp.task("Package-Prepare-Package-Files", function (callback) {
+    var excludeList = [
+      config.websiteRoot + "\\bin\\{Sitecore,Lucene,Newtonsoft,System,Microsoft.Web.Infrastructure}*dll",
+      config.websiteRoot + "\\compilerconfig.json.defaults",
+      config.websiteRoot + "\\packages.config",
+      config.websiteRoot + "\\App_Config\\Include\\{Feature,Foundation,Project}\\*Serialization.config",
+      config.websiteRoot + "\\App_Config\\Include\\{Feature,Foundation,Project}\\z.*DevSettings.config",
+      "!" + config.websiteRoot + "\\bin\\Sitecore.Support*dll",
+      "!" + config.websiteRoot + "\\bin\\Sitecore.{Feature,Foundation,Habitat,Demo,Common}*dll"
+    ];
+    console.log(excludeList);
+
+    return gulp.src(excludeList, { read: false }).pipe(rimraf({ force: true }));
+});
+
+/* Add files to package definition */
+gulp.task("Package-Enumerate-Files", function () {
+    var packageFiles = [];
+    config.websiteRoot = websiteRootBackup;
+
+    return gulp.src(path.resolve("./temp") + "/**/*.*", { base: "temp", read: false })
+      .pipe(foreach(function (stream, file) {
+          var item = "/" + file.relative.replace(/\\/g, "/");
+          console.log("Added to the package:" + item);
+          packageFiles.push(item);
+          return stream;
+      })).pipe(util.buffer(function () {
+          xmlpoke("./package.xml", function (xml) {
+              for (var idx in packageFiles) {
+                  xml.add("project/Sources/xfiles/Entries/x-item", packageFiles[idx]);
+              }
+          });
+      }));
+});
+
+/* Add items to package definition */
+gulp.task("Package-Enumerate-Items", function () {
+    var itemPaths = [];
+    var allowedPatterns = [
+      "./src/**/serialization/**/*.yml",
+      "!./src/**/serialization/Roles/**/*.yml",
+      "!./src/**/serialization/Users/**/*.yml"
+    ];
+    return gulp.src(allowedPatterns)
+        .pipe(foreach(function (stream, file) {
+        console.log(file);
+            var itemPath = unicorn.getFullItemPath(file);
+            itemPaths.push(itemPath);
+            return stream;
+        })).pipe(util.buffer(function () {
+            xmlpoke("./package.xml", function (xml) {
+                for (var idx in itemPaths) {
+                    xml.add("project/Sources/xitems/Entries/x-item", itemPaths[idx]);
+                }
+            });
+        }));
+});
+
+/* Add users to package definition */
+gulp.task("Package-Enumerate-Users", function () {
+    var users = [];
+
+    return gulp.src("./src/**/serialization/Users/**/*.yml")
+        .pipe(foreach(function (stream, file) {
+          console.log(file);
+            var fileContent = file.contents.toString();
+            var userName = unicorn.getUserPath(file);
+            users.push(userName);
+            return stream;
+        })).pipe(util.buffer(function () {
+            xmlpoke("./package.xml", function (xml) {
+                for (var idx in users) {
+                    xml.add("project/Sources/accounts/Entries/x-item", users[idx]);
+                }
+            });
+        }));
+});
+
+/* Add roles to package definition */
+gulp.task("Package-Enumerate-Roles", function () {
+    var roles = [];
+
+    return gulp.src("./src/**/serialization/Roles/**/*.yml")
+        .pipe(foreach(function (stream, file) {
+          console.log(file);
+            var fileContent = file.contents.toString();
+            var roleName = unicorn.getRolePath(file);            
+            roles.push(roleName);
+            return stream;
+        })).pipe(util.buffer(function () {
+            xmlpoke("./package.xml", function (xml) {
+                for (var idx in roles) {
+                    xml.add("project/Sources/accounts/Entries/x-item", roles[idx]);
+                }
+            });
+        }));
+});
+
+/* Remove temp files */
+gulp.task("Package-Clean", function (callback) {
+    rimrafDir.sync(path.resolve("./temp"));
+    callback();
+});
+
+/* Main task, generate package.xml */
+gulp.task("Package-Generate", function (callback) {
+    runSequence(
+        "Package-Clean",
+        "Package-Publish",
+        "Package-Prepare-Package-Files",
+        "Package-Enumerate-Files",
+        "Package-Enumerate-Items",
+        "Package-Enumerate-Users",
+        "Package-Enumerate-Roles",
+        "Package-Clean",
+        callback);
 });

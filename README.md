@@ -1,13 +1,14 @@
-#Sitecore Habitat
+# Sitecore Habitat
 
-Habitat is a Sitecore solution example built on a modular architecture.
+Habitat and the tools and processes in it is a Sitecore solution example built on the [Helix architecture principles](http://helix.sitecore.net).  
 The architecture and methodology focuses on:
 
 * Simplicity - *A consistent and discoverable architecture*
 * Flexibility - *Change and add quickly and without worry*
 * Extensibility - *Simply add new features without steep learning curve*
 
-For more information, please check out the [Habitat Wiki](https://github.com/Sitecore/Habitat/wiki)
+For getting started, please check out the [Habitat Wiki](https://github.com/Sitecore/Habitat/wiki).  
+For more information on **Helix**, please go to [helix.sitecore.net](http://helix.sitecore.net).
 
 ## How to Increase Build and Deployment Times ##
 When creating your own Helix-based solutions, please consider some of the ways that you can improve build and deployment times. Some possible solutions for this can be found here:- http://sitecore.stackexchange.com/questions/4076/slow-build-performance-using-tds-helix-inspired/4114
@@ -38,7 +39,7 @@ In order to achieve the appropriate order, each module's TDS project is explicit
 ## Installation: ##
 
 1. Clone this repository to your local file system.
-2. Set up a clean Sitecore 8.2 Update-1 website (We recommend using Sitecore Instance Manager). The codebase uses this version with it's referenced NuGet packages and configs, so using any other Sitecore version may require changes to the code.
+2. Set up a clean Sitecore 8.2 Update-4 website (We recommend using Sitecore Instance Manager). The codebase uses this version with it's referenced NuGet packages and configs, so using any other Sitecore version may require changes to the code.
  - Default URL: http://habitat.dev.local/ 
  - Default Location: C:\Websites\Habitat.local\
 3. Install the Webforms for Marketers module.
@@ -47,5 +48,5 @@ In order to achieve the appropriate order, each module's TDS project is explicit
 To change the standard location of source, website files and website URL modify the following files:
   - /Configuration/z.Habitat.DevSettings.config
   - /Configuration/TdsGlobal.config 
-6. Deploy the Solution (Right click on the solution -> Deploy Solution) in Visual Studio 2015. This will restore all NuGet packages, build the code, and deploy all Sitecore Items and Project Items to your local website.
+6. Deploy the Solution (Right click on the solution -> Deploy Solution) in Visual Studio 2017. This will restore all NuGet packages, build the code, and deploy all Sitecore Items and Project Items to your local website.
 7. Be productive!
