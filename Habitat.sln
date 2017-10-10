@@ -270,16 +270,15 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Habitat.Website.Ma
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Serialization.Master", "src\Foundation\Serialization\tds\Sitecore.Foundation.Serialization.Master\Sitecore.Foundation.Serialization.Master.scproj", "{F76D3A85-4A21-409A-979C-E92A18108644}"
-	ProjectSection(ProjectDependencies) = postProject
-		{F10B8E08-67FE-4EF5-A1A8-B570AAE5D781} = {F10B8E08-67FE-4EF5-A1A8-B570AAE5D781}
-	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Serialization.Core", "src\Foundation\Serialization\tds\Sitecore.Foundation.Serialization.Core\Sitecore.Foundation.Serialization.Core.scproj", "{F10B8E08-67FE-4EF5-A1A8-B570AAE5D781}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F76D3A85-4A21-409A-979C-E92A18108644} = {F76D3A85-4A21-409A-979C-E92A18108644}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.SitecoreExtensions.Master", "src\Foundation\SitecoreExtensions\tds\Sitecore.Foundation.SitecoreExtensions.Master\Sitecore.Foundation.SitecoreExtensions.Master.scproj", "{1DE919C1-FC1D-4562-95E7-7AC1413B3D76}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F10B8E08-67FE-4EF5-A1A8-B570AAE5D781} = {F10B8E08-67FE-4EF5-A1A8-B570AAE5D781}
-		{F76D3A85-4A21-409A-979C-E92A18108644} = {F76D3A85-4A21-409A-979C-E92A18108644}
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Installer.Master", "src\Foundation\Installer\tds\Sitecore.Foundation.Installer.Master\Sitecore.Foundation.Installer.Master.scproj", "{8FC51E9F-0C50-4C19-B45B-1E15B327BC50}"
@@ -340,6 +339,9 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Sitecor
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Foundation.Alerts.Master", "src\Foundation\Alerts\tds\Sitecore.Foundation.Alerts.Master\Sitecore.Foundation.Alerts.Master.scproj", "{6585D32B-EF87-41B2-9BE5-C049024F138A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B38465A-BB8B-4414-8D00-6204829500BD} = {0B38465A-BB8B-4414-8D00-6204829500BD}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Feature.Maps.Master", "src\Feature\Maps\tds\Sitecore.Feature.Maps.Master\Sitecore.Feature.Maps.Master.scproj", "{C81B58EF-884F-4D28-8F9F-B4385D880183}"
 	ProjectSection(ProjectDependencies) = postProject
