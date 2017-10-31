@@ -23,6 +23,9 @@
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Foundation.Theming</CodeGenTargetProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -101,6 +104,7 @@
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_FixedHeight.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>IsInterface=True</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_FixedHeight\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -117,6 +121,7 @@
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_HasBackground.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>IsInterface=True</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_HasBackground\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -133,6 +138,7 @@
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_HasContainer.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>IsInterface=True</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_HasContainer\Page Layout.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -145,6 +151,7 @@
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\ParametersTemplate_HasContainerWithBackground.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>IsInterface=True</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Theming\Style.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>

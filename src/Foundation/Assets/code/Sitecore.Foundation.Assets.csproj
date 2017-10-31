@@ -30,6 +30,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -114,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AssetContentType.cs" />
+    <Compile Include="Models\GeneratedCode.cs" />
     <Compile Include="Pipelines\GetPageRendering\AddRenderingAssets.cs" />
     <Compile Include="Pipelines\GetPageRendering\AddPageAssets.cs" />
     <Compile Include="Pipelines\GetPageRendering\ClearAssets.cs" />

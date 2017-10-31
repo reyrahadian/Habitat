@@ -19,10 +19,12 @@
     <LegacyFileReplacement>false</LegacyFileReplacement>
     <Name>Sitecore.Feature.Accounts.Master</Name>
     <RootNamespace>Sitecore.Feature.Accounts.Master</RootNamespace>
-    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
     <ManageRoles>True</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Feature.Accounts</CodeGenTargetProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

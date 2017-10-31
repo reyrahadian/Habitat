@@ -26,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -144,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Indexing\NewsIndexingProvider.cs" />
+    <Compile Include="Models\GeneratedCode.cs" />
     <Compile Include="Repositories\INewsRepository.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Repositories\NewsRepository.cs" />

@@ -20,10 +20,12 @@
     <AssemblyName>Sitecore.Feature.Multisite.Master</AssemblyName>
     <Name>Sitecore.Feature.Multisite.Master</Name>
     <RootNamespace>Sitecore.Feature.Multisite.Master</RootNamespace>
-    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
     <ManageRoles>True</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Feature.Multisite</CodeGenTargetProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -113,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <SitecoreRole Include="Sitecore Roles\modules\Feature Multisite Admin.role" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenReferencedProject Include="{0ffda52a-7be3-44b0-a1c3-5a7305b4ca89}" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

@@ -7,9 +7,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>06feb855-6724-4e55-afaa-aa9306141088</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
-    <SourceWebProject>{c98ead78-4d83-4789-a621-6011c3d7314d}|src\Project\Common\code\Sitecore.Common.Website.csproj</SourceWebProject>
-    <SourceWebVirtualPath>/Sitecore.Common.Website.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -20,10 +17,15 @@
     <AssemblyName>Sitecore.Common.Website.Master</AssemblyName>
     <Name>Sitecore.Common.Website.Master</Name>
     <RootNamespace>Sitecore.Common.Website.Master</RootNamespace>
-    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <SourceWebVirtualPath>/Sitecore.Common.Website.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{c98ead78-4d83-4789-a621-6011c3d7314d}|src\Project\Common\code\Sitecore.Common.Website.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Common.Website</CodeGenTargetProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -862,6 +864,26 @@
     <BundledProject Include="..\Sitecore.Common.Website.Core\Sitecore.Common.Website.Core.scproj">
       <ProjectId>{96cb4d20-920c-4795-879c-80e92570ea41}</ProjectId>
     </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenReferencedProject Include="{0d343d50-1fbc-452e-bb77-73aeccd15111}" />
+    <CodeGenReferencedProject Include="{1e86efa3-0793-4e36-9c62-3af793b9028f}" />
+    <CodeGenReferencedProject Include="{4042b797-0e29-4459-ae97-2e274b76b018}" />
+    <CodeGenReferencedProject Include="{4d451c82-35c9-4018-b127-2f36d31917a3}" />
+    <CodeGenReferencedProject Include="{58fe88ed-c34f-40b4-ad15-73f5ab0b80f3}" />
+    <CodeGenReferencedProject Include="{8269f815-d34f-4797-8a5d-9ce761a1a8dd}" />
+    <CodeGenReferencedProject Include="{941aefd8-5bd3-46fb-b35c-e0ad5f267e9e}" />
+    <CodeGenReferencedProject Include="{a39f8207-6ff7-443a-b39e-27e181542a37}" />
+    <CodeGenReferencedProject Include="{ae13d34c-cd4f-40c1-8ef3-06f1366d5a81}" />
+    <CodeGenReferencedProject Include="{aec741a2-5bc2-4c9a-807e-c6bc56ff8031}" />
+    <CodeGenReferencedProject Include="{bcbeaeb7-1371-49e6-a00d-ad62e1ccd19a}" />
+    <CodeGenReferencedProject Include="{c1ee0036-1b56-4f22-b58a-3a9643dea346}" />
+    <CodeGenReferencedProject Include="{c5a686ea-9c06-4d79-b4eb-e10af3cdaf1e}" />
+    <CodeGenReferencedProject Include="{c81b58ef-884f-4d28-8f9f-b4385d880183}" />
+    <CodeGenReferencedProject Include="{ccff3497-44a0-493e-a440-5e88abeeb4f4}" />
+    <CodeGenReferencedProject Include="{d3712d53-f781-4b3d-94b2-5d8b2629093b}" />
+    <CodeGenReferencedProject Include="{dddc658e-bf73-4f12-b10c-21463aa55112}" />
+    <CodeGenReferencedProject Include="{e0598453-0397-4daa-b3a0-064c8b3f25f5}" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

@@ -1,0 +1,485 @@
+﻿<#@ template language="C#" debug="true" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models" #>
+<#
+// The Item template is called for every Sitecore item elegible for code generation. TDS will execute this T4 template every time a
+// template or field on a template changes in TDS. The T4 template is responsible for generating code for only the Sitecore item TDS
+// passes to the template. TDS will join all created templates together to create a single file. 
+//
+// Version 4 of TDS only supports generating code for Sitecore Template items.
+
+// Parameters passed to the T4 Template for code generation
+
+//   Model: This parameter contains information about the Sitecore Item to be generated. The Model will always be a type that inherits from SitecoreItem.
+#>
+<#@ parameter name="Model" type="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models.SitecoreItem" #>
+<#
+// 	DefaultNamespace: The DefaultNamespace parameter contains the default namespace of the project where the generated
+//					  code file resides.
+#>
+<#@ parameter name="DefaultNamespace" type="System.String" #>
+<#
+/*   The following types are used during code generation:
+
+/// <summary>
+/// Represents the SitecoreItem to be passed to the T4 template. Any object that is a SitecoreItem will inherit from this object.
+/// </summary>
+public class SitecoreItem
+{
+	/// <summary>
+    /// Key for versioned fields so the developer has access to the all versioned fields
+    /// </summary>
+	public class FieldVersionedKey
+    {
+        public string Name { get; set; }
+        public string Language { get; set; }
+        public int? Version { get; set; }
+    }
+
+    /// <summary>
+    /// The Sitecore item ID.
+    /// </summary>
+    public Guid ID { get; set; }
+
+    /// <summary>
+    /// The name of the Sitecore item. This may be different than the Display Name.
+    /// </summary>
+    public string Name { get; set; }
+
+    /// <summary>
+    /// The path to the item from the Sitecore root.
+    /// </summary>
+    public string Path { get; set; }
+
+    /// <summary>
+    /// Any custom data associated with the item. This data can be set on the property page associated with the Sitecore item in the solution explorer.
+    /// </summary>
+    public string Data { get; set; }
+
+    /// <summary>
+    /// The Parent SitecoreItem in the Sitecore hierarchy.
+    /// </summary>
+    public SitecoreItem Parent { get; set; }
+
+    /// <summary>
+    /// The name of the template the item is based on
+    /// </summary>
+    public string TemplateName { get; set; }
+
+    /// <summary>
+    /// The ID of the template the item is based on
+    /// </summary>
+    public Guid TemplateId { get; set; }
+
+    /// <summary>
+    /// Additional sitecore fields. These fields are set on the Code Generation Property page. 
+    /// The key in the dictionary is the Field name, the value is the value of the field.
+    /// </summary>
+    public Dictionary<string, string> SitecoreFields;
+
+    /// <summary>
+    /// All Sitecore fields keyed by Name, Language and Version. The field in this collection are set on the Code Generation Property page. 
+    /// The key in the dictionary is the Field name, version and language, the value is the value of the field. 
+    /// </summary>
+    public Dictionary<FieldVersionedKey, string> AllSitecoreFields { get; set; }
+
+	/// <summary>
+    /// The calculated Namespace for the item. Each Sitecore item above the template is represented as part of the namespace. 
+    /// A new Namespace can be set at any item in the items property page. This allows the code generation namespace to be arranged differently 
+    /// than the Sitecore template hierarchy.
+    /// </summary>
+    public string Namespace { get; set; }
+
+    /// <summary>
+    /// Indicates that the item is a reference to an item in another project. Referenced items will only show up for Base Templates.
+    /// </summary>
+    public bool ReferencedItem { get; set; }
+
+    /// <summary>
+    /// The name of the TDS project
+    /// </summary>
+    public string TDSProjectName { get; set; }
+
+    /// <summary>
+    /// The full path to the TDS project file
+    /// </summary>
+    public string TDSProjectPath { get; set; }
+    
+    /// <summary>
+    /// The name of the target project
+    /// </summary>
+    public string TargetProjectName { get; set; }
+
+    /// <summary>
+    /// The full path to the target project
+    /// </summary>
+    public string TargetProjectPath { get; set; }
+
+	/// <summary>
+    /// These are additional properties defined in the Code Generation window that are passed to the template. They can be used for anything the developer wants.
+    /// The same properties are passed to all T4 templates in a given project
+    /// </summary>
+    public Dictionary<string, string> AdditionalProperties { get; set; }
+}
+
+/// <summary>
+/// Represents Template specific information for code generation.
+/// </summary>
+public class SitecoreTemplate : SitecoreItem
+{
+    /// <summary>
+    /// The namespace broken out into individual segments.
+    /// </summary>
+    public IEnumerable<string> NamespaceSegments { get; }
+
+    /// <summary>
+    /// A list of all templates this template inherits from.
+    /// </summary>
+    public List<SitecoreTemplate> BaseTemplates { get; set; }
+
+    /// <summary>
+    /// A list of Sitecore Fields that make up this sitecore template.
+    /// </summary>
+    public List<SitecoreField> Fields { get; set; }
+}
+
+/// <summary>
+/// Represents Field specific information for code generation.
+/// </summary>
+public class SitecoreField : SitecoreItem
+{
+    /// <summary>
+    /// The type of the field from the template editor.
+    /// </summary>
+    public string Type { get; set; }
+}
+*/
+#>
+
+<#
+//To help make it easier to enable code generation in the Habitat project, all code generation settings other then the Target project and Dependent projects are set 
+//in the TDSGlobal.Config file. Once code geration is enabled for a TDS project, everything else is set correctly
+
+//This T4 template is set at the root, which can slow down code generation slightly, but it makes it easier to configure. Therefore, we only generate code when the model is SitecoreTemplate
+if (Model is SitecoreTemplate)
+{
+    SitecoreTemplate template = Model as SitecoreTemplate;
+
+    //Tracks which interfaces have been generated if an interface is inherited multiple times in a deep inheritance structure
+    HashSet<Guid> generatedInterfaces = new HashSet<Guid>();
+#>
+namespace <#=BuildNamespace(template)#>
+{
+    public <#=IsInterface(template) ? "interface" : "class"#> <#=GetClassName(template)#> <#=InheritedClasses(template.BaseTemplates)#>
+    {
+<#
+    //If the class isn't an interface, generate properties for inherited interfaces
+    if (!IsInterface(template))
+    {
+        GenerateInheritedInterfaceFields(template, generatedInterfaces);
+    }#>
+<#GenerateFieldProperties(template, IsInterface(template));#>
+
+    }
+}
+
+<#
+}
+#>
+
+<#+
+//Emits the fields for a class or interface.
+void GenerateFieldProperties(SitecoreTemplate template, bool isInterface = false)
+{
+    //Iterate over the fields
+    foreach(SitecoreField field in template.Fields)
+    {
+        string fieldName = field.Name;
+
+        //If the field name matches the class, emit a slightly different name to prevent compile errors
+        if (fieldName==template.Name)
+        {
+            fieldName= "__" + fieldName;
+        }
+#>   
+        <#=!isInterface ? "public" : ""#> <#=GetFieldType(field)#> <#=NormalizeName(field.Name)#> { get; set; }<#+
+    }
+}
+
+//Emits the fields for inherited interfaces on a class. This should only be called if generating a class.
+void GenerateInheritedInterfaceFields(SitecoreTemplate template, HashSet<Guid> generatedInterfaces)
+{
+    //Loop through the base templates for a class and emit the inherited interface properties
+    foreach(SitecoreTemplate baseTemplate in template.BaseTemplates)
+    {
+        //Only emit for interfaces that havent been emited yet
+        if (IsInterface(baseTemplate) && !generatedInterfaces.Contains(baseTemplate.ID))
+        {
+            //Emit any base interface properties
+            GenerateInheritedInterfaceFields(baseTemplate, generatedInterfaces);
+
+            if (baseTemplate.Fields.Any())
+            {
+#>
+#region Interface <#=GetClassName(baseTemplate)#>
+<#+
+                //Loop through base template fields and generate the property
+                foreach(SitecoreField field in baseTemplate.Fields)
+                {
+                    string fieldName = field.Name;
+
+                    //Emit a fully qualified property name if there are any collisions
+                    if (fieldName == template.Name || template.Fields.Where(f => f.Name == fieldName).Any())
+                    {
+#>  
+        <#=GetFieldType(field)#> <#=BuildNamespace(baseTemplate)#>.<#=GetClassName(baseTemplate)#>.<#=NormalizeName(field.Name)#> { get; set; }
+<#+
+                    }
+                    else
+                    {
+#>  
+        public <#=GetFieldType(field)#> <#=NormalizeName(field.Name)#> { get; set; }
+<#+
+                    }
+                }
+#>
+#endregion
+<#+
+            }
+
+            generatedInterfaces.Add(baseTemplate.ID);
+        }
+    }
+}
+
+
+//Helpers
+
+//Determines if a template is an interface. This is true if a template name begins with _ or if the custom data is set it IsInterface=True.
+bool IsInterface(SitecoreTemplate template)
+{
+    return template.Name.StartsWith("_") || GetCustomProperty(template.Data, "IsInterface") == "True";
+}
+
+//Builds the namespace for a class or interface from the code gen target name and the path to the template.
+string BuildNamespace(HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models.SitecoreTemplate template)
+{
+    StringBuilder retVal = new StringBuilder(template.TargetProjectName + ".Poco");
+
+    IEnumerable<string> splitPath = template.Path.Split(new char[] {'/'});
+
+    //This assumes the path is /sitecore/template/[Name]/[project|feature|foundation] if it is a Helix path
+    //The Name and Helix Layer should be included in the project name
+
+    string possibleLayerScope = splitPath.Skip(3).First();
+    if (possibleLayerScope == "Project" || possibleLayerScope == "Feature" || possibleLayerScope == "Foundation")
+    {
+        splitPath = splitPath.Skip(5).Take(splitPath.Count()-6);
+    }
+    else
+    {
+        splitPath = splitPath.Skip(3).Take(splitPath.Count()-4);
+    }
+
+    foreach(string namespaceSegment in splitPath)
+    {
+        retVal.Append(".");
+        retVal.Append(NormalizeName(namespaceSegment));
+    }
+
+    return retVal.ToString();
+}
+
+//Creates a class/interface name for a template
+string GetClassName(SitecoreTemplate template)
+{
+    string name = template.Name;
+
+    if (name.StartsWith("_"))
+    {
+        name = "I" + name.Substring(1);
+    }
+    else if (IsInterface(template))
+    {
+        name = "I" + name;
+    }
+
+    return NormalizeName(name);
+}
+
+//Cleans up the names for the templates. For now, spaces are replaced by '_', but other rules can be aded here if needed
+string NormalizeName(string name)
+{
+    return name.Replace(" " , "_");
+}
+
+//Generates the inheritance string for a class or interface declaration
+string InheritedClasses(IEnumerable<SitecoreTemplate> baseTemplates)
+{
+    if (!baseTemplates.Any())
+    {
+        return "";
+    }
+
+    StringBuilder retVal = new StringBuilder(": ");
+
+    bool firstNamespace = true;
+    bool emitedBaseClass = false;
+
+    foreach(SitecoreTemplate baseTemplate in baseTemplates)
+    {
+        if (!IsInterface(baseTemplate))
+        {
+            //Make sure we don't emit two classes as base classes
+            if (emitedBaseClass)
+            {
+                continue;
+            }
+
+            emitedBaseClass = true;
+        }
+
+        if (!firstNamespace)
+        {
+            retVal.Append(", ");
+        }
+
+        retVal.Append(BuildNamespace(baseTemplate));
+        retVal.Append(".");
+        retVal.Append(GetClassName(baseTemplate));
+
+        firstNamespace = false;
+    }
+
+    return retVal.ToString();
+}
+
+//Calculates the C# field type for a field based on the Sitecore field type
+string GetFieldType(SitecoreField field)
+{
+	if (field != null && field.Type != null)
+    {
+		// Pull out any 'type' param from the custom data field on the field in TDS
+		string customType = GetCustomProperty(field.Data, "type");
+		string generic = GetCustomProperty(field.Data, "generic");
+		
+		if (customType != "")
+		{
+			if (generic != "")
+			{
+				return string.Format("{0}<{1}>", customType, generic);
+			}
+			else
+			{
+				return customType;
+			}
+		}
+
+		switch(field.Type.ToLower())
+		{
+			case "tristate":
+				return "bool";
+			case "checkbox":
+				return "bool";
+
+			case "date":
+			case "datetime":
+				return "DateTime";
+
+			case "number":
+				return "float";
+
+			case "integer":
+				return "int";
+
+			case "treelist with search":
+			case "treelist":
+			case "treelistex":
+			case "treelist descriptive":
+			case "checklist":
+			case "multilist with search":
+			case "multilist":
+	            return string.Format("IEnumerable<{0}>", string.IsNullOrEmpty(generic) ? "Guid" : generic);
+
+			case "grouped droplink":
+			case "droplink":
+			case "lookup":
+			case "droptree":
+			case "reference":
+			case "tree":
+				return "Guid";
+
+			case "file":
+				return "FileField";
+
+			case "image":
+				return "ImageField";
+
+			case "link":
+			case "internal link":
+			case "general link":
+			case "general link with search":
+				return "LinkField";
+			
+			case "password":
+			case "icon":
+			case "rich text":
+			case "html":
+			case "single-line text":
+			case "multi-line text":
+			case "frame":
+			case "text":
+			case "memo":
+			case "droplist":
+			case "grouped droplist":
+			case "valuelookup":
+				return "string";
+			case "attachment":
+			case "word document":
+				return "System.IO.Stream";	   
+			case "name lookup value list":
+			case "name value list":
+				return "System.Collections.Specialized.NameValueCollection";    		
+			case "tracking":
+				return "TrackingField";
+			default:
+				return "object /* UNKNOWN (" + field.Type + ") */";
+		}
+	}
+	else 
+	{
+	   throw new Exception("There is no 'Type' field on the " + field.Name + " field.");
+	}
+}
+
+/// <summary>
+/// Gets a custom propery from the data assuming it is querystring format
+/// </summary>
+/// <param name="data">A string in query string format.</param>
+/// <param name="key">The key to get the value for.</param>
+/// <returns>The value, or an empty string</returns>
+string GetCustomProperty(string data, string key)
+{
+	if (string.IsNullOrEmpty(data))
+    {
+		return "";
+    }
+
+	string[] strArray = data.Split(new char[] { '&' });
+    string keyEquals = key + "=";
+    int length = keyEquals.Length;
+    
+    foreach (string keyValuePair in strArray)
+    {
+        if ((keyValuePair.Length > length) && keyValuePair.StartsWith(keyEquals, StringComparison.OrdinalIgnoreCase))
+        {
+            return keyValuePair.Substring(length);
+        }
+    }
+    
+    return "";
+}
+#>

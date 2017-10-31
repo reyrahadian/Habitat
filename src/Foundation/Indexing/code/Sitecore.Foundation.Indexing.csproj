@@ -30,6 +30,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -149,6 +150,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Infrastructure\Fields\SearchResultFormatterComputedField.cs" />
     <Compile Include="Infrastructure\Providers\FallbackIndexingProvider.cs" />
+    <Compile Include="Models\GeneratedCode.cs" />
     <Compile Include="Models\IQueryFacet.cs" />
     <Compile Include="Models\ISearchResultFacet.cs" />
     <Compile Include="Models\ISearchResultFacetValue.cs" />

@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -170,6 +171,7 @@
     <Compile Include="Models\Device.cs" />
     <Compile Include="Models\EngagementPlanState.cs" />
     <Compile Include="Models\ExperienceData.cs" />
+    <Compile Include="Models\GeneratedCode.cs" />
     <Compile Include="Pipelines\FakeTrackerData.cs" />
     <Compile Include="Repositories\CampaignRepository.cs" />
     <Compile Include="Repositories\DeviceRepository.cs" />

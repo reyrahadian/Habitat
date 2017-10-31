@@ -26,6 +26,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -134,6 +135,7 @@
     <Compile Include="Infrastructure\Pipelines\GetPageMetadata\SetFromContext.cs" />
     <Compile Include="Infrastructure\Pipelines\GetPageMetadata\SetFromPage.cs" />
     <Compile Include="Infrastructure\Pipelines\GetPageMetadata\CombineTitle.cs" />
+    <Compile Include="Models\GeneratedCode.cs" />
     <Compile Include="Models\IMetadata.cs" />
     <Compile Include="Models\MetadataViewModel.cs" />
     <Compile Include="Repositories\MetadataRepository.cs" />

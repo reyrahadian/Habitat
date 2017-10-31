@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -120,6 +121,7 @@
     <Compile Include="Commands\CreateRenderingSettings.cs" />
     <Compile Include="Commands\OpenExperienceEditor.cs" />
     <Compile Include="Dialogs\DatasourceSettingsPage.cs" />
+    <Compile Include="Models\GeneratedCode.cs" />
     <Compile Include="Pipelines\ResolveContentLanguage.cs" />
     <Compile Include="Placeholders\SiteSpecificPlaceholderCache.cs" />
     <Compile Include="Placeholders\SiteSpecificPlaceholderCacheManager.cs" />
