@@ -32,6 +32,8 @@ var buildDir = Directory("./src/Example/bin") + Directory(configuration);
 // Define artefact directories.
 var deploymentDir = MakeAbsolute(File("./_Deployment")).FullPath;
 var outputDir = deploymentDir + "/Output";
+var tdsUpdatePackagesSuffix = "";
+var skipCleaningDeploymentFolder = false;
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
@@ -39,11 +41,16 @@ var outputDir = deploymentDir + "/Output";
 
 Task("Clean-Deployment-Folder")
     .Does(()=>
-{
-    EnsureDirectoryExists(deploymentDir);
-    CleanDirectory(deploymentDir);
-    EnsureDirectoryExists(outputDir);
-});
+    {
+        EnsureDirectoryExists(deploymentDir);
+
+        if(!skipCleaningDeploymentFolder)
+        {
+            CleanDirectory(deploymentDir);
+        }   
+
+        EnsureDirectoryExists(outputDir);
+    });
 
 Task("Create-TDS-Packages")
     .IsDependentOn("Clean-Deployment-Folder")
@@ -58,6 +65,7 @@ Task("Create-TDS-Packages")
                 settings.SetMaxCpuCount(0);
             });    
         
+        tdsUpdatePackagesSuffix = "Full";
         RunTarget("Copy-TDS-Packages-To-Output-Folder");
     });
 Task("Clean-Build-Directories")
@@ -89,8 +97,22 @@ Task("Clean-TDS-Projects-Package-Folder")
     });
 Task("Copy-TDS-Packages-To-Output-Folder")
     .Does(()=>
-    {    
-        CopyFiles(GetFiles("./src/**/*.update"), outputDir);   
+    {            
+        var files = GetFiles("./src/**/*.update");
+        if(!string.IsNullOrWhiteSpace(tdsUpdatePackagesSuffix))
+        {
+            foreach(var file in files)
+            {
+                Information(file);
+                var newFilePath = file.ToString().Replace(".update","-"+tdsUpdatePackagesSuffix+".update");
+                MoveFile(file,newFilePath);                
+                MoveFileToDirectory(newFilePath,outputDir);
+            }
+        }
+        else
+        {
+            CopyFiles(files, outputDir);   
+        }        
     });
 
 Task("Create-TDS-Delta-Packages-DateAfter")
@@ -112,43 +134,50 @@ Task("Create-TDS-Delta-Packages-DateAfter")
                 settings.WithProperty("IncludeItemsChangedAfter",tdsIncludeItemsChangedAfter);
             });    
         
+        tdsUpdatePackagesSuffix = "DeltaByDateAfter-"+tdsIncludeItemsChangedAfter;
         RunTarget("Copy-TDS-Packages-To-Output-Folder");
     });
 
 Task("Create-TDS-Delta-Packages-DateSince")
     .Does(()=>
-{
-    //TODO
-});
+    {
+        //TODO
+    });
 
 Task("Create-TDS-Delta-Packages-GitDelta")
     .Does(()=>
-{
-    //TODO
-});
-
+    {
+        //TODO
+    });
+Task("Create-All-TDS-Packages-Types")
+    .IsDependentOn("Clean-Deployment-Folder")
+    .Does(()=>{
+        skipCleaningDeploymentFolder = true;
+        RunTarget("Create-TDS-Packages");
+        tdsIncludeItemsChangedAfter = "2016-12-29";
+        RunTarget("Create-TDS-Delta-Packages-DateAfter");
+    });
 Task("Restore-NuGet-Packages")    
     .Does(() =>
-{
-    NuGetRestore(solutionFilePath);
-});
+    {
+        NuGetRestore(solutionFilePath);
+    });
 
 Task("Build")
     .IsDependentOn("Restore-NuGet-Packages")
     .Does(() =>
-{  
-      // Use MSBuild
-      MSBuild(solutionFilePath, settings =>
-        settings.SetConfiguration(configuration)); 
-});
-
+    {  
+        // Use MSBuild
+        MSBuild(solutionFilePath, settings =>
+            settings.SetConfiguration(configuration)); 
+    });
 
 //////////////////////////////////////////////////////////////////////
 // TASK TARGETS
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
-    .IsDependentOn("Build");
+    .IsDependentOn("Create-All-TDS-Packages-Types");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
