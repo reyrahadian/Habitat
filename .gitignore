@@ -41,3 +41,4 @@ temp/
 *.ncrunchsolution
 .vscode
 nCrunchTemp*.*
+tools/
