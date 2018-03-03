@@ -43,3 +43,4 @@ temp/
 nCrunchTemp*.*
 tools/
 _Deployment/
+*.DotSettings

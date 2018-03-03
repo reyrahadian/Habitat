@@ -1,4 +1,14 @@
 //////////////////////////////////////////////////////////////////////
+// COMMAND EXAMPLES
+//////////////////////////////////////////////////////////////////////
+
+// Generate full TDS packages 
+// .\build.ps1 -target Create-TDS-Packages
+
+// Generate TDS delta package by date after
+// .\build.ps1 -target Create-TDS-Delta-Packages-DateAfter -ScriptArgs:'--includeItemsChangedAfter="2016-12-30"'
+
+//////////////////////////////////////////////////////////////////////
 // TOOLS / ADDINS
 //////////////////////////////////////////////////////////////////////
 
@@ -10,6 +20,7 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
+var tdsIncludeItemsChangedAfter = Argument("includeItemsChangedAfter", "");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -36,56 +47,73 @@ Task("Clean-Deployment-Folder")
 
 Task("Create-TDS-Packages")
     .IsDependentOn("Clean-Deployment-Folder")
-    .IsDependentOn("Restore-NuGet-Packages")
-    .IsDependentOn("Clean-TDS-Projects-Package-Folder")
+    .IsDependentOn("Restore-NuGet-Packages")    
     .Does(()=>
-{
-    configuration = "TdsPackage";    
-    MSBuild(solutionFilePath, settings =>
-        {
-            settings.SetConfiguration(configuration);
-            settings.SetMaxCpuCount(0);
-        });    
-    
-    RunTarget("Copy-TDS-Packages-To-Output-Folder");
-});
+    {
+        configuration = "TdsPackage";    
+        RunTarget("Clean-TDS-Projects-Package-Folder");        
+        MSBuild(solutionFilePath, settings =>
+            {
+                settings.SetConfiguration(configuration);
+                settings.SetMaxCpuCount(0);
+            });    
+        
+        RunTarget("Copy-TDS-Packages-To-Output-Folder");
+    });
 Task("Clean-Build-Directories")
     .Does(()=>
-{
-    MSBuild(solutionFilePath, settings =>
-        {
-            settings.SetConfiguration(configuration);
-            settings.SetMaxCpuCount(0);
-            settings.WithTarget("Clean");
-        });   
-});
+    {
+        MSBuild(solutionFilePath, settings =>
+            {
+                settings.SetConfiguration(configuration);
+                settings.SetMaxCpuCount(0);
+                settings.WithTarget("Clean");
+            });   
+    });
 Task("Clean-TDS-Projects-Package-Folder")
     .Does(()=>
-{
-    var tdsProjectSuffixes = new string[]{".core",".master",".content"};    
-    var solution = ParseSolution(solutionFilePath);    
-    var tdsProjects = solution.Projects.Where(p=> tdsProjectSuffixes.Any(x=> p.Name.ToLower().EndsWith(x)));
-    foreach(var project in tdsProjects)
-    {        
-        var path = project.Path + "/bin/Package_"+configuration;
-        Information(path);
-        if(DirectoryExists(path))
-        {
-            CleanDirectory(path);
-        }           
-    }
-});
+    {
+        configuration = "TdsPackage";
+        var tdsProjectSuffixes = new string[]{".core",".master",".content",".media"};    
+        var solution = ParseSolution(solutionFilePath);    
+        var tdsProjects = solution.Projects.Where(p=> tdsProjectSuffixes.Any(x=> p.Name.ToLower().EndsWith(x)));
+        foreach(var project in tdsProjects)
+        {        
+            var path = project.Path + "/../bin/Package_"+configuration;            
+            if(DirectoryExists(path))
+            {
+                Information(path);
+                CleanDirectory(path);
+            }           
+        }
+    });
 Task("Copy-TDS-Packages-To-Output-Folder")
     .Does(()=>
-{    
-    CopyFiles(GetFiles("./src/**/*.update"), outputDir);   
-});
+    {    
+        CopyFiles(GetFiles("./src/**/*.update"), outputDir);   
+    });
 
 Task("Create-TDS-Delta-Packages-DateAfter")
+    .IsDependentOn("Clean-Deployment-Folder")
+    .IsDependentOn("Restore-NuGet-Packages")    
     .Does(()=>
-{
-    //TODO
-});
+    {
+        if(string.IsNullOrWhiteSpace(tdsIncludeItemsChangedAfter))
+        {
+            throw new ArgumentException("tdsIncludeItemsChangedAfter cannot be empty");
+        }
+
+        configuration = "TdsPackage";    
+        RunTarget("Clean-TDS-Projects-Package-Folder");        
+        MSBuild(solutionFilePath, settings =>
+            {
+                settings.SetConfiguration(configuration);
+                settings.SetMaxCpuCount(0);                                
+                settings.WithProperty("IncludeItemsChangedAfter",tdsIncludeItemsChangedAfter);
+            });    
+        
+        RunTarget("Copy-TDS-Packages-To-Output-Folder");
+    });
 
 Task("Create-TDS-Delta-Packages-DateSince")
     .Does(()=>
