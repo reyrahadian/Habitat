@@ -1,4 +1,3 @@
-
 //////////////////////////////////////////////////////////////////////
 // TOOLS / ADDINS
 //////////////////////////////////////////////////////////////////////
@@ -36,9 +35,50 @@ Task("Clean-Deployment-Folder")
 });
 
 Task("Create-TDS-Packages")
+    .IsDependentOn("Clean-Deployment-Folder")
+    .IsDependentOn("Restore-NuGet-Packages")
+    .IsDependentOn("Clean-TDS-Projects-Package-Folder")
     .Does(()=>
 {
-    //TODO
+    configuration = "TdsPackage";    
+    MSBuild(solutionFilePath, settings =>
+        {
+            settings.SetConfiguration(configuration);
+            settings.SetMaxCpuCount(0);
+        });    
+    
+    RunTarget("Copy-TDS-Packages-To-Output-Folder");
+});
+Task("Clean-Build-Directories")
+    .Does(()=>
+{
+    MSBuild(solutionFilePath, settings =>
+        {
+            settings.SetConfiguration(configuration);
+            settings.SetMaxCpuCount(0);
+            settings.WithTarget("Clean");
+        });   
+});
+Task("Clean-TDS-Projects-Package-Folder")
+    .Does(()=>
+{
+    var tdsProjectSuffixes = new string[]{".core",".master",".content"};    
+    var solution = ParseSolution(solutionFilePath);    
+    var tdsProjects = solution.Projects.Where(p=> tdsProjectSuffixes.Any(x=> p.Name.ToLower().EndsWith(x)));
+    foreach(var project in tdsProjects)
+    {        
+        var path = project.Path + "/bin/Package_"+configuration;
+        Information(path);
+        if(DirectoryExists(path))
+        {
+            CleanDirectory(path);
+        }           
+    }
+});
+Task("Copy-TDS-Packages-To-Output-Folder")
+    .Does(()=>
+{    
+    CopyFiles(GetFiles("./src/**/*.update"), outputDir);   
 });
 
 Task("Create-TDS-Delta-Packages-DateAfter")

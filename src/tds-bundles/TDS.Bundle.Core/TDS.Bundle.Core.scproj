@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>123e7cb6-a3d9-4c0a-ae8b-fdc93425d0b7</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>TDS.Bundle.Core</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>TDS.Bundle.Core</AssemblyName>
+    <Name>TDS.Bundle.Core</Name>
+    <RootNamespace>TDS.Bundle.Core</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>core</SitecoreDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'TdsPackage' ">
+    <OutputPath>.\bin\TdsPackage\</OutputPath>
+    <PackageName>TDS.Bundle.Core</PackageName>
+    <PackageAuthor>Rey Rahadian</PackageAuthor>
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <DisableFileDeployment>False</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'TdsDeploy' ">
+    <OutputPath>bin\TdsDeploy\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\Feature\Accounts\tds\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj">
+      <ProjectId>{aec741a2-5bc2-4c9a-807e-c6bc56ff8031}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Feature\Maps\tds\Sitecore.Feature.Maps.Core\Sitecore.Feature.Maps.Core.scproj">
+      <ProjectId>{c7fefd13-b99f-433d-9dc0-1d1762b73b73}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Foundation\FieldEditor\tds\Sitecore.Foundation.FieldEditor.Core\Sitecore.Foundation.FieldEditor.Core.scproj">
+      <ProjectId>{7791b7e8-0c05-41b7-8ea7-bbd4107581e0}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Foundation\Serialization\tds\Sitecore.Foundation.Serialization.Core\Sitecore.Foundation.Serialization.Core.scproj">
+      <ProjectId>{f10b8e08-67fe-4ef5-a1a8-b570aae5d781}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Foundation\SitecoreExtensions\tds\Sitecore.Foundation.SitecoreExtensions.Core\Sitecore.Foundation.SitecoreExtensions.Core.scproj">
+      <ProjectId>{2c4b960c-6a37-4a1f-befe-75a6ba3b9e36}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Project\Common\tds\Sitecore.Common.Website.Core\Sitecore.Common.Website.Core.scproj">
+      <ProjectId>{96cb4d20-920c-4795-879c-80e92570ea41}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\Accounts\tds\Sitecore.Feature.Accounts.Core\Sitecore.Feature.Accounts.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Maps\tds\Sitecore.Feature.Maps.Core\Sitecore.Feature.Maps.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\FieldEditor\tds\Sitecore.Foundation.FieldEditor.Core\Sitecore.Foundation.FieldEditor.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\Serialization\tds\Sitecore.Foundation.Serialization.Core\Sitecore.Foundation.Serialization.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\SitecoreExtensions\tds\Sitecore.Foundation.SitecoreExtensions.Core\Sitecore.Foundation.SitecoreExtensions.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Project\Common\tds\Sitecore.Common.Website.Core\Sitecore.Common.Website.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>
