@@ -23,6 +23,7 @@ var configuration = Argument("configuration", "Release");
 var tdsIncludeItemsChangedAfter = Argument("tdsIncludeItemsChangedAfter", "2016-12-23");
 var tdsGitCommitId = Argument("tdsGitCommitId","");
 var tdsGitTagName = Argument("tdsGitTagName","");
+var version = Argument("version","1.0.0.0");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -34,6 +35,7 @@ var buildDir = Directory("./src/Example/bin") + Directory(configuration);
 // Define artefact directories.
 var deploymentDir = MakeAbsolute(File("./_Deployment")).FullPath;
 var outputDir = deploymentDir + "/Output";
+var toolsDir = MakeAbsolute(File("./tools")).FullPath;
 var tdsUpdatePackagesSuffix = "";
 var skipCleaningDeploymentFolder = false;
 
@@ -64,7 +66,7 @@ Task("Create-TDS-Packages")
         MSBuild(solutionFilePath, settings =>
             {
                 settings.SetConfiguration(configuration);
-                settings.SetMaxCpuCount(0);
+                settings.SetMaxCpuCount(0);                
             });    
         
         tdsUpdatePackagesSuffix = "Full";
@@ -99,22 +101,43 @@ Task("Clean-TDS-Projects-Package-Folder")
     });
 Task("Copy-TDS-Packages-To-Output-Folder")
     .Does(()=>
-    {            
-        var files = GetFiles("./src/**/*.update");
+    {                    
+        var files = GetFiles("./src/**/*.update");        
         if(!string.IsNullOrWhiteSpace(tdsUpdatePackagesSuffix))
         {
             foreach(var file in files)
             {
                 Information(file);
-                var newFilePath = file.ToString().Replace(".update","-"+tdsUpdatePackagesSuffix+".update");
-                MoveFile(file,newFilePath);                
-                MoveFileToDirectory(newFilePath,outputDir);
+                var newFilePath = file.ToString().Replace(".update","-"+tdsUpdatePackagesSuffix+".update");                
+                MoveFile(file,newFilePath);                 
             }
         }
-        else
-        {
-            CopyFiles(files, outputDir);   
-        }        
+
+        var tdsProjectSuffixes = new string[]{".core",".master",".content",".media"};    
+        var solution = ParseSolution(solutionFilePath);    
+        var tdsBundleProjects = solution.Projects.Where(p=> p.Path.FullPath.Contains("tds-bundles") && tdsProjectSuffixes.Any(x=> p.Name.ToLower().EndsWith(x)));
+        foreach(var project in tdsBundleProjects)
+        {        
+            var projectName = project.Name+"."+tdsUpdatePackagesSuffix;
+            var projectRootPath = project.Path.FullPath.Replace(project.Name+".scproj","");            
+            NuGetPack(new NuGetPackSettings(){
+                Id = projectName,
+                Version = version,
+                Title = projectName,
+                Authors = new string[]{"Rey Rahadian"},
+                Description = "TDS Package",
+                RequireLicenseAcceptance = false,
+                Files = new NuSpecContent[] 
+                        {
+                            new NuSpecContent 
+                            {
+                                Source = "**/*.update",                                 
+                            },
+                        },
+                BasePath = projectRootPath,
+                OutputDirectory = outputDir
+            });                
+        }                
     });
 
 Task("Create-TDS-Delta-Packages-DateAfter")
@@ -171,7 +194,7 @@ Task("Create-TDS-Delta-Packages-GitDelta")
         tdsUpdatePackagesSuffix = "GitDelta";
         RunTarget("Copy-TDS-Packages-To-Output-Folder");
     });
-Task("Create-All-TDS-Packages-Types")
+Task("Create-TDS-Packages-All-Types")
     .IsDependentOn("Clean-Deployment-Folder")
     .Does(()=>{
         skipCleaningDeploymentFolder = true;
@@ -213,7 +236,7 @@ Task("Build")
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
-    .IsDependentOn("Create-All-TDS-Packages-Types");
+    .IsDependentOn("Create-TDS-Packages-All-Types");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
