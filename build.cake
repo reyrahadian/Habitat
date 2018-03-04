@@ -23,7 +23,7 @@ var configuration = Argument("configuration", "Release");
 var tdsIncludeItemsChangedAfter = Argument("tdsIncludeItemsChangedAfter", "2016-12-23");
 var tdsGitCommitId = Argument("tdsGitCommitId","");
 var tdsGitTagName = Argument("tdsGitTagName","");
-var version = Argument("version","1.0.0.0");
+var version = Argument("packageVersion","1.0.0.0");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
