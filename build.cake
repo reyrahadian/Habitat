@@ -8,6 +8,10 @@
 // Generate TDS delta package by date after
 // .\build.ps1 -target Create-TDS-Delta-Packages-DateAfter -ScriptArgs:'--includeItemsChangedAfter="2016-12-30"'
 
+// Generate TDS Git delta package
+//.\build.ps1 -target Create-TDS-Delta-Packages-GitDelta -tdsGitCommitId="5684a8921e0c4192b047efb3ceadbde7504a65e6"
+//.\build.ps1 -target Create-TDS-Delta-Packages-GitDelta -tdsGitTagName="1.0.4"
+
 //////////////////////////////////////////////////////////////////////
 // TOOLS / ADDINS
 //////////////////////////////////////////////////////////////////////
@@ -106,8 +110,7 @@ Task("Copy-TDS-Packages-To-Output-Folder")
         if(!string.IsNullOrWhiteSpace(tdsUpdatePackagesSuffix))
         {
             foreach(var file in files)
-            {
-                Information(file);
+            {                
                 var newFilePath = file.ToString().Replace(".update","-"+tdsUpdatePackagesSuffix+".update");                
                 MoveFile(file,newFilePath);                 
             }
@@ -119,7 +122,9 @@ Task("Copy-TDS-Packages-To-Output-Folder")
         foreach(var project in tdsBundleProjects)
         {        
             var projectName = project.Name+"."+tdsUpdatePackagesSuffix;
-            var projectRootPath = project.Path.FullPath.Replace(project.Name+".scproj","");            
+            var projectRootPath = project.Path.FullPath.Replace(project.Name+".scproj","");  
+            var projectTdsPackageDirectoryPath = projectRootPath+"bin/Package_"+configuration;
+            Information(projectRootPath);                  
             NuGetPack(new NuGetPackSettings(){
                 Id = projectName,
                 Version = version,
@@ -131,10 +136,10 @@ Task("Copy-TDS-Packages-To-Output-Folder")
                         {
                             new NuSpecContent 
                             {
-                                Source = "**/*.update",                                 
+                                Source = "*.update"                                                             
                             },
                         },
-                BasePath = projectRootPath,
+                BasePath = projectTdsPackageDirectoryPath,
                 OutputDirectory = outputDir
             });                
         }                
