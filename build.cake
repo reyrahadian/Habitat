@@ -9,7 +9,7 @@
 // .\build.ps1 -target Create-TDS-Delta-Packages-DateAfter -ScriptArgs:'--includeItemsChangedAfter="2016-12-30"'
 
 // Generate TDS Git delta package
-//.\build.ps1 -target Create-TDS-Delta-Packages-GitDelta -tdsGitCommitId="5684a8921e0c4192b047efb3ceadbde7504a65e6"
+//.\build.ps1 -target Create-TDS-Delta-Packages-GitDelta -tdsGitCommitId="ba4af9a27fd170752689568915315438a2c95993"
 //.\build.ps1 -target Create-TDS-Delta-Packages-GitDelta -tdsGitTagName="1.0.4"
 
 //////////////////////////////////////////////////////////////////////
@@ -210,14 +210,14 @@ Task("Create-TDS-Packages-All-Types")
         // after specific date
         if(string.IsNullOrWhiteSpace(tdsIncludeItemsChangedAfter))
         {
-            tdsIncludeItemsChangedAfter = "2016-12-29";
+            tdsIncludeItemsChangedAfter = "2016-06-30";
         }        
         RunTarget("Create-TDS-Delta-Packages-DateAfter");
 
         // git delta
         if(string.IsNullOrWhiteSpace(tdsGitCommitId))
         {
-            tdsGitCommitId = "5684a8921e0c4192b047efb3ceadbde7504a65e6";
+            tdsGitCommitId = "ba4af9a27fd170752689568915315438a2c95993";
         }        
         RunTarget("Create-TDS-Delta-Packages-GitDelta");
     });
