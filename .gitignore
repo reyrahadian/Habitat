@@ -44,3 +44,4 @@ nCrunchTemp*.*
 tools/
 _Deployment/
 *.DotSettings
+**/Report/ChangedItemFiles.txt

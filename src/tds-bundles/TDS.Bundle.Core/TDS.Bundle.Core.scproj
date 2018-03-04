@@ -19,6 +19,8 @@
     <RootNamespace>TDS.Bundle.Core</RootNamespace>
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>core</SitecoreDatabase>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +51,23 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'TdsDeploy' ">
     <OutputPath>bin\TdsDeploy\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'TdsGitDeltaPackage' ">
+    <PackageName>TDS.Bundle.Core</PackageName>
+    <PackageAuthor>Rey Rahadian</PackageAuthor>
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <DisableFileDeployment>False</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+    <OutputPath>bin\TdsGitDeltaPackage\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -98,5 +117,17 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <!--Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />-->
+  <Import Project="..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.12\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.12\build\HedgehogDevelopment.TDS.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.2.0.2\build\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.2.0.2\build\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.12\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.12\build\HedgehogDevelopment.TDS.targets'))" />
+  </Target>
+  <Import Project="..\..\..\packages\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.2.0.2\build\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.targets" Condition="Exists('..\..\..\packages\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.2.0.2\build\Hedgehog.TDS.BuildExtensions.GitDeltaDeploy.targets')" />
 </Project>

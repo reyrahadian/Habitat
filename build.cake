@@ -20,7 +20,9 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
-var tdsIncludeItemsChangedAfter = Argument("includeItemsChangedAfter", "");
+var tdsIncludeItemsChangedAfter = Argument("tdsIncludeItemsChangedAfter", "2016-12-23");
+var tdsGitCommitId = Argument("tdsGitCommitId","");
+var tdsGitTagName = Argument("tdsGitTagName","");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -145,17 +147,51 @@ Task("Create-TDS-Delta-Packages-DateSince")
     });
 
 Task("Create-TDS-Delta-Packages-GitDelta")
+    .IsDependentOn("Clean-Deployment-Folder")
+    .IsDependentOn("Restore-NuGet-Packages") 
     .Does(()=>
     {
-        //TODO
+        configuration = "TdsGitDeltaPackage";    
+        RunTarget("Clean-TDS-Projects-Package-Folder");        
+        MSBuild(solutionFilePath, settings =>
+            {
+                settings.SetConfiguration(configuration);
+                settings.SetMaxCpuCount(0);                                
+                settings.WithProperty("CustomGitDeltaDeploy","True");
+                if(!string.IsNullOrWhiteSpace(tdsGitCommitId))
+                {
+                    settings.WithProperty("LastDeploymentGitCommitID",tdsGitCommitId);
+                }
+                if(!string.IsNullOrWhiteSpace(tdsGitTagName))
+                {
+                    settings.WithProperty("LastDeploymentGitTagName",tdsGitTagName);
+                }
+            });    
+        
+        tdsUpdatePackagesSuffix = "GitDelta";
+        RunTarget("Copy-TDS-Packages-To-Output-Folder");
     });
 Task("Create-All-TDS-Packages-Types")
     .IsDependentOn("Clean-Deployment-Folder")
     .Does(()=>{
         skipCleaningDeploymentFolder = true;
+        
+        // full tds packages
         RunTarget("Create-TDS-Packages");
-        tdsIncludeItemsChangedAfter = "2016-12-29";
+
+        // after specific date
+        if(string.IsNullOrWhiteSpace(tdsIncludeItemsChangedAfter))
+        {
+            tdsIncludeItemsChangedAfter = "2016-12-29";
+        }        
         RunTarget("Create-TDS-Delta-Packages-DateAfter");
+
+        // git delta
+        if(string.IsNullOrWhiteSpace(tdsGitCommitId))
+        {
+            tdsGitCommitId = "5684a8921e0c4192b047efb3ceadbde7504a65e6";
+        }        
+        RunTarget("Create-TDS-Delta-Packages-GitDelta");
     });
 Task("Restore-NuGet-Packages")    
     .Does(() =>
