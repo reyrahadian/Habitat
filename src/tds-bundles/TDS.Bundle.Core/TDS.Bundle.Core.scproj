@@ -67,7 +67,7 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
-    <OutputPath>bin\TdsGitDeltaPackage\</OutputPath>
+    <OutputPath>.\bin\TdsGitDeltaPackage\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

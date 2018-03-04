@@ -71,7 +71,7 @@
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
-    <OutputPath>bin\TdsGitDeltaPackage\</OutputPath>
+    <OutputPath>.\bin\TdsGitDeltaPackage\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -285,6 +285,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'TdsPackage' ">
+    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.PublishDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
+      <Parameter>Internet</Parameter>
+      <Order>0</Order>
+    </PostDeployAction>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'TdsGitDeltaPackage' ">
+    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.PublishDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
+      <Parameter>Internet</Parameter>
+      <Order>0</Order>
+    </PostDeployAction>
   </ItemGroup>
   <!--<Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />-->
   <Import Project="..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.12\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.12\build\HedgehogDevelopment.TDS.targets')" />
